@@ -1,10 +1,10 @@
 # Billable Accounts
 
-{{ MyVariables.ProductName_Overlord }} provides an information on the billable accounts – the enabled Active Directory/{{ MyVariables.Azure_AD app }} (formerly Azure AD) accounts for your organization. You can review these accounts (in numbers and percentage from total numbers of served users) in the Users column on the main dashboard of your Home page. 
+{{ MyVariables.ProductName_Overlord }} provides an information on the billable accounts – the enabled Active Directory/{{ MyVariables.Azure_AD_app }} (formerly Azure AD) accounts for your organization. You can review these accounts (in numbers and percentage from total numbers of served users) in the Users column on the main dashboard of your Home page. 
 
-To view the numbers of the column, your organization should add the Active Directory/{{ MyVariables.Azure_AD app }} sources and connectors. 
+To view the numbers of the column, your organization should add the Active Directory/{{ MyVariables.Azure_AD_app }} sources and connectors. 
 
-You can review the Active Directory/{{ MyVariables.Azure_AD app }} users on the following dashboards:
+You can review the Active Directory/{{ MyVariables.Azure_AD_app }} users on the following dashboards:
 
 - Managing Organization![](../../../Resources/Images/1Secure/Tabs.png)
 
@@ -14,15 +14,15 @@ You can also review the Billable Users reports with the detailed information for
 
 ## Calculation of the Numbers
 
-{{ MyVariables.ProductName_Overlord }} calculates and dedupes the users that are synced across AD and {{ MyVariables.Azure_AD app }}. 
+{{ MyVariables.ProductName_Overlord }} calculates and dedupes the users that are synced across AD and {{ MyVariables.Azure_AD_app }}. 
 
 The system calculates:
 
 - a total number of   on-prem AD users
-- a total number of {{ MyVariables.Azure_AD app }} native users (not synced with on-prem)
-- a total number of synced users from on-prem {{ MyVariables.Azure_AD app }} (or hybrid users)
+- a total number of {{ MyVariables.Azure_AD_app }} native users (not synced with on-prem)
+- a total number of synced users from on-prem {{ MyVariables.Azure_AD_app }} (or hybrid users)
 
-The number of synced users from on-prem is registered against the on-prem tenant reference. {{ MyVariables.ProductName_Overlord }} uses the highest number out  of on-prem users reported by the Agent and  the number of hybrid users reported by the {{ MyVariables.Azure_AD app }} connector as the on-prem total. Then the {{ MyVariables.Azure_AD app }} users, which are not synced with on-prem envinronment, are added. 
+The number of synced users from on-prem is registered against the on-prem tenant reference. {{ MyVariables.ProductName_Overlord }} uses the highest number out  of on-prem users reported by the Agent and  the number of hybrid users reported by the {{ MyVariables.Azure_AD_app }} connector as the on-prem total. Then the {{ MyVariables.Azure_AD_app }} users, which are not synced with on-prem envinronment, are added. 
 
 **Example:**
 
@@ -31,9 +31,9 @@ The number of synced users from on-prem is registered against the on-prem tenant
 | **On-prem AD**: 200 users | **Agent**<br>                        <br>
 <br>                        <br>On-prem: 200 | User Counts<br>
 <br>                        <br>**On-prem**: Max (200, 150) = 200 |
-| **{{ MyVariables.Azure_AD app }}**: 250 users (150 users synced from on-prem + 100 Azure AD only users) | **{{ MyVariables.Azure_AD app }}**<br>                        <br>
+| **{{ MyVariables.Azure_AD_app }}**: 250 users (150 users synced from on-prem + 100 Azure AD only users) | **{{ MyVariables.Azure_AD_app }}**<br>                        <br>
 <br>                        <br>o	150 from on-prem domain<br>
-<br>                        <br>o	100 Azure AD | **{{ MyVariables.Azure_AD app }}**: 100 |
+<br>                        <br>o	100 Azure AD | **{{ MyVariables.Azure_AD_app }}**: 100 |
 |  |  | **Total**: 300 |
 
 The percentage is calculated as follows:

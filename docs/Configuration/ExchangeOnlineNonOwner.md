@@ -1,6 +1,6 @@
 # Settings for Non-Owner Mailbox Access Audit: Using Application
 
-To prepare for non-owner mailbox access auditing in the Exchange Online organization, you will need to take several configuration steps, creating a {{ MyVariables.Azure_AD app }} app with the required permissions and instructing this app to automatically apply the necessary audit settings. 
+To prepare for non-owner mailbox access auditing in the Exchange Online organization, you will need to take several configuration steps, creating a {{ MyVariables.Azure_AD_app }} app with the required permissions and instructing this app to automatically apply the necessary audit settings. 
 
 These settings shall provide configuration for the All Exchange Online Non-Owner Mailbox Access Events report. See the [Filters](../Admin/SearchAndReports/FilterValues.md)  topic for additional information. 
 
@@ -8,9 +8,9 @@ To start auditing the data for the report, you need to select the **Collect non-
 
 ## Grant Permissions  to the Application
 
-Follow the steps to grant permissions to the {{ MyVariables.Azure_AD app }} application. @Snippet:Config/EntraID:AdminCenterNote@
+Follow the steps to grant permissions to the {{ MyVariables.Azure_AD_app }} application. @Snippet:Config/EntraID:AdminCenterNote@
         
-In the {{ MyVariables.Azure_AD admin center }}, create and register a {{ MyVariables.Azure_AD app }} app. See the 
+In the {{ MyVariables.Azure_AD_admin_center }}, create and register a {{ MyVariables.Azure_AD_app }} app. See the 
 
 After you created an app, select the newly-created, registered application. If you left the Overview page, it will be listed in the **Identity** &gt; **Applications** &gt; **App registrations** &gt; **All applications** list. @Snippet:Config/EntraID/GrantPermissions:APIPermissions@ @Snippet:Config/EntraID/GrantPermissions:AddPermission@
 

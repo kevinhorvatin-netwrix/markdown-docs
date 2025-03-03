@@ -4,7 +4,7 @@ This section lists platforms and systems that can be monitored with {{ MyVariabl
 
 - Active Directory
 
-- {{ MyVariables.Azure_AD app }} (formerly Azure AD)
+- {{ MyVariables.Azure_AD_app }} (formerly Azure AD)
 
 - Computer (Windows File Share)
 - SharePoint Online
@@ -19,7 +19,7 @@ This section lists platforms and systems that can be monitored with {{ MyVariabl
 <br>                            <li>Windows Server 2016</li>
 <br>                            <li>Windows Server 2012 R2</li>
 <br>                        </ul> |
-| {{ MyVariables.Azure_AD app }}<br> | {{ MyVariables.Azure_AD app }} version provided within Microsoft Office 365<br>
+| {{ MyVariables.Azure_AD_app }}<br> | {{ MyVariables.Azure_AD_app }} version provided within Microsoft Office 365<br>
 <br>                        <br>You may need to take some preparatory steps, depending on the authentication method you want to use for collecting Azure AD and Office 365 data. See the [App Registration and Configuration in Microsoft Entra ID](../Configuration/EntraID/RegisterConfig.md)  topic for additional information. |
 | Computer (Windows File Server) | <ul>
 <br>                            <li>Windows Server OS:<ul><li>Windows Server 2022</li><li>Windows Server 2019</li><li>Windows Server 2016</li><li>Windows Server 2012 R2</li></ul></li>

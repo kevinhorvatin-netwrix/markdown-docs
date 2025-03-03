@@ -1,6 +1,6 @@
 #  Microsoft 365 Required Permissions
 
-This page lists the permissions required for an application you registered in {{ MyVariables.Azure_AD app }} to audit the following Microsoft 365 data sources: 
+This page lists the permissions required for an application you registered in {{ MyVariables.Azure_AD_app }} to audit the following Microsoft 365 data sources: 
 
 - Microsoft Entra ID
 - SharePoint Online
@@ -8,7 +8,7 @@ This page lists the permissions required for an application you registered in {{
 
 ## Permissions to Audit Microsoft Entra ID
 
-The registered application must be assigned to the Global Administrator or Exchange Administrator role for {{ MyVariables.Azure_AD app }} state collection.
+The registered application must be assigned to the Global Administrator or Exchange Administrator role for {{ MyVariables.Azure_AD_app }} state collection.
 
 | API | Permissions |
 | --- | --- |

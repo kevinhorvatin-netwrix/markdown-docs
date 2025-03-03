@@ -26,18 +26,18 @@ Reports
 - High-Risk Permissions – Shows the permissions of Authenticated users, Anonymous logon, or domain users, including the object URL, resource type, and permission level.
 - Direct Object Permissions – Displays all identities (users or groups) that have assigned permissions to specific objects, such as documents, lists, or sites.
 
-New Alerts and Reports for {{ MyVariables.Azure_AD app }}
+New Alerts and Reports for {{ MyVariables.Azure_AD_app }}
 
-Thirteen new alerts and ten new activity reports are now available for {{ MyVariables.Azure_AD app }} to assist in threat detection. Seven reports and seven alerts (based on these new reports) are completely new. Six of the thirteen alerts and three of the ten reports, previously available for Active Directory, now also cover {{ MyVariables.Azure_AD app }} activities, helping users better detect and respond to potential threats.
+Thirteen new alerts and ten new activity reports are now available for {{ MyVariables.Azure_AD_app }} to assist in threat detection. Seven reports and seven alerts (based on these new reports) are completely new. Six of the thirteen alerts and three of the ten reports, previously available for Active Directory, now also cover {{ MyVariables.Azure_AD_app }} activities, helping users better detect and respond to potential threats.
 
-New {{ MyVariables.Azure_AD app }} alerts and reports
+New {{ MyVariables.Azure_AD_app }} alerts and reports
 
-- {{ MyVariables.Azure_AD app }} Role Management Permission Grant – Identifies when the Microsoft Graph RoleManagement.ReadWrite.Directory (Delegated or Application) permission is granted to a service principal. An adversary could use this permission to add a {{ MyVariables.Azure_AD app }} object to an Admin directory role and escalate privileges.
+- {{ MyVariables.Azure_AD_app }} Role Management Permission Grant – Identifies when the Microsoft Graph RoleManagement.ReadWrite.Directory (Delegated or Application) permission is granted to a service principal. An adversary could use this permission to add a {{ MyVariables.Azure_AD_app }} object to an Admin directory role and escalate privileges.
 - Mail.Read Permissions Granted to Application – Detects applications that have been granted permissions to read mail in all mailboxes without a signed-in user. This can help identify applications that have been abused to gain access to mailboxes.
 - MFA Rejected by User – Identifies occurrences where a user has rejected an MFA prompt. This could be an indicator that a threat actor has compromised the username and password of this user account and is using them to try and log into the account.
 - (Multiple) User Removed from a Privileged Role – Detects when one or more existing admins are removed, which can be an attempt by adversaries to lock down the organization and retain sole access.
-- (Multiple) {{ MyVariables.Azure_AD app }} Admin Permissions Granted – Identifies when one or more users' permissions are changed at once.
-- User Added to a {{ MyVariables.Azure_AD app }} Privileged Group – Tracks when a user is added to any of the Privileged Groups.
+- (Multiple) {{ MyVariables.Azure_AD_app }} Admin Permissions Granted – Identifies when one or more users' permissions are changed at once.
+- User Added to a {{ MyVariables.Azure_AD_app }} Privileged Group – Tracks when a user is added to any of the Privileged Groups.
 - User Assigned New Privileged Role – Identifies when a new eligible or active privileged role is assigned to a user.
 
 Alerts (previously available for Active Directory)
@@ -51,7 +51,7 @@ Alerts (previously available for Active Directory)
 
 Reports (previously available for Active Directory)
 
-- All Logon Activity – Helps validate compliance and analyze user activity by showing all {{ MyVariables.Azure_AD app }} logon activities.
+- All Logon Activity – Helps validate compliance and analyze user activity by showing all {{ MyVariables.Azure_AD_app }} logon activities.
 - Failed Logons – Shows failed logon attempts.
 - User Account Status Changes – Shows changes to the status (enabled, disabled, locked, or unlocked) of user accounts.
 
@@ -72,9 +72,9 @@ Major Enhancements
 
 ## Netwrix 1Secure 2024.09.12
 
-New: {{ MyVariables.Azure_AD app }} Reports
+New: {{ MyVariables.Azure_AD_app }} Reports
 
-Two new reports provide visibility into roles and role members within your {{ MyVariables.Azure_AD app }} organization. Use these reports to identify improper role assignments or modifications and strengthen your organization's security posture. The new reports include:
+Two new reports provide visibility into roles and role members within your {{ MyVariables.Azure_AD_app }} organization. Use these reports to identify improper role assignments or modifications and strengthen your organization's security posture. The new reports include:
 
 - Roles
 - Role Members
@@ -126,7 +126,7 @@ These reports not only protect Exchange Online by identifying unauthorized activ
 
 New: Risk Assessment 2.0
 
-The completely redesigned Risk Assessment not only helps clients and MSPs diagnose their security posture better than ever, but also identifies many new risk factors. Users can subscribe to the report and export it as a .pptx file. Furthermore, {{ MyVariables.Azure_AD app }} data is incorporated into the assessed risks. The list of new risks includes:
+The completely redesigned Risk Assessment not only helps clients and MSPs diagnose their security posture better than ever, but also identifies many new risk factors. Users can subscribe to the report and export it as a .pptx file. Furthermore, {{ MyVariables.Azure_AD_app }} data is incorporated into the assessed risks. The list of new risks includes:
 
 - User Accounts with "No MFA Configured"
 - Stale Guest Accounts

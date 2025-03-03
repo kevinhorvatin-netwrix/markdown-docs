@@ -1,6 +1,6 @@
 # Billable Users Report
 
-A Billable Users report  provides information on the billable accounts – the enabled Active Directory/{{ MyVariables.Azure_AD app }} (formerly Azure AD) accounts for your organization. See the [Billable Accounts](../Organizations/BillableAccounts.md)  topic for additional information. 
+A Billable Users report  provides information on the billable accounts – the enabled Active Directory/{{ MyVariables.Azure_AD_app }} (formerly Azure AD) accounts for your organization. See the [Billable Accounts](../Organizations/BillableAccounts.md)  topic for additional information. 
 
 | Icon | Description |
 | --- | --- |

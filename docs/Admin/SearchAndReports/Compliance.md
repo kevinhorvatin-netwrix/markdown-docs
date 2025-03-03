@@ -1,6 +1,6 @@
 # Compliance Reports
 
-Compliance reports help clients and Managed Service Providers gather information about their {{ MyVariables.Azure_AD app }}, Active Directory, and SharePoint Online configuration state at a specific point in time. This enables them to prove compliance with many regulations to auditors.  Compliance reports provide information on user attributes, expired or locked user accounts, group memberships, and so on. 
+Compliance reports help clients and Managed Service Providers gather information about their {{ MyVariables.Azure_AD_app }}, Active Directory, and SharePoint Online configuration state at a specific point in time. This enables them to prove compliance with many regulations to auditors.  Compliance reports provide information on user attributes, expired or locked user accounts, group memberships, and so on. 
 
 ## Review a Report
 
@@ -31,8 +31,8 @@ A list of the available Compliance reports is given below.
 
 | Report Name | Description |
 | --- | --- |
-| Role Members | Lists {{ MyVariables.Azure_AD app }} accounts (members or guests) assigned to a given role in your organization. Use this report to identify unauthorized role assignments or changes. |
-| Roles | Lists the {{ MyVariables.Azure_AD app }} roles in your organization and the number of accounts (members or guests) assigned to each role. |
+| Role Members | Lists {{ MyVariables.Azure_AD_app }} accounts (members or guests) assigned to a given role in your organization. Use this report to identify unauthorized role assignments or changes. |
+| Roles | Lists the {{ MyVariables.Azure_AD_app }} roles in your organization and the number of accounts (members or guests) assigned to each role. |
 | User Attributes | @Snippet:1Secure/Reports:UserAttributes@ |
 
 SharePoint Online
@@ -105,7 +105,7 @@ This table provides a list of filters and descriptions.
 <br>                        <br>To apply this filter, select **Status** from the **Filter** drop-down menu and choose a status from the **Value** drop-down menu. |
 | Inactive days | Filters the report based on an account's inactive days.<br>
 <br>                        <br>To apply this filter, select **Inactive Days** from the **Filter** drop-down menu and specify the number of inactive days in the **Value** field. |
-| AD and {{ MyVariables.Azure_AD app }} User Attributes filters | Depending on the following filters, review the specific information on the user accounts that violate company policies or applicable compliance standards:<br><ul>
+| AD and {{ MyVariables.Azure_AD_app }} User Attributes filters | Depending on the following filters, review the specific information on the user accounts that violate company policies or applicable compliance standards:<br><ul>
 <br>                            <li>
 <br>                                <p>Account Cannot be Delegated </p>
 <br>                            </li>
@@ -219,7 +219,7 @@ This table provides a list of filters and descriptions.
 <br>                                <p>Hybrid AD</p>
 <br>                            </li>
 <br>                            <li>
-<br>                                <p>{{ MyVariables.Azure_AD app }}
+<br>                                <p>{{ MyVariables.Azure_AD_app }}
 <br>                                </p>
 <br>                            </li>
 <br>                        </ul>

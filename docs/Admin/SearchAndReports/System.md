@@ -10,7 +10,7 @@ Navigate to the **Reports** &gt; **System** tab.![](../../../Resources/Images/1S
 
 Select the **Billable Users** report in the left pane to view it.
 
-This report lists the number of Active Directory and {{ MyVariables.Azure_AD app }} users contributing to the billing counter. @Snippet:1Secure/Reports:ReportSearch@
+This report lists the number of Active Directory and {{ MyVariables.Azure_AD_app }} users contributing to the billing counter. @Snippet:1Secure/Reports:ReportSearch@
         
 ## Filter Descriptions
 
@@ -29,7 +29,7 @@ This table provides a list of filters with their description.
 <br>                                <p>Windows Local User</p>
 <br>                            </li>
 <br>                            <li>
-<br>                                <p>{{ MyVariables.Azure_AD app }} user</p>
+<br>                                <p>{{ MyVariables.Azure_AD_app }} user</p>
 <br>                            </li>
 <br>                        </ul>
 <br>                        <br>To apply this filter, select **Source Type** from the **Filter** drop-down menu and choose an option from the **Value** drop-down menu. |

@@ -7,7 +7,7 @@ You can choose to view predefined Activity reports or create customized reports 
 Activity reports collect data from the following environments:
 
 - Active Directory
-- {{ MyVariables.Azure_AD app }}
+- {{ MyVariables.Azure_AD_app }}
 - Exchange Online
 - File Server
 - SharePoint Online
@@ -25,7 +25,7 @@ Navigate to the **Reports** &gt; **Activity** tab. The left pane displays report
 - Active Directory Reports
 - Azure Active Directory Reports
 - Custom Reports
-- {{ MyVariables.Azure_AD app }}
+- {{ MyVariables.Azure_AD_app }}
 - Exchange Online
 - File Server
 - SharePoint Online
@@ -70,8 +70,8 @@ A list of the available Activity reports is given below.
 
 | Report Name | Description |
 | --- | --- |
-| All {{ MyVariables.Azure_AD app }} Changes | Lists all changes made to {{ MyVariables.Azure_AD app }} objects, including creation, modification, and deletion. |
-| {{ MyVariables.Azure_AD app }} Sign-In Activity | Lists all sign-in attempts across{{ MyVariables.Azure_AD app }}. |
+| All {{ MyVariables.Azure_AD_app }} Changes | Lists all changes made to {{ MyVariables.Azure_AD_app }} objects, including creation, modification, and deletion. |
+| {{ MyVariables.Azure_AD_app }} Sign-In Activity | Lists all sign-in attempts across{{ MyVariables.Azure_AD_app }}. |
 
 ## Exchange Online
 

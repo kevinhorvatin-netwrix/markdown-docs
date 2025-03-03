@@ -25,7 +25,7 @@ See the [App Registration and Configuration in Microsoft Entra ID](../Configurat
 
 Click **Finish**. 
 
-You must firstly add a Sites.ReadWrite.All permission in your {{ MyVariables.Azure_AD admin center }}. See the [Microsoft 365 Required Permissions](../Configuration/EntraID/Permissions.md#Grant Permissions to the Registered Application)  topic for additional information. 
+You must firstly add a Sites.ReadWrite.All permission in your {{ MyVariables.Azure_AD_admin_center }}. See the [Microsoft 365 Required Permissions](../Configuration/EntraID/Permissions.md#Grant Permissions to the Registered Application)  topic for additional information. 
 
 The SharePoint Online integration is added now. The status displays "Ok" in green.![](../../Resources/Images/1Secure/IntegrationsSharePointOnline.png)
 

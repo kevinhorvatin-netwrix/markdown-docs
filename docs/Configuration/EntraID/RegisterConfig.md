@@ -1,18 +1,18 @@
 # App Registration and Configuration in Microsoft Entra ID
 
-This topic explains how to configure an app in {{ MyVariables.Azure_AD app }} (formerly Azure AD) to audit Microsoft 365 data sources (SharePoint Online, {{ MyVariables.Azure_AD app }}, and Exchange Online) in {{ MyVariables.ProductName_Overlord }} using modern authentication. This app enables secure access to the {{ MyVariables.ProductName_Overlord }} cloud-based infrastructure via Microsoft Graph and other modern APIs. 
+This topic explains how to configure an app in {{ MyVariables.Azure_AD_app }} (formerly Azure AD) to audit Microsoft 365 data sources (SharePoint Online, {{ MyVariables.Azure_AD_app }}, and Exchange Online) in {{ MyVariables.ProductName_Overlord }} using modern authentication. This app enables secure access to the {{ MyVariables.ProductName_Overlord }} cloud-based infrastructure via Microsoft Graph and other modern APIs. 
 
-You have to  configure the app in {{ MyVariables.Azure_AD app }} once, as it can be used to audit multiple Microsoft 365 data sources, including SharePoint Online, {{ MyVariables.Azure_AD app }}, and Exchange Online.
+You have to  configure the app in {{ MyVariables.Azure_AD_app }} once, as it can be used to audit multiple Microsoft 365 data sources, including SharePoint Online, {{ MyVariables.Azure_AD_app }}, and Exchange Online.
 
-It is recommended to register a dedicated app in {{ MyVariables.Azure_AD app }} for each data source that you want to audit in {{ MyVariables.ProductName_Overlord }}. While sharing a single app across multiple data sources is allowed, it may lead to issues such as throttling. For example, if there are too many connections to Microsoft Graph, some connections may be temporarily stopped. Additionally, different data sources may require different permissions and you might not grant all permissions to a single app.
+It is recommended to register a dedicated app in {{ MyVariables.Azure_AD_app }} for each data source that you want to audit in {{ MyVariables.ProductName_Overlord }}. While sharing a single app across multiple data sources is allowed, it may lead to issues such as throttling. For example, if there are too many connections to Microsoft Graph, some connections may be temporarily stopped. Additionally, different data sources may require different permissions and you might not grant all permissions to a single app.
 
-To begin auditing Microsoft 365 data sources, manually register the app for {{ MyVariables.ProductName_Overlord }} in {{ MyVariables.Azure_AD app }} and provide its settings while adding a data source in {{ MyVariables.ProductName_Overlord }}.
+To begin auditing Microsoft 365 data sources, manually register the app for {{ MyVariables.ProductName_Overlord }} in {{ MyVariables.Azure_AD_app }} and provide its settings while adding a data source in {{ MyVariables.ProductName_Overlord }}.
 
 A user account with the Global Administrator, Application Administrator, or Cloud Application Administrator role is required to grant admin consent for certain permissions to the registered application. @Snippet:1Secure/Configuration:UnifiedAuditLog@
 
 ## Register an App in Microsoft Entra ID
 
-Follow the steps to register an application in {{ MyVariables.Azure_AD app }}. @Snippet:Config/EntraID:AdminCenterNote@ @Snippet:Config/EntraID/Register:SignIn@ @Snippet:1Secure/EntraIDApp:NavAppReg-Step@
+Follow the steps to register an application in {{ MyVariables.Azure_AD_app }}. @Snippet:Config/EntraID:AdminCenterNote@ @Snippet:Config/EntraID/Register:SignIn@ @Snippet:1Secure/EntraIDApp:NavAppReg-Step@
 
 On the App registrations page, click **New registration** in the top toolbar. The Register an application page is displayed.
 
@@ -32,7 +32,7 @@ The Overview page for the newly registered application opens. The following sett
 
 ## Grant Permissions to the App
 
-You must grant the necessary permissions to the registered application in {{ MyVariables.Azure_AD app }}, based on the data sources you plan to audit in.
+You must grant the necessary permissions to the registered application in {{ MyVariables.Azure_AD_app }}, based on the data sources you plan to audit in.
 
 Follow the steps to grant permissions to the application. @Snippet:Config/EntraID/Register:SignIn@ @Snippet:1Secure/EntraIDApp:NavAppReg-Step@ @Snippet:1Secure/EntraIDApp:AppStep2@
 
@@ -40,7 +40,7 @@ Click the application you registered from the list to grant the permissions. The
 
 Click **API permissions** under the Manage section. The API permissions page is displayed.
 
-On the API permissions page, click **Add a permission**. The Request API permissions pane is displayed with the Microsoft APIs tab selected. The tab lists all the APIs available in {{ MyVariables.Azure_AD app }}. 
+On the API permissions page, click **Add a permission**. The Request API permissions pane is displayed with the Microsoft APIs tab selected. The tab lists all the APIs available in {{ MyVariables.Azure_AD_app }}. 
 
 Click an API to access its permissions. The permission types are displayed for it.
 
@@ -60,7 +60,7 @@ The  API permissions are granted to the application.
 
 ## Assign Roles to the App
 
-The registered application must be assigned to the Global Administrator or Exchange Administrator role for {{ MyVariables.Azure_AD app }} state collection.  
+The registered application must be assigned to the Global Administrator or Exchange Administrator role for {{ MyVariables.Azure_AD_app }} state collection.  
 Follow the steps to assign role(s) to an application. @Snippet:Config/EntraID/Register:SignIn@ @Snippet:1Secure/EntraIDApp:NavAppReg-Step@ @Snippet:1Secure/EntraIDApp:AppStep2@
 
 Click the registered application from the list. The Overview page for the application is displayed.
@@ -69,7 +69,7 @@ Click **Roles and administrators** under the Manage section. The Roles and admin
 
 On the All roles page, search for one of the following roles as required.
 
-- Global Administrator – Can manage all aspects of {{ MyVariables.Azure_AD app }} and Microsoft services that use Microsoft Entra identities
+- Global Administrator – Can manage all aspects of {{ MyVariables.Azure_AD_app }} and Microsoft services that use Microsoft Entra identities
 - Exchange Administrator – Can manage all aspects of the Exchange product
 
 Click the desired role. The Assignments page is displayed for it.
@@ -101,7 +101,7 @@ If you leave this page before copying the key, it cannot be retrieved, and you w
 
 ## Upload a Certificate
 
-Certain connecters require a certificate rather than a client secret for authentication. This certificate is downloaded while configuring a data source in {{ MyVariables.ProductName_Overlord }}. Once downloaded, you need to upload the certificate to the registered application  in {{ MyVariables.Azure_AD app }}. See the [Add a Source and Connectors for SharePoint Online](../../Admin/Organizations/SourcesAndConnectors/SharePointOnline.md) topic for additional information on downloading a certificate.
+Certain connecters require a certificate rather than a client secret for authentication. This certificate is downloaded while configuring a data source in {{ MyVariables.ProductName_Overlord }}. Once downloaded, you need to upload the certificate to the registered application  in {{ MyVariables.Azure_AD_app }}. See the [Add a Source and Connectors for SharePoint Online](../../Admin/Organizations/SourcesAndConnectors/SharePointOnline.md) topic for additional information on downloading a certificate.
 
 Follow the steps to upload a certificate to the registered application. @Snippet:Config/EntraID/Register:SignIn@ @Snippet:1Secure/EntraIDApp:NavAppReg-Step@ @Snippet:1Secure/EntraIDApp:AppStep2@
 

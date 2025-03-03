@@ -15,7 +15,7 @@ This functionality is currently available for the following data sources:
 {{ MyVariables.ProductName_Overlord }} also provides possibility for generating state-in-time reports. This functionality is currently available for the following connectors:
 
 - Active Directory State
-- {{ MyVariables.Azure_AD app }} State
+- {{ MyVariables.Azure_AD_app }} State
 
 See the following topics for additional information:
 

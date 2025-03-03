@@ -5,7 +5,7 @@ In {{ MyVariables.ProductName_Overlord }}, you can add data sources and their co
 - Active Drectory
 - Computer
 - Exchange Online
-- {{ MyVariables.Azure_AD app }}
+- {{ MyVariables.Azure_AD_app }}
 - SharePoint Online
 - SQL Server
 
