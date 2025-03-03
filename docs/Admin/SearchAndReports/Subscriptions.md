@@ -25,7 +25,7 @@ Select a  frequency for sending the reports from the Frequency drop-down menu. T
 
  You can view the subscription timing details in the footer of the pane.
 
-In the Attached File field, specify the name of the file the intended recipients will receive. The default name is: Report on {{Report\_Name}} {{Export\_Date}}. These variables will be replaced with the report's name and date. For example, Report on Accounts Deleted 01/10/2025 09:00:00.
+In the Attached File field, specify the name of the file the intended recipients will receive. The default name is: Report on {{ '{{' }}Report\_Name{{ '}}' }} {{ '{{' }}Export\_Date{{ '}}' }}. These variables will be replaced with the report's name and date. For example, Report on Accounts Deleted 01/10/2025 09:00:00.
 
 You can use other variables to specify the file name, as discussed in the following step.
 
@@ -36,7 +36,7 @@ From the Variables drop-down menu, select a variable to be used in the name of t
 Click the **Send reports by email** check box to specify email delivery settings. The Email Settings section expands to display the following:![](../../../Resources/Images/1Secure/SubscriptionsEmailSettings.png "Email Delivery Settings")
 
 - Recipients – Specify  the email addresses of the recipients of the report subscription. You can enter multiple addresses separated by a comma.
-- Email Subject – Specify the email subject. The default subject is: {{Frequency}} Report on {{Report\_Name}} from {{Managed\_Organization}}. These variables will be replaced with the report frequency, report name, and managed organization name. For example, Monthly Report on Accounts Deleted from Netwrix.
+- Email Subject – Specify the email subject. The default subject is: {{ '{{' }}Frequency{{ '}}' }} Report on {{ '{{' }}Report\_Name{{ '}}' }} from {{ '{{' }}Managed\_Organization{{ '}}' }}. These variables will be replaced with the report frequency, report name, and managed organization name. For example, Monthly Report on Accounts Deleted from Netwrix.
 
     You can use other variables to specify the subject line of the email, as discussed below.
 - Variables – Select variable(s) to customize the subject line of the email. @Snippet:1Secure/Reports:SubscribeVariables@![](../../../Resources/Images/1Secure/Subscriptions_2.png "Email Subject")
