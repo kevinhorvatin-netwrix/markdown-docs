@@ -1,0 +1,147 @@
+site_name: Netwrix 1Secure
+nav:
+    - Whatsnew: /Whatsnew.md
+    - Netwrix 1 Secure Documentation: /
+    - Configuration:
+      - Overview: /Configuration/README.md
+      - Configure IT Infrastructure: /Configuration/ConfigureITInfrastructure.md
+      - Exchange Online Non Owner: /Configuration/ExchangeOnlineNonOwner.md
+      - Network Traffic Compression: /Configuration/NetworkTrafficCompression.md
+      - Configuration AD:
+        - Group Policy Management Console: /Configuration/AD/GroupPolicyManagementConsole.md
+        - Protocols and Ports: /Configuration/AD/ProtocolsAndPorts.md
+        - Domain Audit Policies: /Configuration/AD/DomainAuditPolicies.md
+        - Security Log Size: /Configuration/AD/SecurityLogSize.md
+        - Settings: /Configuration/AD/Settings.md
+        - Object Level: /Configuration/AD/ObjectLevel.md
+        - Auto: /Configuration/AD/Auto.md
+        - Cfg Manual: /Configuration/AD/CfgManual.md
+        - AD Manual: /Configuration/AD/ADManual.md
+        - Advanced Policy: /Configuration/AD/AdvancedPolicy.md
+        - Manual: /Configuration/AD/Manual.md
+        - ADSI: /Configuration/AD/ADSI.md
+        - Secondary Logon Service: /Configuration/AD/SecondaryLogonService.md
+      - Configuration Entra ID:
+        - Permissions: /Configuration/EntraID/Permissions.md
+        - Register Config: /Configuration/EntraID/RegisterConfig.md
+      - Configuration SQL Server:
+        - Overview: /Configuration/SQLServer/README.md
+        - Permissions: /Configuration/SQLServer/Permissions.md
+        - Configuring Trace Logging: /Configuration/SQLServer/ConfiguringTraceLogging.md
+        - Ports: /Configuration/SQLServer/Ports.md
+      - Configuration Logon Activity:
+        - Basic Audit Policies: /Configuration/LogonActivity/BasicAuditPolicies.md
+        - Overview: /Configuration/LogonActivity/README.md
+        - Security Log Size: /Configuration/LogonActivity/SecurityLogSize.md
+        - Advanced Audit: /Configuration/LogonActivity/AdvancedAudit.md
+        - Firewall Rules: /Configuration/LogonActivity/FirewallRules.md
+      - Configuration Computer:
+        - Protocols and Ports: /Configuration/Computer/ProtocolsAndPorts.md
+        - Remote Registry Service: /Configuration/Computer/RemoteRegistryService.md
+        - Overview: /Configuration/Computer/README.md
+        - Local Policy: /Configuration/Computer/LocalPolicy.md
+        - Event Log: /Configuration/Computer/EventLog.md
+        - Object Level: /Configuration/Computer/ObjectLevel.md
+        - Firewall Rules: /Configuration/Computer/FirewallRules.md
+        - Advanced Policy: /Configuration/Computer/AdvancedPolicy.md
+        - File Serversand Antivirus: /Configuration/Computer/FileServersandAntivirus.md
+    - Install:
+      - Install Agent: /Install/InstallAgent.md
+      - Overview: /Install/README.md
+    - Security:
+      - Data Security: /Security/DataSecurity.md
+      - Overview: /Security/README.md
+      - Customer Data Privacy: /Security/CustomerDataPrivacy.md
+      - Compliance: /Security/Compliance.md
+      - Access Control: /Security/AccessControl.md
+    - Integration:
+      - Overview: /Integration/README.md
+      - Share Point Online: /Integration/SharePointOnline.md
+      - Connect Wise: /Integration/ConnectWise.md
+      - Service Now: 
+        - Service Now: /Integration/ServiceNow.md
+        - Template 1: /Resources/Content/Template1.md
+    - Admin:
+      - Update Netwrix Cloud Agent: /Admin/UpdateNetwrixCloudAgent.md
+      - How It Works: /Admin/HowItWorks.md
+      - Overview: /Admin/README.md
+      - Statuses: /Admin/Statuses.md
+      - Log in: /Admin/LogIn.md
+      - Notifications: /Admin/Notifications.md
+      - Admin Organizations:
+        - Organization Groups: /Admin/Organizations/OrganizationGroups.md
+        - Overview: /Admin/Organizations/README.md
+        - Billable Accounts: /Admin/Organizations/BillableAccounts.md
+        - Adding Users: /Admin/Organizations/AddingUsers.md
+        - Add Sites: /Admin/Organizations/AddSites.md
+        - Manage My Organization: /Admin/Organizations/ManageMyOrganization.md
+        - Add Organizations: /Admin/Organizations/AddOrganizations.md
+        - Role Definitions: /Admin/Organizations/RoleDefinitions.md
+        - Managing Credentials: /Admin/Organizations/ManagingCredentials.md
+        - View Tabs and Dashboard: /Admin/Organizations/ViewTabsAndDashboard.md
+        - Admin Organizations Sources and Connectors:
+          - Overview: /Admin/Organizations/SourcesAndConnectors/README.md
+          - Share Point Online: /Admin/Organizations/SourcesAndConnectors/SharePointOnline.md
+          - Entra ID: /Admin/Organizations/SourcesAndConnectors/EntraID.md
+          - Exchange Online: /Admin/Organizations/SourcesAndConnectors/ExchangeOnline.md
+          - Computer: /Admin/Organizations/SourcesAndConnectors/Computer.md
+          - SQL Server: /Admin/Organizations/SourcesAndConnectors/SQLServer.md
+          - Active Directory: /Admin/Organizations/SourcesAndConnectors/ActiveDirectory.md
+      - Admin Data Collection:
+        - Overview: /Admin/DataCollection/README.md
+        - Share Point Online: /Admin/DataCollection/SharePointOnline.md
+        - Entra ID: /Admin/DataCollection/EntraID.md
+        - Exchange Online: /Admin/DataCollection/ExchangeOnline.md
+        - Admin Data Collection Active Directory:
+          - Log on as Batch: /Admin/DataCollection/ActiveDirectory/LogOnAsBatch.md
+          - Audit Logging: /Admin/DataCollection/ActiveDirectory/AuditLogging.md
+          - Permissions AD Container: /Admin/DataCollection/ActiveDirectory/PermissionsADContainer.md
+          - Audit Logs Role: /Admin/DataCollection/ActiveDirectory/AuditLogsRole.md
+          - Active Directory Auditing: /Admin/DataCollection/ActiveDirectory/ActiveDirectoryAuditing.md
+          - Permissions Registry Keys: /Admin/DataCollection/ActiveDirectory/PermissionsRegistryKeys.md
+          - Manage Auditing Security Log: /Admin/DataCollection/ActiveDirectory/ManageAuditingSecurityLog.md
+        - Admin Data Collection Data Collecting Account:
+          - Overview: /Admin/DataCollection/DataCollectingAccount/README.md
+        - Admin Data Collection GMSA:
+          - GMSA: /Admin/DataCollection/GMSA/GMSA.md
+        - Admin Data Collection Logon Activity:
+          - Overview: /Admin/DataCollection/LogonActivity/README.md
+          - Non Domain Admin: /Admin/DataCollection/LogonActivity/NonDomainAdmin.md
+        - Admin Data Collection Computer:
+          - Overview: /Admin/DataCollection/Computer/README.md
+          - Backup Files Directories: /Admin/DataCollection/Computer/BackupFilesDirectories.md
+      - Admin Search and Reports:
+        - Export Report: /Admin/SearchAndReports/ExportReport.md
+        - System: /Admin/SearchAndReports/System.md
+        - Overview: /Admin/SearchAndReports/README.md
+        - Apply Filters: /Admin/SearchAndReports/ApplyFilters.md
+        - State in Time: /Admin/SearchAndReports/StateInTime.md
+        - Compliance: /Admin/SearchAndReports/Compliance.md
+        - Filter Values: /Admin/SearchAndReports/FilterValues.md
+        - Subscriptions: /Admin/SearchAndReports/Subscriptions.md
+        - Filter Operators: /Admin/SearchAndReports/FilterOperators.md
+        - Audit Logs: /Admin/SearchAndReports/AuditLogs.md
+        - Custom Reports: /Admin/SearchAndReports/CustomReports.md
+        - Activity: /Admin/SearchAndReports/Activity.md
+        - Billable Users: /Admin/SearchAndReports/BillableUsers.md
+      - Admin Alerts:
+        - Alerts: /Admin/Alerts/Alerts.md
+        - Overview: /Admin/Alerts/README.md
+      - Admin Dashboard:
+        - Overview: /Admin/Dashboard/README.md
+        - Alerts Timeline: /Admin/Dashboard/AlertsTimeline.md
+        - Organization Statistics: /Admin/Dashboard/OrganizationStatistics.md
+      - Admin Risk Profiles:
+        - Add Profile: /Admin/RiskProfiles/AddProfile.md
+        - Overview: /Admin/RiskProfiles/README.md
+        - Configure Profile: /Admin/RiskProfiles/ConfigureProfile.md
+        - Risk Assessment Dashboard: /Admin/RiskProfiles/RiskAssessmentDashboard.md
+    - Requirements:
+      - Overview: /Requirements/README.md
+      - Prerequisites for Data Sources: /Requirements/PrerequisitesForDataSources.md
+      - Cloud Agent Requirements: /Requirements/CloudAgentRequirements.md
+
+plugins:
+  - search
+  - markdownextradata
+
