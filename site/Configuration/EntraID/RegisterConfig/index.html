@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Register Config - Netwrix 1Secure</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Register Config";
+        var mkdocs_page_input_path = "Configuration/EntraID/RegisterConfig.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Netwrix 1Secure
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../Whatsnew/">Whatsnew</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Netwrix 1 Secure Documentation</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Configuration</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../../">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../ConfigureITInfrastructure/">Configure IT Infrastructure</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../ExchangeOnlineNonOwner/">Exchange Online Non Owner</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../NetworkTrafficCompression/">Network Traffic Compression</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Configuration AD</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../AD/GroupPolicyManagementConsole/">Group Policy Management Console</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../AD/ProtocolsAndPorts/">Protocols and Ports</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../AD/DomainAuditPolicies/">Domain Audit Policies</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../AD/SecurityLogSize/">Security Log Size</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../AD/Settings/">Settings</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../AD/ObjectLevel/">Object Level</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../AD/Auto/">Auto</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../AD/CfgManual/">Cfg Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../AD/ADManual/">AD Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../AD/AdvancedPolicy/">Advanced Policy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../AD/Manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../AD/ADSI/">ADSI</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../AD/SecondaryLogonService/">Secondary Logon Service</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Configuration Entra ID</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../Permissions/">Permissions</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Register Config</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#register-an-app-in-microsoft-entra-id">Register an App in Microsoft Entra ID</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#grant-permissions-to-the-app">Grant Permissions to the App</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#assign-roles-to-the-app">Assign Roles to the App</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#generate-client-secret-value">Generate Client Secret Value</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#upload-a-certificate">Upload a Certificate</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#assign-permissions-to-the-app-using-manifest">Assign Permissions to the App Using Manifest</a>
+    </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Configuration SQL Server</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../SQLServer/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../SQLServer/Permissions/">Permissions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../SQLServer/ConfiguringTraceLogging/">Configuring Trace Logging</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../SQLServer/Ports/">Ports</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Configuration Logon Activity</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../LogonActivity/BasicAuditPolicies/">Basic Audit Policies</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../LogonActivity/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../LogonActivity/SecurityLogSize/">Security Log Size</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../LogonActivity/AdvancedAudit/">Advanced Audit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../LogonActivity/FirewallRules/">Firewall Rules</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Configuration Computer</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Computer/ProtocolsAndPorts/">Protocols and Ports</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Computer/RemoteRegistryService/">Remote Registry Service</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Computer/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Computer/LocalPolicy/">Local Policy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Computer/EventLog/">Event Log</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Computer/ObjectLevel/">Object Level</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Computer/FirewallRules/">Firewall Rules</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Computer/AdvancedPolicy/">Advanced Policy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Computer/FileServersandAntivirus/">File Serversand Antivirus</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Install</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Install/InstallAgent/">Install Agent</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Install/">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Security</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Security/DataSecurity/">Data Security</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Security/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Security/CustomerDataPrivacy/">Customer Data Privacy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Security/Compliance/">Compliance</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Security/AccessControl/">Access Control</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Integration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Integration/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Integration/SharePointOnline/">Share Point Online</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Integration/ConnectWise/">Connect Wise</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Service Now</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Integration/ServiceNow/">Service Now</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Resources/Content/Template1/">Template 1</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Admin</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Admin/UpdateNetwrixCloudAgent/">Update Netwrix Cloud Agent</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Admin/HowItWorks/">How It Works</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Admin/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Admin/Statuses/">Statuses</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Admin/LogIn/">Log in</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Admin/Notifications/">Notifications</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Admin Organizations</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Admin/Organizations/OrganizationGroups/">Organization Groups</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Admin/Organizations/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Admin/Organizations/BillableAccounts/">Billable Accounts</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Admin/Organizations/AddingUsers/">Adding Users</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Admin/Organizations/AddSites/">Add Sites</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Admin/Organizations/ManageMyOrganization/">Manage My Organization</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Admin/Organizations/AddOrganizations/">Add Organizations</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Admin/Organizations/RoleDefinitions/">Role Definitions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Admin/Organizations/ManagingCredentials/">Managing Credentials</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Admin/Organizations/ViewTabsAndDashboard/">View Tabs and Dashboard</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Admin Organizations Sources and Connectors</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Admin/Organizations/SourcesAndConnectors/">Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Admin/Organizations/SourcesAndConnectors/SharePointOnline/">Share Point Online</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Admin/Organizations/SourcesAndConnectors/EntraID/">Entra ID</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Admin/Organizations/SourcesAndConnectors/ExchangeOnline/">Exchange Online</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Admin/Organizations/SourcesAndConnectors/Computer/">Computer</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Admin/Organizations/SourcesAndConnectors/SQLServer/">SQL Server</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Admin/Organizations/SourcesAndConnectors/ActiveDirectory/">Active Directory</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Admin Data Collection</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Admin/DataCollection/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Admin/DataCollection/SharePointOnline/">Share Point Online</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Admin/DataCollection/EntraID/">Entra ID</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Admin/DataCollection/ExchangeOnline/">Exchange Online</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Admin Data Collection Active Directory</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Admin/DataCollection/ActiveDirectory/LogOnAsBatch/">Log on as Batch</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Admin/DataCollection/ActiveDirectory/AuditLogging/">Audit Logging</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Admin/DataCollection/ActiveDirectory/PermissionsADContainer/">Permissions AD Container</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Admin/DataCollection/ActiveDirectory/AuditLogsRole/">Audit Logs Role</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Admin/DataCollection/ActiveDirectory/ActiveDirectoryAuditing/">Active Directory Auditing</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Admin/DataCollection/ActiveDirectory/PermissionsRegistryKeys/">Permissions Registry Keys</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Admin/DataCollection/ActiveDirectory/ManageAuditingSecurityLog/">Manage Auditing Security Log</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Admin Data Collection Data Collecting Account</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Admin/DataCollection/DataCollectingAccount/">Overview</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Admin Data Collection GMSA</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Admin/DataCollection/GMSA/GMSA/">GMSA</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Admin Data Collection Logon Activity</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Admin/DataCollection/LogonActivity/">Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Admin/DataCollection/LogonActivity/NonDomainAdmin/">Non Domain Admin</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Admin Data Collection Computer</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Admin/DataCollection/Computer/">Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../Admin/DataCollection/Computer/BackupFilesDirectories/">Backup Files Directories</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Admin Search and Reports</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Admin/SearchAndReports/ExportReport/">Export Report</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Admin/SearchAndReports/System/">System</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Admin/SearchAndReports/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Admin/SearchAndReports/ApplyFilters/">Apply Filters</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Admin/SearchAndReports/StateInTime/">State in Time</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Admin/SearchAndReports/Compliance/">Compliance</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Admin/SearchAndReports/FilterValues/">Filter Values</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Admin/SearchAndReports/Subscriptions/">Subscriptions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Admin/SearchAndReports/FilterOperators/">Filter Operators</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Admin/SearchAndReports/AuditLogs/">Audit Logs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Admin/SearchAndReports/CustomReports/">Custom Reports</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Admin/SearchAndReports/Activity/">Activity</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Admin/SearchAndReports/BillableUsers/">Billable Users</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Admin Alerts</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Admin/Alerts/Alerts/">Alerts</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Admin/Alerts/">Overview</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Admin Dashboard</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Admin/Dashboard/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Admin/Dashboard/AlertsTimeline/">Alerts Timeline</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Admin/Dashboard/OrganizationStatistics/">Organization Statistics</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Admin Risk Profiles</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Admin/RiskProfiles/AddProfile/">Add Profile</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Admin/RiskProfiles/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Admin/RiskProfiles/ConfigureProfile/">Configure Profile</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Admin/RiskProfiles/RiskAssessmentDashboard/">Risk Assessment Dashboard</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Requirements</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Requirements/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Requirements/PrerequisitesForDataSources/">Prerequisites for Data Sources</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Requirements/CloudAgentRequirements/">Cloud Agent Requirements</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Netwrix 1Secure</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Configuration</li>
+          <li class="breadcrumb-item">Configuration Entra ID</li>
+      <li class="breadcrumb-item active">Register Config</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="app-registration-and-configuration-in-microsoft-entra-id">App Registration and Configuration in Microsoft Entra ID</h1>
+<p>This topic explains how to configure an app in {{ no such element: dict object['Azure_AD_app'] }} (formerly Azure AD) to audit Microsoft 365 data sources (SharePoint Online, {{ no such element: dict object['Azure_AD_app'] }}, and Exchange Online) in Netwrix 1Secure using modern authentication. This app enables secure access to the Netwrix 1Secure cloud-based infrastructure via Microsoft Graph and other modern APIs. </p>
+<p>You have to  configure the app in {{ no such element: dict object['Azure_AD_app'] }} once, as it can be used to audit multiple Microsoft 365 data sources, including SharePoint Online, {{ no such element: dict object['Azure_AD_app'] }}, and Exchange Online.</p>
+<p>It is recommended to register a dedicated app in {{ no such element: dict object['Azure_AD_app'] }} for each data source that you want to audit in Netwrix 1Secure. While sharing a single app across multiple data sources is allowed, it may lead to issues such as throttling. For example, if there are too many connections to Microsoft Graph, some connections may be temporarily stopped. Additionally, different data sources may require different permissions and you might not grant all permissions to a single app.</p>
+<p>To begin auditing Microsoft 365 data sources, manually register the app for Netwrix 1Secure in {{ no such element: dict object['Azure_AD_app'] }} and provide its settings while adding a data source in Netwrix 1Secure.</p>
+<p>A user account with the Global Administrator, Application Administrator, or Cloud Application Administrator role is required to grant admin consent for certain permissions to the registered application. Unified audit log must be enabled for a tenant. See the Microsoft <a href="https://learn.microsoft.com/en-us/purview/audit-log-enable-disable?view=o365-worldwide&amp;tabs=microsoft-purview-portal" title="Turn auditing on or off">Turn auditing on or off</a> article for additional information.</p>
+<h2 id="register-an-app-in-microsoft-entra-id">Register an App in Microsoft Entra ID</h2>
+<p>Follow the steps to register an application in {{ no such element: dict object['Azure_AD_app'] }}. 
+@@@NEEDS CONVERSION@@@ 
+@@@NEEDSCONVERSION@@@ 
+On the left navigation menu, navigate to <strong>Identity</strong> &gt; <strong>Applications</strong> &gt; <strong>App registrations</strong> page.</p>
+<p>On the App registrations page, click <strong>New registration</strong> in the top toolbar. The Register an application page is displayed.</p>
+<p>Specify the following information on the Register an application page:</p>
+<ul>
+<li>Name – Enter a user-facing display name  for the application, for example, Netwrix 1Secure Entra ID</li>
+<li>Supported account types – Select <strong>Accounts in this organizational directory only</strong></li>
+<li>Redirect URL (optional) – You can leave the field blank</li>
+</ul>
+<p>Click <strong>Register</strong>.</p>
+<p>The Overview page for the newly registered application opens. The following settings of the registered application are required  while adding a data source in Netwrix 1Secure. See the <a href="../../../Admin/Organizations/SourcesAndConnectors/">Sources and Connectors</a> topic for additional information on adding a data source. It is recommended to copy these settings and keep them safe.</p>
+<ul>
+<li>Application (client) ID – A client ID for the registered application</li>
+<li>Directory (tenant) ID – A tenant ID for the registered application</li>
+<li>Client Secret – A client secret value generated when a new client secret key is created for the registered application. See the <a href="/Configuration/EntraID/#Generate">Generate Client Secret Value</a>  topic for additional information.</li>
+</ul>
+<h2 id="grant-permissions-to-the-app">Grant Permissions to the App</h2>
+<p>You must grant the necessary permissions to the registered application in {{ no such element: dict object['Azure_AD_app'] }}, based on the data sources you plan to audit in.</p>
+<p>Follow the steps to grant permissions to the application. 
+@@@NEEDSCONVERSION@@@ 
+On the left navigation menu, navigate to <strong>Identity</strong> &gt; <strong>Applications</strong> &gt; <strong>App registrations</strong> page. 
+On the App registrations page, click the <strong>All applications</strong> tab. The registered applications are displayed in a list.</p>
+<p>Click the application you registered from the list to grant the permissions. The Overview page of the application is displayed.</p>
+<p>Click <strong>API permissions</strong> under the Manage section. The API permissions page is displayed.</p>
+<p>On the API permissions page, click <strong>Add a permission</strong>. The Request API permissions pane is displayed with the Microsoft APIs tab selected. The tab lists all the APIs available in {{ no such element: dict object['Azure_AD_app'] }}. </p>
+<p>Click an API to access its permissions. The permission types are displayed for it.</p>
+<p>Click the <strong>Application permissions</strong> tab. The permission categories are listed. Click a category and select the required permissions under it.</p>
+<p>See the following topics for the  list of API permissions required to audit the respective data source.  </p>
+<ul>
+<li><a href="/Configuration/EntraID/Permissions.md#EntraID">Permissions to Audit Microsoft Entra ID</a> </li>
+<li><a href="/Configuration/EntraID/Permissions.md#SharePt">Permissions to Audit SharePoint Online</a> </li>
+<li><a href="/Configuration/EntraID/Permissions.md#Exchange">Permissions to Audit Exchange Online</a> </li>
+</ul>
+<p>After selecting the required permission(s), click <strong>Add Permissions</strong> at the bottom. You are navigated to the API Permissions page.</p>
+<p>Click <strong>Grant admin consent for &lt;tenant&gt;</strong> to grant the selected permissions to the applcation. </p>
+<p>The  API permissions are granted to the application.</p>
+<h2 id="assign-roles-to-the-app">Assign Roles to the App</h2>
+<p>The registered application must be assigned to the Global Administrator or Exchange Administrator role for {{ no such element: dict object['Azure_AD_app'] }} state collection.<br />
+Follow the steps to assign role(s) to an application. 
+@@@NEEDSCONVERSION@@@ 
+On the left navigation menu, navigate to <strong>Identity</strong> &gt; <strong>Applications</strong> &gt; <strong>App registrations</strong> page. 
+On the App registrations page, click the <strong>All applications</strong> tab. The registered applications are displayed in a list.</p>
+<p>Click the registered application from the list. The Overview page for the application is displayed.</p>
+<p>Click <strong>Roles and administrators</strong> under the Manage section. The Roles and administrators page is displayed. From here, go to the All roles page.</p>
+<p>On the All roles page, search for one of the following roles as required.</p>
+<ul>
+<li>Global Administrator – Can manage all aspects of {{ no such element: dict object['Azure_AD_app'] }} and Microsoft services that use Microsoft Entra identities</li>
+<li>Exchange Administrator – Can manage all aspects of the Exchange product</li>
+</ul>
+<p>Click the desired role. The Assignments page is displayed for it.</p>
+<p>Click <strong>Add assignments</strong> in the top toolbar. The Add assignments pane is displayed.</p>
+<p>On the Add assignments pane, search your application and select it.</p>
+<p>Click the <strong>Add</strong> button at the bottom. The application is listed on the Assignments page.</p>
+<h2 id="generate-client-secret-value">Generate  Client Secret Value</h2>
+<p>Follow the steps to generate a client secret value. 
+@@@NEEDSCONVERSION@@@ 
+On the left navigation menu, navigate to <strong>Identity</strong> &gt; <strong>Applications</strong> &gt; <strong>App registrations</strong> page. 
+On the App registrations page, click the <strong>All applications</strong> tab. The registered applications are displayed in a list.</p>
+<p>Click the registered application from the list. The Overview page for the application is displayed.</p>
+<p>Click <strong>Certificates &amp; secrets</strong> under the Manage section. The Certificates and secrets page is displayed with the Client secrets tab selected by default.</p>
+<p>On the Client secrets tab, click <strong>New client secret</strong>. The Add a client secret pane is displayed.</p>
+<ul>
+<li>Description – Enter a description for the secret</li>
+<li>Expires – Select an expiration date for the secret key from the Expiry drop-down-menu. By default, the Recommended: 180 days (6 months) option is selected.</li>
+</ul>
+<p>Click the <strong>Add</strong> button. The client secret is generated and the client secret value is displayed in the Value column.</p>
+<p>The client secret value is required  while adding a data source  in Netwrix 1Secure. See the <a href="../../../Admin/Organizations/SourcesAndConnectors/">Sources and Connectors</a> topic for additional information on adding a data source.</p>
+<p>If you leave this page before copying the key, it cannot be retrieved, and you will need to repeat the process.</p>
+<h2 id="upload-a-certificate">Upload a Certificate</h2>
+<p>Certain connecters require a certificate rather than a client secret for authentication. This certificate is downloaded while configuring a data source in Netwrix 1Secure. Once downloaded, you need to upload the certificate to the registered application  in {{ no such element: dict object['Azure_AD_app'] }}. See the <a href="../../../Admin/Organizations/SourcesAndConnectors/SharePointOnline/">Add a Source and Connectors for SharePoint Online</a> topic for additional information on downloading a certificate.</p>
+<p>Follow the steps to upload a certificate to the registered application. 
+@@@NEEDSCONVERSION@@@ 
+On the left navigation menu, navigate to <strong>Identity</strong> &gt; <strong>Applications</strong> &gt; <strong>App registrations</strong> page. 
+On the App registrations page, click the <strong>All applications</strong> tab. The registered applications are displayed in a list.</p>
+<p>Click the application you registered from the list. The Overview page of the application is displayed.</p>
+<p>Click <strong>Certificates &amp; secrets</strong> under the Manage section. The Certificates &amp; secrets page is displayed with the Client secrets tab selected by default.</p>
+<p>Click the <strong>Certificates</strong> tab.</p>
+<p>On the Certificates tab, click <strong>Upload certificate</strong>. The Upload certificate pane is displayed.</p>
+<p>Click the select a file icon next to the Select a File field.</p>
+<p>Browse and select the certificate file downloaded during the data source configuration in Netwrix 1Secure, then click <strong>Open</strong>. The certificate file is selected.</p>
+<p>Enter a description for this certificate and click the <strong>Add</strong> button at the bottom. The certificate is uploaded to the registered application.</p>
+<h2 id="assign-permissions-to-the-app-using-manifest">Assign Permissions to the App Using Manifest</h2>
+<p>Follow the steps to assign permissions to the registered application by modifying its attribute values using the Manifest app. See the <a href="https://learn.microsoft.com/en-us/entra/identity-platform/reference-app-manifest#requiredresourceaccess-attribute" title="Microsoft Entra app manifest (Azure AD Graph format)">Microsoft Entra app manifest (Azure AD Graph format)</a> article for additional information on Manifest.</p>
+<p>This is an alternate way for assigning permissions to the registered application that differs from the normal method discussed in the <a href="/Configuration/EntraID/#Grant">Grant Permissions to the App</a> topic. 
+@@@NEEDSCONVERSION@@@ 
+On the left navigation menu, navigate to <strong>Identity</strong> &gt; <strong>Applications</strong> &gt; <strong>App registrations</strong> page. 
+On the App registrations page, click the <strong>All applications</strong> tab. The registered applications are displayed in a list.</p>
+<p>Click the application you registered from the list. The Overview page of the application is displayed.</p>
+<p>Click <strong>Manifest</strong> under the Manage section. The Manifest page is displayed.</p>
+<p>Locate the <strong>requiredResourceAccess</strong> property in the manifest and edit it with the following in the square brackets ([]). The <strong>requiredResourceAccess</strong> property should look like this:</p>
+<pre><code class="language-json">&quot;requiredResourceAccess&quot;: [
+  {
+     &quot;resourceAppId&quot;: &quot;00000003-0000-0ff1-ce00-000000000000&quot;,
+     &quot;resourceAccess&quot;: [
+        {
+           &quot;id&quot;: &quot;678536fe-1083-478a-9c59-b99265e6b0d3&quot;,
+           &quot;type&quot;: &quot;Role&quot;
+        }
+     ]
+  },
+  {
+     &quot;resourceAppId&quot;: &quot;00000003-0000-0000-c000-000000000000&quot;,
+     &quot;resourceAccess&quot;: [
+        {
+           &quot;id&quot;: &quot;b0afded3-3588-46d8-8b3d-9842eff778da&quot;,
+           &quot;type&quot;: &quot;Role&quot;
+        },
+        {
+           &quot;id&quot;: &quot;7ab1d382-f21e-4acd-a863-ba3e13f7da61&quot;,
+           &quot;type&quot;: &quot;Role&quot;
+        },
+        {
+           &quot;id&quot;: &quot;246dd0d5-5bd0-4def-940b-0421030a5b68&quot;,
+&quot;type&quot;: &quot;Role&quot;
+},
+{
+&quot;id&quot;: &quot;332a536c-c7ef-4017-ab91-336970924f0d&quot;,
+&quot;type&quot;: &quot;Role&quot;
+}
+]
+},
+{
+&quot;resourceAppId&quot;: &quot;c5393580-f805-4401-95e8-94b7a6ef2fc2&quot;,
+&quot;resourceAccess&quot;: [
+{
+&quot;id&quot;: &quot;594c1fb6-4f81-4475-ae41-0c394909246c&quot;,
+&quot;type&quot;: &quot;Role&quot;
+}
+]
+},
+{
+&quot;resourceAppId&quot;: &quot;00000002-0000-0ff1-ce00-000000000000&quot;,
+&quot;resourceAccess&quot;: [
+{
+&quot;id&quot;: &quot;dc50a0fb-09a3-484d-be87-e023b12c6440&quot;,
+&quot;type&quot;: &quot;Role&quot;
+}
+]
+}
+]
+</code></pre>
+<p>Click <strong>Save</strong>.</p>
+<p>Optionally, you can select <strong>Download</strong> to edit the manifest locally, and then use Upload to reapply it to your application.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Permissions/" class="btn btn-neutral float-left" title="Permissions"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../SQLServer/" class="btn btn-neutral float-right" title="Overview">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+  <ul>
+    <li>© 2008 - 2025 Netwrix Corporation. All Rights Reserved</li>
+    <li class="zDocsFooterLinksList"><a class="css-ettsdk" href="https://www.netwrix.com/privacy.html" target="_blank">Privacy Policy</a></li>
+  </ul>
+
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Permissions/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../SQLServer/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

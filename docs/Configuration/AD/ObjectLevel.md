@@ -31,7 +31,7 @@ Do one of the following depending on the OS:
 
 Follow the steps to enable object-level auditing for the Configuration partition.
 
-To perform this procedure, you will need the [ADSI Edit](http://technet.microsoft.com/en-us/library/cc773354%28v=ws.10%29.aspx "ADSI Edit") utility. In Windows Server 2008  and above, this component is installed together with the AD DS role, or it can be downloaded and installed along with Remote Server Administration Tools. See the [Install ADSI Edit](/Configuration/AD/ADSI.md)  topic for additional information on how to install the ADSI Edit utility.
+To perform this procedure, you will need the [ADSI Edit](http://technet.microsoft.com/en-us/library/cc773354%28v=ws.10%29.aspx "ADSI Edit") utility. In Windows Server 2008  and above, this component is installed together with the AD DS role, or it can be downloaded and installed along with Remote Server Administration Tools. See the [Install ADSI Edit](ADSI.md)  topic for additional information on how to install the ADSI Edit utility.
 
 On any domain controller in the target domain, navigate to Start&gt;Windows Administrative Tools (Windows Server 2016 and higher) or Administrative Tools **(Windows 2012)**  **&gt; ADSI Edit**. 
 
