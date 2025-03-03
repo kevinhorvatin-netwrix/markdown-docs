@@ -4,13 +4,13 @@
 
 | Icon | Description |
 | --- | --- |
-| <br>![](../../Resources/Images/1Secure/SelfUpdate_icon.png)<br> | Bell icon. Click the Bell icon to look for the updates. |
+| <br>![](../Resources/Images/1Secure/SelfUpdate_icon.png)<br> | Bell icon. Click the Bell icon to look for the updates. |
 
 Follow the steps to review notifications.
 
 Click the **Bell** icon in the upper right corner of your screen. 
 
-You can select and fix any of the issues on the displayed panel.![](../../Resources/Images/1Secure/Notifications.png)
+You can select and fix any of the issues on the displayed panel.![](../Resources/Images/1Secure/Notifications.png)
 
 Select **Fix**. 
 

@@ -1,0 +1,15 @@
+
+ManagedOrgNav: |-
+  Click **Configuration** in the top bar. The Managed organizations page is displayed, that lists the managed organizations defined in {{ ProductName_Overlord }}.
+
+Navigation: |-
+  Navigate to the **Configuration** &gt; **Organization groups** page.
+
+OrganizationGroup: |-
+  Administrators have access to all tenancies regardless of the organization group(s).
+
+OrgSelectionNav: |-
+  Click the name of an organization from the list. The properties page for the organization is displayed.
+
+SubscriptionTab: |-
+  Click the **Subscriptions** tab. The subscriptions for the organization are listed here.

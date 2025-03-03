@@ -1,0 +1,4 @@
+NetworkTrafficCompression: |-
+  If Netwrix Auditor and {{ ProductName_Overlord }} audit the same domain, make sure that the network traffic compression service is enabled for only one of the products or neither product for any of the audited services. It cannot be enabled for both products.
+UnifiedAuditLog: |-
+  Unified audit log must be enabled for a tenant. See the Microsoft [Turn auditing on or off](https://learn.microsoft.com/en-us/purview/audit-log-enable-disable?view=o365-worldwide&amp;tabs=microsoft-purview-portal "Turn auditing on or off") article for additional information.

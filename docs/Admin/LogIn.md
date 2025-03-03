@@ -1,6 +1,6 @@
 # Log in to Netwrix 1Secure
 
-Once the Netwrix team has created a new tenant for your organization, you will receive an email invitation with the subject line  Netwrix 1Secure – Account Created sent from email address &lt;noreply-1secure@netwrix.com&gt;.![](../../Resources/Images/1Secure/LogOn.png)
+Once the Netwrix team has created a new tenant for your organization, you will receive an email invitation with the subject line  Netwrix 1Secure – Account Created sent from email address &lt;noreply-1secure@netwrix.com&gt;.![](../Resources/Images/1Secure/LogOn.png)
 
 This email includes a unique access link to product’s web portal. You need to activate your account via the link within 7 days. If it expires, you will need to follow the link and request a new activation link.
 
@@ -10,7 +10,7 @@ During the first logon you will be prompted to authorize with multi-factor authe
 
 On the main starting page, select **Log in**.
 
-Specify email, you would like to authorize with, and select **Continue**.![](../../Resources/Images/1Secure/MultifactorAuthentication.png)
+Specify email, you would like to authorize with, and select **Continue**.![](../Resources/Images/1Secure/MultifactorAuthentication.png)
 
 Specify the password and select Log In. 
 
@@ -28,7 +28,7 @@ Follow the steps to disable Multifactor authentication.
 
 Go to **Configuration** &gt; **My Organizations** &gt; **Edit Settings**. 
 
-Turn off the slider for the Multifactor Authentication.![](../../Resources/Images/1Secure/MultifactorAuthentication_Disable.png)
+Turn off the slider for the Multifactor Authentication.![](../Resources/Images/1Secure/MultifactorAuthentication_Disable.png)
 
 Click **Save**. 
 

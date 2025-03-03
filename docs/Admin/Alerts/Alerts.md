@@ -5,11 +5,11 @@ When you create an alert profile, several alerts are preconfigured for it. You c
 You can access the generated alerts in the following ways:
 
 - View the alerts on the {{ MyVariables.ProductName_Overlord }} dashboard. See the [1Secure Dashboard](../Dashboard/README.md)  topic for additional information.
-- Receive alerts as email notifications sent to the specified email address(es). See the [Manage Delivery Settings for an Alert Profile](/Admin/Alerts/README.md#Manage) topic for setting up email notifications.
+- Receive alerts as email notifications sent to the specified email address(es). See the [Manage Delivery Settings for an Alert Profile](README.md#Manage) topic for setting up email notifications.
 
 Follow the steps to view the alerts within an alert profile. @Snippet:1Secure/AlertProfiles:AlertProfileNavigation@
 
-Click an alert profile. The alerts for the profile are displayed in a list.![](../../../Resources/Images/1Secure/AlertsList.png "Alerts List within an alert profile")
+Click an alert profile. The alerts for the profile are displayed in a list.![](../../Resources/Images/1Secure/AlertsList.png "Alerts List within an alert profile")
 
 You can view the following for each alert in the list:
 
@@ -27,7 +27,7 @@ Follow the steps to add a custom alert. @Snippet:1Secure/AlertProfiles:AlertProf
 
 Click an alert profile. The alerts for the profile are displayed in a list.
 
-Click **Add**. The New Alert pane is displayed.![](../../../Resources/Images/1Secure/AddCustomAlert.png "New Alert Pane")
+Click **Add**. The New Alert pane is displayed.![](../../Resources/Images/1Secure/AddCustomAlert.png "New Alert Pane")
 
 Select a custom report from the Report drop-down menu to trigger the alert when a new record is generated for the report. See the [Custom Reports](../SearchAndReports/CustomReports.md)  topic for additional information.
 
@@ -63,7 +63,7 @@ Click an alert profile. The alerts for the profile are displayed in a list.
 
 Click the Edit icon for an alert. The Edit alert pane is displayed.
 
-Modify the required information. See the [Add a Custom Alert](/Admin/Alerts/#Adding)  topic, starting from Step 4 for additional information.
+Modify the required information. See the [Add a Custom Alert](#Add_a_Custom_Alert)  topic, starting from Step 4 for additional information.
 
 Click **Save**.
 

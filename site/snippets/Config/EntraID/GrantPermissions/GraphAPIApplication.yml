@@ -1,0 +1,14 @@
+DirectoryReadAll: |-
+  @@@NEEDSCONVERSION@@@
+
+AuditLogReadAll: |-
+  @@@NEEDSCONVERSION@@@
+
+PolicyReadAll: |-
+  @@@NEEDSCONVERSION@@@
+
+SitesReadAll: |-
+  @@@NEEDSCONVERSION@@@
+
+SitesReadWriteAll: |-
+  @@@NEEDSCONVERSION@@@

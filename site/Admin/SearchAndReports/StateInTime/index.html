@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>State in Time - Netwrix 1Secure</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "State in Time";
+        var mkdocs_page_input_path = "Admin/SearchAndReports/StateInTime.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Netwrix 1Secure
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../Whatsnew/">Whatsnew</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Netwrix 1 Secure Documentation</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Configuration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Configuration/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Configuration/ConfigureITInfrastructure/">Configure IT Infrastructure</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Configuration/ExchangeOnlineNonOwner/">Exchange Online Non Owner</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Configuration/NetworkTrafficCompression/">Network Traffic Compression</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Configuration AD</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/AD/GroupPolicyManagementConsole/">Group Policy Management Console</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/AD/ProtocolsAndPorts/">Protocols and Ports</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/AD/DomainAuditPolicies/">Domain Audit Policies</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/AD/SecurityLogSize/">Security Log Size</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/AD/Settings/">Settings</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/AD/ObjectLevel/">Object Level</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/AD/Auto/">Auto</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/AD/CfgManual/">Cfg Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/AD/ADManual/">AD Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/AD/AdvancedPolicy/">Advanced Policy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/AD/Manual/">Manual</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/AD/ADSI/">ADSI</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/AD/SecondaryLogonService/">Secondary Logon Service</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Configuration Entra ID</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/EntraID/Permissions/">Permissions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/EntraID/RegisterConfig/">Register Config</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Configuration SQL Server</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/SQLServer/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/SQLServer/Permissions/">Permissions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/SQLServer/ConfiguringTraceLogging/">Configuring Trace Logging</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/SQLServer/Ports/">Ports</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Configuration Logon Activity</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/LogonActivity/BasicAuditPolicies/">Basic Audit Policies</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/LogonActivity/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/LogonActivity/SecurityLogSize/">Security Log Size</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/LogonActivity/AdvancedAudit/">Advanced Audit</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/LogonActivity/FirewallRules/">Firewall Rules</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Configuration Computer</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/Computer/ProtocolsAndPorts/">Protocols and Ports</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/Computer/RemoteRegistryService/">Remote Registry Service</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/Computer/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/Computer/LocalPolicy/">Local Policy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/Computer/EventLog/">Event Log</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/Computer/ObjectLevel/">Object Level</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/Computer/FirewallRules/">Firewall Rules</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/Computer/AdvancedPolicy/">Advanced Policy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/Computer/FileServersandAntivirus/">File Serversand Antivirus</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Install</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Install/InstallAgent/">Install Agent</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Install/">Overview</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Security</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Security/DataSecurity/">Data Security</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Security/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Security/CustomerDataPrivacy/">Customer Data Privacy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Security/Compliance/">Compliance</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Security/AccessControl/">Access Control</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Integration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Integration/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Integration/SharePointOnline/">Share Point Online</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Integration/ConnectWise/">Connect Wise</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Service Now</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Integration/ServiceNow/">Service Now</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Resources/Content/Template1/">Template 1</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Admin</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../../UpdateNetwrixCloudAgent/">Update Netwrix Cloud Agent</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../HowItWorks/">How It Works</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Statuses/">Statuses</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../LogIn/">Log in</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Notifications/">Notifications</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Admin Organizations</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Organizations/OrganizationGroups/">Organization Groups</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Organizations/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Organizations/BillableAccounts/">Billable Accounts</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Organizations/AddingUsers/">Adding Users</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Organizations/AddSites/">Add Sites</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Organizations/ManageMyOrganization/">Manage My Organization</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Organizations/AddOrganizations/">Add Organizations</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Organizations/RoleDefinitions/">Role Definitions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Organizations/ManagingCredentials/">Managing Credentials</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Organizations/ViewTabsAndDashboard/">View Tabs and Dashboard</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Admin Organizations Sources and Connectors</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../Organizations/SourcesAndConnectors/">Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Organizations/SourcesAndConnectors/SharePointOnline/">Share Point Online</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Organizations/SourcesAndConnectors/EntraID/">Entra ID</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Organizations/SourcesAndConnectors/ExchangeOnline/">Exchange Online</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Organizations/SourcesAndConnectors/Computer/">Computer</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Organizations/SourcesAndConnectors/SQLServer/">SQL Server</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Organizations/SourcesAndConnectors/ActiveDirectory/">Active Directory</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Admin Data Collection</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../DataCollection/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../DataCollection/SharePointOnline/">Share Point Online</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../DataCollection/EntraID/">Entra ID</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../DataCollection/ExchangeOnline/">Exchange Online</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Admin Data Collection Active Directory</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../DataCollection/ActiveDirectory/LogOnAsBatch/">Log on as Batch</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DataCollection/ActiveDirectory/AuditLogging/">Audit Logging</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DataCollection/ActiveDirectory/PermissionsADContainer/">Permissions AD Container</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DataCollection/ActiveDirectory/AuditLogsRole/">Audit Logs Role</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DataCollection/ActiveDirectory/ActiveDirectoryAuditing/">Active Directory Auditing</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DataCollection/ActiveDirectory/PermissionsRegistryKeys/">Permissions Registry Keys</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DataCollection/ActiveDirectory/ManageAuditingSecurityLog/">Manage Auditing Security Log</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Admin Data Collection Data Collecting Account</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../DataCollection/DataCollectingAccount/">Overview</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Admin Data Collection GMSA</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../DataCollection/GMSA/GMSA/">GMSA</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Admin Data Collection Logon Activity</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../DataCollection/LogonActivity/">Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DataCollection/LogonActivity/NonDomainAdmin/">Non Domain Admin</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Admin Data Collection Computer</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../DataCollection/Computer/">Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DataCollection/Computer/BackupFilesDirectories/">Backup Files Directories</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Admin Search and Reports</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../ExportReport/">Export Report</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../System/">System</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ApplyFilters/">Apply Filters</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">State in Time</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#review-a-report">Review a Report</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#filter-descriptions">Filter Descriptions</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Compliance/">Compliance</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../FilterValues/">Filter Values</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Subscriptions/">Subscriptions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../FilterOperators/">Filter Operators</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AuditLogs/">Audit Logs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../CustomReports/">Custom Reports</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Activity/">Activity</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BillableUsers/">Billable Users</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Admin Alerts</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Alerts/Alerts/">Alerts</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Alerts/">Overview</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Admin Dashboard</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Dashboard/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Dashboard/AlertsTimeline/">Alerts Timeline</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Dashboard/OrganizationStatistics/">Organization Statistics</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Admin Risk Profiles</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../RiskProfiles/AddProfile/">Add Profile</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../RiskProfiles/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../RiskProfiles/ConfigureProfile/">Configure Profile</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../RiskProfiles/RiskAssessmentDashboard/">Risk Assessment Dashboard</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Requirements</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Requirements/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Requirements/PrerequisitesForDataSources/">Prerequisites for Data Sources</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Requirements/CloudAgentRequirements/">Cloud Agent Requirements</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Netwrix 1Secure</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Admin</li>
+          <li class="breadcrumb-item">Admin Search and Reports</li>
+      <li class="breadcrumb-item active">State in Time</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="state-in-time-risks-reports">State In Time Risks Reports</h1>
+<p>The state-in-time reports functionality allows generating reports on audited system  at a specific moment of time. State-in-time reports are based on the configuration snapshots captured by the product daily, and reflect a particular aspect of the audited environment.
+For example, they show a number or statuses of inactive user accounts within the domain within the particular period. </p>
+<p>The  state-in-time reports collect data  from the following connectors:</p>
+<ul>
+<li>Active Directory State (AD State)</li>
+<li>Azure AD State</li>
+</ul>
+<p>Netwrix 1Secure
+allows to run the state-in-time reports from the risk-related data, displayed on your Risk Assessment Dashboard. See the <a href="../../RiskProfiles/RiskAssessmentDashboard/">Review Risks using Risks Assessment Dashboard</a>  for additional information. </p>
+<p>You can run a report from a dashboard or from the <strong>Reports</strong> &gt; <strong>Risks</strong> tab. </p>
+<h2 id="review-a-report">Review a Report</h2>
+<p>Follow the steps to review a state-in-time report. </p>
+<p>Navigate to the <strong>Reports</strong> &gt; <strong>Risks</strong> tab.<img alt="" src="../../../Resources/Images/1Secure/SITRisks.png" /></p>
+<p>Select your organization from the drop-down list at the upper left corner of the page. This will apply the related risk data audited for your organization. </p>
+<p>You can also click the Risk Assessment Dashboard to navigate to the risk details for your organization.  </p>
+<p>Select the required risk report. </p>
+<p>On each report, you can view a status and measure of the risks. </p>
+<p>See the list of the available state-in-time reports below.</p>
+<p>Identity: </p>
+<table>
+<thead>
+<tr>
+<th>Risk Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Administrative groups</td>
+<td>Minimizing the number of administrative groups helps you understand and control the assignment of powerful permissions, as required for security and compliance.</td>
+</tr>
+<tr>
+<td>Empty security groups</td>
+<td>Empty security groups with administrative privileges are a potential back door for attackers. Regularly identify and delete empty groups.</td>
+</tr>
+<tr>
+<td>Global Administrators</td>
+<td>Lists global administrators within an environment. Regularly reviewing this report helps identify potential risks and ensures that only authorized personnel have elevated privileges.</td>
+</tr>
+<tr>
+<td>Inactive user accounts</td>
+<td>Inactive user accounts can be taken over and misused, so you should periodically identify and disable them, and then remove them.</td>
+</tr>
+<tr>
+<td>Stale Guest Accounts</td>
+<td>Any guest users that have not logged in for "X" days. By default, the accounts that have not logged in for 35 days are shown. You can filter this data.</td>
+</tr>
+<tr>
+<td>User Accounts Created via Email Verified Self-Service Creation</td>
+<td>User accounts created with self-service account creation. Self-service account creation when not strictly verified, can allow unauthorized individuals to gain access to an organization's systems. This can lead to unauthorized data access, leakage of sensitive information, and the establishment of footholds for further attacks within the network.</td>
+</tr>
+<tr>
+<td>User accounts with "No MFA Configured"</td>
+<td>User accounts which MFA is not configured with the admins of the organizations in {{ no such element: dict object['Azure_AD_app'] }}. Without MFA, compromised credentials can lead directly to unauthorized entry, bypassing what is now considered a basic security standard. In the absence of MFA, even a strong password policy may not be sufficient to protect against phishing attacks and credential stuffing, which can lead to data breaches and system compromises.</td>
+</tr>
+<tr>
+<td>User accounts with "Password never expires"</td>
+<td>Enabled user accounts whose passwords never expire might be in violation of your organization's security policy.</td>
+</tr>
+<tr>
+<td>User accounts with "Password not required"</td>
+<td>Accounts that can be used to log on without a password are a high risk and require immediate attention.</td>
+</tr>
+<tr>
+<td>User accounts with administrative permissions</td>
+<td>Minimizing the number of users with administrative privileges reduces security risks and is required by many compliance mandates.</td>
+</tr>
+</tbody>
+</table>
+<p>Infrastructure: </p>
+<table>
+<thead>
+<tr>
+<th>Risk Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Disabled computer accounts</td>
+<td>Disabled computers often lack current patches and antivirus software, making them easy targets for cyberattacks if they are re-enabled. Periodically identifying and deleting these accounts will reduce this risk.</td>
+</tr>
+<tr>
+<td>Inactive computer accounts</td>
+<td>Inactive computer accounts can be misused, so you should periodically identify and disable them, and then remove them.</td>
+</tr>
+</tbody>
+</table>
+<p>Apply the search filters if necessary and click <strong>Search</strong>. </p>
+<p>You can also export a report to your email by clicking <strong>Export</strong>  in the upper right corner of the page. You shall receive a report in XLSX/CSV to your login email. </p>
+<h2 id="filter-descriptions">Filter Descriptions</h2>
+<p>This table provides a list of filters and descriptions.</p>
+<table>
+<thead>
+<tr>
+<th>Filter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Group Location</td>
+<td>Limits your search to a location of the administrative group, that share servers (for example, specific path).</td>
+</tr>
+<tr>
+<td>Group name</td>
+<td>Limits your search to a name of the administrative group.</td>
+</tr>
+<tr>
+<td>Member location</td>
+<td>Specify the location of the specific member within the administrative group (for example, Group A's Member name would be Admin Group, or Group B's Member name is Group C, and Group C's Member name is Admin Group).</td>
+</tr>
+<tr>
+<td>Member name</td>
+<td>Specify a name of the member for the administrative group.  Member Name is the name of the group, member location is where the group exists e.g. AdminGroup's full path may be /path/groups/users/AdminGroup, so its name is AdminGroup and its location is /path/groups/users/</td>
+</tr>
+<tr>
+<td>Member through</td>
+<td>Specify whether a group is a member of a group explicitly or inherited from another group. <br></td>
+</tr>
+<tr>
+<td><br>                        <br>For example, Group A &gt; Admin Group (Group A is explicitly a member of Admin Group)<br></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                        <br>Group B &gt; Group C &gt; Admin Group (Group C is explicitly a member of Admin Group, Group B is an inherited member of Admin Group)<br></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                        <br>If you do not specify the value, it will include both. If your Value is Inherited, it will only show Group B, and if you Value is Explicit, it will show Group A and Group C</td>
+<td></td>
+</tr>
+<tr>
+<td>Status</td>
+<td>Specify Enabled or Disabled in Value column. This applies to a status of the user accounts.</td>
+</tr>
+<tr>
+<td>Last login</td>
+<td>Specify the date and time of the last user login to limit your search.</td>
+</tr>
+<tr>
+<td>Source Type</td>
+<td>Specify the source type of the user:<br><ul></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>AD Group</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>Azure Group</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>Windows Local Group</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                        </ul></td>
+<td></td>
+</tr>
+<tr>
+<td>Source</td>
+<td>Specify the source name, that you set up when adding the organization.  This value shall be retrieved from Source group name.</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>Specify name of the user account or computer account (for example, account with "password not required" or a computer name in the "Disabled computer accounts" report)</td>
+</tr>
+<tr>
+<td>Disabled</td>
+<td>Limit your search to disabled accounts.</td>
+</tr>
+<tr>
+<td>Path</td>
+<td>Limits your search to a specific path.</td>
+</tr>
+<tr>
+<td>Role</td>
+<td>Limits your search to a specific role.</td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../ApplyFilters/" class="btn btn-neutral float-left" title="Apply Filters"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Compliance/" class="btn btn-neutral float-right" title="Compliance">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+  <ul>
+    <li>© 2008 - 2025 Netwrix Corporation. All Rights Reserved</li>
+    <li class="zDocsFooterLinksList"><a class="css-ettsdk" href="https://www.netwrix.com/privacy.html" target="_blank">Privacy Policy</a></li>
+  </ul>
+
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../ApplyFilters/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Compliance/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

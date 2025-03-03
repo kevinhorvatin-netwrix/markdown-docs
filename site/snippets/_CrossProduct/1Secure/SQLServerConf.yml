@@ -1,0 +1,20 @@
+SQLSeverMonitoringScope: |-
+  @@@NEEDSCONVERSION@@@
+
+ConfigTraceLogOverview: |-
+  @@@NEEDSCONVERSION@@@
+TraceLogStep2: |-
+  @@@NEEDSCONVERSION@@@
+TraceLogStep3: |-
+  @@@NEEDSCONVERSION@@@
+TraceLogExample: |-
+  @@@NEEDSCONVERSION@@@
+
+AuditingPermissions: |-
+  @@@NEEDSCONVERSION@@@
+
+AssignSystemAdminRole: |-
+  @@@NEEDSCONVERSION@@@
+
+Ports: |-
+  @@@NEEDSCONVERSION@@@
