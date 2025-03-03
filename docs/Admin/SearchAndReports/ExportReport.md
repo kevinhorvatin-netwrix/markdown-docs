@@ -13,7 +13,9 @@ Navigate to any of the following:
 - **Reports** &gt; **Activity** tab
 - **Reports** &gt; **Compliance** tab
 - **Reports** &gt; **Risks** tab
-- **Reports** &gt; **System** tab @Snippet:1Secure/Reports:ReportNavStep2@ @Snippet:1Secure/Reports:ReportNavStep3@ @Snippet:1Secure/Reports:ReportNavStep4@
+- **Reports** &gt; **System** tab @Snippet:1Secure/Reports:ReportNavStep2@ 
+@Snippet:1Secure/Reports:ReportNavStep3@ 
+@Snippet:1Secure/Reports:ReportNavStep4@
 
 Click **Export**. The report is sent to you as an .xlsx file by email.![](../../../Resources/Images/1Secure/ExportReport.png "Roports - Export option")
 
@@ -21,7 +23,8 @@ A report cannot be exported if no data is available for it. In this case, the Ex
 
 ## Export an Investigation
 
-Follow the steps to export the results of an investigation. @Snippet:1Secure/Reports:ActivityReportNav@ @Snippet:1Secure/Reports:ReportNavStep2@
+Follow the steps to export the results of an investigation. @Snippet:1Secure/Reports:ActivityReportNav@ 
+@Snippet:1Secure/Reports:ReportNavStep2@
 
 Define a filter criteria, then click **Search** to generate the investigation results based on it. See the [Apply Filters](/Admin/SearchAndReports/ApplyFilters.md)  topic for additional information.
 

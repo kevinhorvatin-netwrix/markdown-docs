@@ -1,1 +1,4 @@
-# Configure Local Audit Policies @Snippet:_CrossProduct/Auditor/FileServers:ConfigLocalOverview@ See the [Configure Advanced Audit Policies](/Configuration/Computer/AdvancedPolicy.md)  topic for additional information. @Snippet:_CrossProduct/Auditor/FileServers:LocalAuditPolicyConfiguration@
+# Configure Local Audit Policies 
+@Snippet:_CrossProduct/Auditor/FileServers:ConfigLocalOverview@ 
+See the [Configure Advanced Audit Policies](/Configuration/Computer/AdvancedPolicy.md) topic for additional information. 
+@Snippet:_CrossProduct/Auditor/FileServers:LocalAuditPolicyConfiguration@

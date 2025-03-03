@@ -2,7 +2,8 @@
 
 Perform this procedure only if the account selected for data collection is not a member of the Domain Admins group.
 
-Open the **Group Policy Management** console on any domain controller in the target domain: navigate to @Snippet:Auditor:Administrative_Tools@**→ Group Policy Management.**
+Open the **Group Policy Management** console on any domain controller in the target domain: navigate to @Snippet:Auditor:Administrative_Tools@ 
+**→ Group Policy Management.**
 
 In the left pane, navigate to **Forest: &lt;forest\_name&gt; → Domains → &lt;domain\_name&gt; → Domain Controllers**. Right-click the effective domain controllers policy (by default, it is the **Default Domain Controllers Policy**), and select **Edit** from the pop-up menu.
 

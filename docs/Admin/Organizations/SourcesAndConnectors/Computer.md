@@ -1,6 +1,10 @@
 # Add a Source and Connectors for Computer
 
-Follow the steps to add a Computer data source and connector(s) to your organization. @Snippet:1Secure/Organization:ManagedOrgNav@ @Snippet:1Secure/SourcesAndConnectors:OrgSelectionStep@ @Snippet:1Secure/SourcesAndConnectors:StepClickAdd@ @Snippet:1Secure/SourcesAndConnectors:SelectDataSource@![](../../../../Resources/Images/1Secure/AddSources_Exchange.png "Select Data Source (Step 1 of 3) pane")
+Follow the steps to add a Computer data source and connector(s) to your organization. @Snippet:1Secure/Organization:ManagedOrgNav@ 
+@Snippet:1Secure/SourcesAndConnectors:OrgSelectionStep@ 
+@Snippet:1Secure/SourcesAndConnectors:StepClickAdd@ 
+@Snippet:1Secure/SourcesAndConnectors:SelectDataSource@ 
+![](../../../../Resources/Images/1Secure/AddSources_Exchange.png "Select Data Source (Step 1 of 3) pane")
 
 Select **Computer** and click **Next**.![](../../../../Resources/Images/1Secure/ConfigureSourceDetails(Step2-3).png "Configure Source Details (Step 2 of 3) pane") @Snippet:1Secure/SourcesAndConnectors:SiteSelectStep@
 
@@ -37,7 +41,8 @@ Select the **Manual** or **AD Container** option button.
 The Choose new connector pane (Step 3 of 3) lists one connector for computer. Specify the following:
 
 - File Server Activity – Toggle the **File Server Activity** switch to ON to collect and monitor data for this connector. With this, you can generate activity reports on File Server data. See the [File Server](../../SearchAndReports/Activity.md#File)  topic for additional information.
-- @Snippet:1Secure/SourcesAndConnectors:TrafficNetCompression@ @Snippet:1Secure/SourcesAndConnectors:SameDomainProducts@
+- @Snippet:1Secure/SourcesAndConnectors:TrafficNetCompression@ 
+ @Snippet:1Secure/SourcesAndConnectors:SameDomainProducts@
 - @Snippet:1Secure/SourcesAndConnectors:AdjustAutoAudit@
 - Monitor User Hidden Shares – Select this checkbox to monitor the user hidden shares on the computer.
 

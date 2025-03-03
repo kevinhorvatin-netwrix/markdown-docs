@@ -152,7 +152,8 @@ The Co-managing Administrator role  provides access to the Home screen, which di
 
 Follow the steps to delete a user from a managed organization.
 
-User(s) can only be deleted from a managed organization by tenant administrators or co-managing administrators. @Snippet:1Secure/Organization:ManagedOrgNav@ @Snippet:1Secure/Organization:OrgSelectionNav@
+User(s) can only be deleted from a managed organization by tenant administrators or co-managing administrators. @Snippet:1Secure/Organization:ManagedOrgNav@ 
+@Snippet:1Secure/Organization:OrgSelectionNav@
 
 Click the **Users** tab. The users for the organization are listed here.
 

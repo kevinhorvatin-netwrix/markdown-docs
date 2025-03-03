@@ -1,6 +1,10 @@
 # Add a Source and Connectors for Microsoft Entra ID
 
-Follow the steps to add a {{ MyVariables.Azure_AD_app }} data source and connector(s) to your organization. @Snippet:1Secure/Organization:ManagedOrgNav@ @Snippet:1Secure/SourcesAndConnectors:OrgSelectionStep@ @Snippet:1Secure/SourcesAndConnectors:StepClickAdd@ @Snippet:1Secure/SourcesAndConnectors:SelectDataSource@![](../../../../Resources/Images/1Secure/AddSources_Exchange.png "Select Data Source (Step 1 of 3) pane")
+Follow the steps to add a {{ MyVariables.Azure_AD_app }} data source and connector(s) to your organization. @Snippet:1Secure/Organization:ManagedOrgNav@ 
+@Snippet:1Secure/SourcesAndConnectors:OrgSelectionStep@ 
+@Snippet:1Secure/SourcesAndConnectors:StepClickAdd@ 
+@Snippet:1Secure/SourcesAndConnectors:SelectDataSource@
+![](../../../../Resources/Images/1Secure/AddSources_Exchange.png "Select Data Source (Step 1 of 3) pane")
 
 Select **Entra ID** and click **Next**.![](../../../../Resources/Images/1Secure/Entra_ConfigSourceDetails(Step2of3).png "Configure Source Details (Step 2 of 3) pane")
 

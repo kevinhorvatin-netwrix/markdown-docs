@@ -1,8 +1,13 @@
 # Add a Source and Connectors for Active Directory
 
-Follow the steps to add an Active Directory data source and connector(s) to your organization. @Snippet:1Secure/Organization:ManagedOrgNav@ @Snippet:1Secure/SourcesAndConnectors:OrgSelectionStep@ @Snippet:1Secure/SourcesAndConnectors:StepClickAdd@ @Snippet:1Secure/SourcesAndConnectors:SelectDataSource@![](../../../../Resources/Images/1Secure/AddSources_Exchange.png "Select Data Source (Step 1 of 3) pane")
+Follow the steps to add an Active Directory data source and connector(s) to your organization. @Snippet:1Secure/Organization:ManagedOrgNav@ 
+@Snippet:1Secure/SourcesAndConnectors:OrgSelectionStep@ 
+@Snippet:1Secure/SourcesAndConnectors:StepClickAdd@ 
+@Snippet:1Secure/SourcesAndConnectors:SelectDataSource@
+![](../../../../Resources/Images/1Secure/AddSources_Exchange.png "Select Data Source (Step 1 of 3) pane")
 
-Select **Active Directory** and click **Next**.![](../../../../Resources/Images/1Secure/ConfigureSourceDetails(Step2-3).png "Configure Source Details (Step 2 of 3) pane") @Snippet:1Secure/SourcesAndConnectors:SiteSelectStep@
+Select **Active Directory** and click **Next**.![](../../../../Resources/Images/1Secure/ConfigureSourceDetails(Step2-3).png "Configure Source Details (Step 2 of 3) pane") 
+@Snippet:1Secure/SourcesAndConnectors:SiteSelectStep@
 
 - @Snippet:1Secure/SourcesAndConnectors:NewSiteBullet@
 - @Snippet:1Secure/SourcesAndConnectors:ExisSiteBullet@
@@ -34,7 +39,8 @@ The Choose new connector (Step 3 of 3) pane lists three connectors for Active Di
 
 Optionally, select the following for each <madcap:annotation madcap:createdate="2025-02-19T13:14:49.6114364+05:00" madcap:creator="AyeshaAzeem" madcap:initials="AY" madcap:comment="In the caution below, add a link to info that explains how the service can be enabled/disabled." madcap:editor="HassaanKhan" madcap:editdate="2025-02-19T16:38:18.7367412+05:00">connector</madcap:annotation>:
 
-- @Snippet:1Secure/SourcesAndConnectors:TrafficNetCompression@ @Snippet:1Secure/SourcesAndConnectors:SameDomainProducts@
+- @Snippet:1Secure/SourcesAndConnectors:TrafficNetCompression@ 
+@Snippet:1Secure/SourcesAndConnectors:SameDomainProducts@
 
 - @Snippet:1Secure/SourcesAndConnectors:AdjustAutoAudit@
 

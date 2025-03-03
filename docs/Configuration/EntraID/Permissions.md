@@ -27,7 +27,8 @@ The registered application must be assigned to the Global Administrator or Excha
 <br>                        <br>Policy<br><ul>
 <br>                            <li>
 <br>                                <p>
-<br> @Snippet:Config/EntraID/GrantPermissions/GraphAPIApplication:PolicyReadAll@. @Snippet:1Secure/EntraIDApp:StatePerm@</p>
+<br> @Snippet:Config/EntraID/GrantPermissions/GraphAPIApplication:PolicyReadAll@. 
+@Snippet:1Secure/EntraIDApp:StatePerm@</p>
 <br>                            </li>
 <br>                        </ul> |
 | Office 365 Management APIs | ActivityFeed<br><ul>
@@ -72,7 +73,8 @@ To access the Office 365 Exchange Online API, click the **APIs my organization u
 | SharePoint | Sites<br><ul>
 <br>                            <li>
 <br>                                <p>
-<br> @Snippet:Config/EntraID/GrantPermissions/SharePoint:SitesFullControlAll@. @Snippet:1Secure/EntraIDApp:StatePerm@</p>
+<br> @Snippet:Config/EntraID/GrantPermissions/SharePoint:SitesFullControlAll@. 
+@Snippet:1Secure/EntraIDApp:StatePerm@</p>
 <br>                            </li>
 <br>                        </ul> |
 | Office 365 Management APIs | ActivityFeed<br><ul>
@@ -90,7 +92,8 @@ To access the Office 365 Exchange Online API, click the **APIs my organization u
 | Microsoft Graph | Policy<br><ul>
 <br>                            <li>
 <br>                                <p>
-<br> @Snippet:Config/EntraID/GrantPermissions/GraphAPIApplication:PolicyReadAll@. @Snippet:1Secure/EntraIDApp:StatePerm@</p>
+<br> @Snippet:Config/EntraID/GrantPermissions/GraphAPIApplication:PolicyReadAll@. 
+@Snippet:1Secure/EntraIDApp:StatePerm@</p>
 <br>                            </li>
 <br>                        </ul> |
 | Office 365 Management APIs | ActivityFeed<br><ul>

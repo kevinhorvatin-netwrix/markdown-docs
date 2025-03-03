@@ -34,7 +34,10 @@ You may link this report to an alert. See the [Add a Custom Alert](../Alerts/Ale
 
 ## Modify a Custom Report
 
-Follow the steps to modify a custom report. @Snippet:1Secure/Reports:ActivityReportNav@ @Snippet:1Secure/Reports:ReportNavStep2@ @Snippet:1Secure/Reports:ReportNavStep3@ @Snippet:1Secure/Reports:OpenCustomReport@ 
+Follow the steps to modify a custom report. @Snippet:1Secure/Reports:ActivityReportNav@ 
+@Snippet:1Secure/Reports:ReportNavStep2@ 
+@Snippet:1Secure/Reports:ReportNavStep3@ 
+@Snippet:1Secure/Reports:OpenCustomReport@ 
 
 Click **Edit** to modify the report. The Edit Report pane is displayed.
 
@@ -44,7 +47,10 @@ Click **Save Report**.
 
 ## Delete a Custom Report
 
-Follow the steps to delete a custom report. @Snippet:1Secure/Reports:ActivityReportNav@ @Snippet:1Secure/Reports:ReportNavStep2@ @Snippet:1Secure/Reports:ReportNavStep3@ @Snippet:1Secure/Reports:OpenCustomReport@
+Follow the steps to delete a custom report. @Snippet:1Secure/Reports:ActivityReportNav@ 
+@Snippet:1Secure/Reports:ReportNavStep2@ 
+@Snippet:1Secure/Reports:ReportNavStep3@ 
+@Snippet:1Secure/Reports:OpenCustomReport@
 
 Click **Delete**. A dialog box is displayed, prompting you to confirm the action. Click **Delete**. 
 

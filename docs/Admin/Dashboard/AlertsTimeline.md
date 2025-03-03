@@ -6,7 +6,8 @@ To access the Alerts Timeline page, click **Home** at the top and do one of the 
 
 - On the Top 5 Organizations with Most Alerts chart, click a bar. It opens the Alerts Timeline page that displays alert-related data for the organization represented by the selected bar.
 - On the Top 5 Triggered Alerts by Type chart, click a bar. It opens the  Alerts Timeline page that displays alert-related data for all managed organizations.
-- In the organizations list, click an organization name to navigate to the Organization Statistics page, then click the Alerts Timeline chart. It opens the Alerts Timeline page that displays alert-related data for the organization selected in the organizations list.![](../../../Resources/Images/1Secure/AlertsTimeline.png "Alerts Timeline Page") @Snippet:1Secure/Dashboard:ManagedUserInsight@ @Snippet:1Secure/Dashboard:ManagingUserInsight@
+- In the organizations list, click an organization name to navigate to the Organization Statistics page, then click the Alerts Timeline chart. It opens the Alerts Timeline page that displays alert-related data for the organization selected in the organizations list.![](../../../Resources/Images/1Secure/AlertsTimeline.png "Alerts Timeline Page") @Snippet:1Secure/Dashboard:ManagedUserInsight@ 
+@Snippet:1Secure/Dashboard:ManagingUserInsight@
         
 Top 5 Alerts by Count
 

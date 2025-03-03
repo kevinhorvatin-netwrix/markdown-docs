@@ -30,7 +30,7 @@ The alert profile is added to the list. You can:
 
 ## Modify the Name of an Alert Profile
 
-Follow the steps to modify the name of an alert profile. @Snippet:1Secure/Alert Profiles:AlertProfileNavigation@
+Follow the steps to modify the name of an alert profile. @Snippet:1Secure/AlertProfiles:AlertProfileNavigation@
 
 Click the Edit icon for an alert profile. The Edit alert profile pane is displayed.
 
@@ -43,7 +43,7 @@ Click **Save**.
 (1) The alert profile named *Netwrix Profile (Default)* cannot be deleted.   
 (2) When  an alert profile is deleted, the *Netwrix Profile (Default)* is automatically assigned to the organizations that were previously assigned the deleted profile.
 
-Follow the steps to delete an alert profile. @Snippet:1Secure/Alert Profiles:AlertProfileNavigation@
+Follow the steps to delete an alert profile. @Snippet:1Secure/AlertProfiles:AlertProfileNavigation@
 
 Click the Delete icon for an alert profile to delete it.  A dialog box is displayed, prompting you to confirm the deletion of the profile.
 
@@ -55,7 +55,7 @@ You can receive alerts by email or through the third-party ticket service, as us
 
 Follow the steps to  configure alerts by email.
 
-. @Snippet:1Secure/Alert Profiles:AlertProfileNavigation@
+. @Snippet:1Secure/AlertProfiles:AlertProfileNavigation@
 
 Click an alert profile. The alerts for the profile are displayed in a list.
 

@@ -2,7 +2,8 @@
 
 The {{ MyVariables.ProductName_Overlord }} dashboard provides an intuitive, single-pane-of-glass view of your clients organizations, enabling managing organizations, such as Managed Service Providers (MSPs), to quickly identify and prioritize what requires immediate attention. It displays the alerts triggered by specific events, offering drill-down capabilities that enable you to access detailed information on specific alerts and issues, ensuring timely and effective responses. See the [Alerts](../Alerts/Alerts.md)  topic for additional information on alerts.
 
-Click **Home** at the top of the page to access the dashboard. This page is also the default landing page of the application when you sign in.![](../../../Resources/Images/1Secure/DashboardPage.png "Dashboard Page for managing user") @Snippet:1Secure/Dashboard:ManagedUserInsight@See the [Organization Statistics](/Admin/Dashboard/OrganizationStatistics.md)  topic for additional information. @Snippet:1Secure/Dashboard:ManagingUserInsight@
+Click **Home** at the top of the page to access the dashboard. This page is also the default landing page of the application when you sign in.![](../../../Resources/Images/1Secure/DashboardPage.png "Dashboard Page for managing user") @Snippet:1Secure/Dashboard:ManagedUserInsight@ 
+See the [Organization Statistics](/Admin/Dashboard/OrganizationStatistics.md)  topic for additional information. @Snippet:1Secure/Dashboard:ManagingUserInsight@
 
 Top 5 Triggered Alerts by Type
 

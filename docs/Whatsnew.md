@@ -95,7 +95,7 @@ Users can now access the Billable Users report to review billable accounts for g
 
 New: Netwrix 1Secure is available for End-Customers
 
-Netwrix 1Secure is available for end-customers. The actionable dashboards in the new user interface ensure that end-customers are promptly alerted to areas requiring attention, while human-readable reports empower them to address auditor or management inquiries with ease. See the [Add Users](Admin/Organizations/AddingUsers.md)  topic for additional information. 
+Netwrix 1Secure is available for end-customers. The actionable dashboards in the new user interface ensure that end-customers are promptly alerted to areas requiring attention, while human-readable reports empower them to address auditor or management inquiries with ease. See the [Add Users](/Admin/Organizations/AddingUsers.md)  topic for additional information. 
 
 New: Active Directory Compliance Reports
 
@@ -122,7 +122,7 @@ Three new reports improve the security posture of clients and MSPs by showing:
 - Changes to Exchange Online groups
 - Changes to mailbox policies
 
-These reports not only protect Exchange Online by identifying unauthorized activity, but also monitor Exchange Online groups and policies for changes that could lead to data leaks and breaches. See the [Filters](Admin/SearchAndReports/FilterValues.md)  topic for additional information. 
+These reports not only protect Exchange Online by identifying unauthorized activity, but also monitor Exchange Online groups and policies for changes that could lead to data leaks and breaches. See the [Filters](/Admin/SearchAndReports/FilterValues.md)  topic for additional information. 
 
 New: Risk Assessment 2.0
 
@@ -140,7 +140,7 @@ The completely redesigned Risk Assessment not only helps clients and MSPs diagno
 - Self-Service Password Reset is Not Enabled
 - Improper Number of Global Administrators
 
-See the [Review Risks using Risks Assessment Dashboard](Admin/RiskProfiles/RiskAssessmentDashboard.md)  topic for additional information. 
+See the [Review Risks using Risks Assessment Dashboard](/Admin/RiskProfiles/RiskAssessmentDashboard.md)  topic for additional information. 
 
 Enhancement: Subscribed Reports for SharePoint Online
 

@@ -1,6 +1,11 @@
 # Add a Source and Connectors for SQL Server
 
-Follow the steps to add a SQL Server data source and connector to your organization. @Snippet:1Secure/Organization:ManagedOrgNav@ @Snippet:1Secure/SourcesAndConnectors:OrgSelectionStep@ @Snippet:1Secure/SourcesAndConnectors:StepClickAdd@ @Snippet:1Secure/SourcesAndConnectors:SelectDataSource@![](../../../../Resources/Images/1Secure/AddSources_Exchange.png "Select Data Source (Step 1 of 3) pane")
+Follow the steps to add a SQL Server data source and connector to your organization. 
+@Snippet:1Secure/Organization:ManagedOrgNav@ 
+@Snippet:1Secure/SourcesAndConnectors:OrgSelectionStep@ 
+@Snippet:1Secure/SourcesAndConnectors:StepClickAdd@ 
+@Snippet:1Secure/SourcesAndConnectors:SelectDataSource@
+![](../../../../Resources/Images/1Secure/AddSources_Exchange.png "Select Data Source (Step 1 of 3) pane")
 
 Select **SQL Server** and click **Next**.![](../../../../Resources/Images/1Secure/ConfigureSourceDetails(Step2-3).png "Configure Source Details (Step 2 of 3) pane") @Snippet:1Secure/SourcesAndConnectors:SiteSelectStep@
 

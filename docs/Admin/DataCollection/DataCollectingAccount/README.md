@@ -11,11 +11,9 @@ You can use  group Managed Service Account (gMSA) as data collecting account. Se
 | --- | --- | --- |
 | Active Directory | Active Directory Activity<br>
 <br>                        <br>Active Directory Logons | <br> [Active Directory Auditing](../ActiveDirectory/ActiveDirectoryAuditing.md) <br>                        <br>
-<br>                        <br><br>                            <madcap:xref href="../LogonActivity/Overview.htm" target="_parent" title="Logon Activity Auditing" alt="Logon Activity Auditing">Logon Activity Auditing
-<br>        </madcap:xref><![CDATA[
-<br>]]> |
-| Azure AD | Azure AD Activity<br>
-<br>                        <br>Azure AD Logons | <br> [Microsoft Entra ID Auditing](../EntraID.md) <br> |
+<br>                        <br><br>                           [Logon Activity Auditing](../LogonActivity/README.md)
+<br>|
+| Azure AD | Azure AD Activity Azure AD Logons | <br> [Microsoft Entra ID Auditing](../EntraID.md) <br> |
 | Computer | File Server Activity | <br> [Computer Auditing](../Computer/README.md) <br> |
 | SharePoint Online | SharePoint Online Activity | <br> [SharePoint Online Auditing](../SharePointOnline.md) <br> |
 | Exchange Online | Exchange Online Activity | <br> [Exchange Online Auditing](../ExchangeOnline.md) <br> |

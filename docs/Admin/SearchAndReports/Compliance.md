@@ -4,7 +4,8 @@ Compliance reports help clients and Managed Service Providers gather information
 
 ## Review a Report
 
-Follow the steps to review a Compliance report. @Snippet:1Secure/Reports:ActivityReportNav@ @Snippet:1Secure/Reports:ReportNavStep2@
+Follow the steps to review a Compliance report. @Snippet:1Secure/Reports:ActivityReportNav@ 
+@Snippet:1Secure/Reports:ReportNavStep2@
 
 Click the **Compliance** tab to access the compliance reports. This opens the Compliance page with the Group Membership report selected by default in the left pane.![](../../../Resources/Images/1Secure/ReportsCompliance.png "Compliance Reports Page") @Snippet:1Secure/Reports:ReportNavStep3@ Categories are:
 
@@ -45,7 +46,8 @@ SharePoint Online
 | High Risk Permissions | Lists the permissions and permission levels of high-risk trustees, such as Everyone, Authenticated Users, and Everyone except external users. |
 | Permissions Overview by Resource | Provides a summary of assigned permissions in your organization, including the count of direct user permissions, stale permissions, broken permission inheritance, and high-risk permissions for each object. Click any permissions value to navigate to the specific permissions report for the selected resource. For example, clicking a High Risk Permissions value will take you to the High Risk Permissions report. |
 
-Sort a Report @Snippet:1Secure/Reports:SortReport@ @Snippet:1Secure/Reports:ReportSearch@
+Sort a Report @Snippet:1Secure/Reports:SortReport@ 
+@Snippet:1Secure/Reports:ReportSearch@
         
 ## Filter Descriptions
 

@@ -9,10 +9,14 @@ A report delivered by subscription can contain up to 2000 records. If the data e
 
 ## Add a Subscription
 
-Follow the steps to add a subscription. @Snippet:1Secure/Reports:ActivityReportNav@ @Snippet:1Secure/Reports:ReportNavStep2@ @Snippet:1Secure/Reports:ReportNavStep3@ @Snippet:1Secure/Reports:ReportNavStep4@
+Follow the steps to add a subscription. 
+@Snippet:1Secure/Reports:ActivityReportNav@ 
+@Snippet:1Secure/Reports:ReportNavStep2@ 
+@Snippet:1Secure/Reports:ReportNavStep3@ 
+@Snippet:1Secure/Reports:ReportNavStep4@
 
 You cannot subscribe to a report if no data is available for it. In this case, the Subscribe button remains disabled.
-
+`
 Click **Subscribe** on the top right of the page. The Subscription to &lt;name of the report&gt; pane is displayed.![](../../../Resources/Images/1Secure/Subscriptions.png "Subscription to Report pane")
 
 Set a start date, time, and time zone for sending the report to the intended recipients.
@@ -39,7 +43,9 @@ Click the **Send reports by email** check box to specify email delivery settings
 - Email Subject – Specify the email subject. The default subject is: {{ '{{' }}Frequency{{ '}}' }} Report on {{ '{{' }}Report\_Name{{ '}}' }} from {{ '{{' }}Managed\_Organization{{ '}}' }}. These variables will be replaced with the report frequency, report name, and managed organization name. For example, Monthly Report on Accounts Deleted from Netwrix.
 
     You can use other variables to specify the subject line of the email, as discussed below.
-- Variables – Select variable(s) to customize the subject line of the email. @Snippet:1Secure/Reports:SubscribeVariables@![](../../../Resources/Images/1Secure/Subscriptions_2.png "Email Subject")
+- Variables – Select variable(s) to customize the subject line of the email. 
+@Snippet:1Secure/Reports:SubscribeVariables@
+![](../../../Resources/Images/1Secure/Subscriptions_2.png "Email Subject")
 
     The End Customer Organization has the Organization Name variable instead of the Managed Organization and Managing Organization variables.
 - Message – Enter the information to be included in the body of the email.
@@ -61,7 +67,11 @@ The subscription is created.
 
 ## Edit  a Subscription
 
-Follow the steps to edit a subscription. @Snippet:1Secure/Organization:ManagedOrgNav@ @Snippet:1Secure/Organization:OrgSelectionNav@ @Snippet:1Secure/Organization:SubscriptionTab@ On this page, you can review statuses for your subscriptions in the Last run result column. It indicates the status for sending the reports or creating a subscription (New, Success, Error Processing, Error Sending). 
+Follow the steps to edit a subscription. 
+@Snippet:1Secure/Organization:ManagedOrgNav@ 
+@Snippet:1Secure/Organization:OrgSelectionNav@ 
+@Snippet:1Secure/Organization:SubscriptionTab@ 
+On this page, you can review statuses for your subscriptions in the Last run result column. It indicates the status for sending the reports or creating a subscription (New, Success, Error Processing, Error Sending). 
 
 (Optional) To disable a subscription, toggle OFF the switch for it.![](../../../Resources/Images/1Secure/Subscriptions_3.png "Organization Subscriptions Page")
 
@@ -73,7 +83,10 @@ Click **Save**.
 
 ## Delete a Subscription
 
-Follow the steps to delete a subscription. @Snippet:1Secure/Organization:ManagedOrgNav@ @Snippet:1Secure/Organization:OrgSelectionNav@ @Snippet:1Secure/Organization:SubscriptionTab@
+Follow the steps to delete a subscription. 
+@Snippet:1Secure/Organization:ManagedOrgNav@ 
+@Snippet:1Secure/Organization:OrgSelectionNav@ 
+@Snippet:1Secure/Organization:SubscriptionTab@
 
 Click the Delete icon for a subscription to delete it.
 

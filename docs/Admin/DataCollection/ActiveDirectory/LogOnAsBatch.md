@@ -8,7 +8,7 @@ You can configure this policy via the **Local Security Policy** snap-in or using
 
 On any domain controller in the target domain, open the **Local Security Policy** snap-in: navigate to Start →Windows Administrative Tools (Windows Server 2016 and higher) or Administrative Tools (Windows 2012) and select Local Security Policy.
 
-Navigate to **Security Settings → Local Policies → User Rights Assignment** and locate the **Log on as a batch job** policy.![](../../../../Resources/Images/1Secure/ManualConfig_WS_Logonasbatch.png)
+Navigate to **Security Settings → Local Policies → User Rights Assignment** and locate the **Log on as a batch job** policy.![](../../../Resources/Images/1Secure/ManualConfig_WS_Logonasbatch.png)
 
 Double-click the **Log on as a batch job** policy, and click **Add User or Group**. Specify the account that you want to define this policy for.
 

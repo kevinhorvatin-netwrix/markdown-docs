@@ -1,0 +1,21 @@
+
+FilterData: |-
+  Multiple filters are available on this page to enable you to filter data as desired. You can apply one or more filters at a time.
+
+FilterKeyword: |-
+  Filter by Keyword –  Type a search string (only alpha characters allowed) in the Filter by keyword field and press Enter.
+
+ManagedUserInsight: |-
+  If you are a managed organization user, this page displays insights specific to your organization.
+
+ManagingUserInsight: |-
+  If you are a managing organization user, this page provides the following insights for all your organizations.
+
+OrgStatus: |-
+  the current health status of the organization, which can be: Healthy, Trial in Progress, New, Update Recommended, Needs Attention, Experiencing Issues, Offline, Disabled, Not Configured, and Pending Deletion.
+
+Timeframe: |-
+  Timeframe – Select a time period from the Timeframe drop-down menu. The charts and the listing on the page display data for the selected time period. For example, if you select 7 Days, the data  will reflect information for the past 7 days. By default, 30 Days is selected. Options are:
+
+UserCount: |-
+  the total number of users in the organization along with their percentage share with respect to the total number of users in the managed organizations (tenant) in 1Secure. Click the value to navigate to the Billable Users page. See the [Review Billable Users Report](/Admin/SearchAndReports/System.md#Review)  topic for additional information.

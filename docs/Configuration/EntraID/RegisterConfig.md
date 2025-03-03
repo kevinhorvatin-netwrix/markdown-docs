@@ -12,7 +12,10 @@ A user account with the Global Administrator, Application Administrator, or Clou
 
 ## Register an App in Microsoft Entra ID
 
-Follow the steps to register an application in {{ MyVariables.Azure_AD_app }}. @Snippet:Config/EntraID:AdminCenterNote@ @Snippet:Config/EntraID/Register:SignIn@ @Snippet:1Secure/EntraIDApp:NavAppReg-Step@
+Follow the steps to register an application in {{ MyVariables.Azure_AD_app }}. 
+@Snippet:Config/EntraID:AdminCenterNote@ 
+@Snippet:Config/EntraID/Register:SignIn@ 
+@Snippet:1Secure/EntraIDApp:NavAppReg-Step@
 
 On the App registrations page, click **New registration** in the top toolbar. The Register an application page is displayed.
 
@@ -34,7 +37,10 @@ The Overview page for the newly registered application opens. The following sett
 
 You must grant the necessary permissions to the registered application in {{ MyVariables.Azure_AD_app }}, based on the data sources you plan to audit in.
 
-Follow the steps to grant permissions to the application. @Snippet:Config/EntraID/Register:SignIn@ @Snippet:1Secure/EntraIDApp:NavAppReg-Step@ @Snippet:1Secure/EntraIDApp:AppStep2@
+Follow the steps to grant permissions to the application. 
+@Snippet:Config/EntraID/Register:SignIn@ 
+@Snippet:1Secure/EntraIDApp:NavAppReg-Step@ 
+@Snippet:1Secure/EntraIDApp:AppStep2@
 
 Click the application you registered from the list to grant the permissions. The Overview page of the application is displayed.
 
@@ -61,7 +67,10 @@ The  API permissions are granted to the application.
 ## Assign Roles to the App
 
 The registered application must be assigned to the Global Administrator or Exchange Administrator role for {{ MyVariables.Azure_AD_app }} state collection.  
-Follow the steps to assign role(s) to an application. @Snippet:Config/EntraID/Register:SignIn@ @Snippet:1Secure/EntraIDApp:NavAppReg-Step@ @Snippet:1Secure/EntraIDApp:AppStep2@
+Follow the steps to assign role(s) to an application. 
+@Snippet:Config/EntraID/Register:SignIn@ 
+@Snippet:1Secure/EntraIDApp:NavAppReg-Step@ 
+@Snippet:1Secure/EntraIDApp:AppStep2@
 
 Click the registered application from the list. The Overview page for the application is displayed.
 
@@ -82,7 +91,10 @@ Click the **Add** button at the bottom. The application is listed on the Assignm
 
 ## Generate  Client Secret Value
 
-Follow the steps to generate a client secret value. @Snippet:Config/EntraID/Register:SignIn@ @Snippet:1Secure/EntraIDApp:NavAppReg-Step@ @Snippet:1Secure/EntraIDApp:AppStep2@
+Follow the steps to generate a client secret value. 
+@Snippet:Config/EntraID/Register:SignIn@ 
+@Snippet:1Secure/EntraIDApp:NavAppReg-Step@ 
+@Snippet:1Secure/EntraIDApp:AppStep2@
 
 Click the registered application from the list. The Overview page for the application is displayed.
 
@@ -103,7 +115,10 @@ If you leave this page before copying the key, it cannot be retrieved, and you w
 
 Certain connecters require a certificate rather than a client secret for authentication. This certificate is downloaded while configuring a data source in {{ MyVariables.ProductName_Overlord }}. Once downloaded, you need to upload the certificate to the registered application  in {{ MyVariables.Azure_AD_app }}. See the [Add a Source and Connectors for SharePoint Online](../../Admin/Organizations/SourcesAndConnectors/SharePointOnline.md) topic for additional information on downloading a certificate.
 
-Follow the steps to upload a certificate to the registered application. @Snippet:Config/EntraID/Register:SignIn@ @Snippet:1Secure/EntraIDApp:NavAppReg-Step@ @Snippet:1Secure/EntraIDApp:AppStep2@
+Follow the steps to upload a certificate to the registered application. 
+@Snippet:Config/EntraID/Register:SignIn@ 
+@Snippet:1Secure/EntraIDApp:NavAppReg-Step@ 
+@Snippet:1Secure/EntraIDApp:AppStep2@
 
 Click the application you registered from the list. The Overview page of the application is displayed.
 
@@ -123,7 +138,10 @@ Enter a description for this certificate and click the **Add** button at the bot
 
 Follow the steps to assign permissions to the registered application by modifying its attribute values using the Manifest app. See the [Microsoft Entra app manifest (Azure AD Graph format)](https://learn.microsoft.com/en-us/entra/identity-platform/reference-app-manifest#requiredresourceaccess-attribute "Microsoft Entra app manifest (Azure AD Graph format)") article for additional information on Manifest.
 
-This is an alternate way for assigning permissions to the registered application that differs from the normal method discussed in the [Grant Permissions to the App](/Configuration/EntraID/#Grant)  topic. @Snippet:Config/EntraID/Register:SignIn@ @Snippet:1Secure/EntraIDApp:NavAppReg-Step@ @Snippet:1Secure/EntraIDApp:AppStep2@
+This is an alternate way for assigning permissions to the registered application that differs from the normal method discussed in the [Grant Permissions to the App](/Configuration/EntraID/#Grant) topic. 
+@Snippet:Config/EntraID/Register:SignIn@ 
+@Snippet:1Secure/EntraIDApp:NavAppReg-Step@ 
+@Snippet:1Secure/EntraIDApp:AppStep2@
 
 Click the application you registered from the list. The Overview page of the application is displayed.
 
@@ -131,30 +149,30 @@ Click **Manifest** under the Manage section. The Manifest page is displayed.
 
 Locate the **requiredResourceAccess** property in the manifest and edit it with the following in the square brackets ([]). The **requiredResourceAccess** property should look like this:
 
-        <madcap:codesnippet>
-            <madcap:codesnippetbody madcap:uselinenumbers="False" madcap:linenumberstart="1" madcap:continue="False" xml:space="preserve">"requiredResourceAccess": [
-{
-"resourceAppId": "00000003-0000-0ff1-ce00-000000000000",
-"resourceAccess": [
-{
-"id": "678536fe-1083-478a-9c59-b99265e6b0d3",
-"type": "Role"
-}
-]
-},
-{
-"resourceAppId": "00000003-0000-0000-c000-000000000000",
-"resourceAccess": [
-{
-"id": "b0afded3-3588-46d8-8b3d-9842eff778da",
-"type": "Role"
-},
-{
-"id": "7ab1d382-f21e-4acd-a863-ba3e13f7da61",
-"type": "Role"
-},
-{
-"id": "246dd0d5-5bd0-4def-940b-0421030a5b68",
+```json
+"requiredResourceAccess": [
+  {
+     "resourceAppId": "00000003-0000-0ff1-ce00-000000000000",
+     "resourceAccess": [
+        {
+           "id": "678536fe-1083-478a-9c59-b99265e6b0d3",
+           "type": "Role"
+        }
+     ]
+  },
+  {
+     "resourceAppId": "00000003-0000-0000-c000-000000000000",
+     "resourceAccess": [
+        {
+           "id": "b0afded3-3588-46d8-8b3d-9842eff778da",
+           "type": "Role"
+        },
+        {
+           "id": "7ab1d382-f21e-4acd-a863-ba3e13f7da61",
+           "type": "Role"
+        },
+        {
+           "id": "246dd0d5-5bd0-4def-940b-0421030a5b68",
 "type": "Role"
 },
 {
@@ -181,9 +199,9 @@ Locate the **requiredResourceAccess** property in the manifest and edit it with 
 }
 ]
 }
-],</madcap:codesnippetbody>
-        </madcap:codesnippet>
-        
+]
+```
+
 Click **Save**.
 
 Optionally, you can select **Download** to edit the manifest locally, and then use Upload to reapply it to your application.
