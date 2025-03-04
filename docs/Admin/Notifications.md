@@ -16,4 +16,4 @@ Select **Fix**.
 
 See the following topic for additional information:
 
-- [Update Netwrix Cloud Agent](/Admin/UpdateNetwrixCloudAgent.md) 
+- [Update Netwrix Cloud Agent](UpdateNetwrixCloudAgent.md) 

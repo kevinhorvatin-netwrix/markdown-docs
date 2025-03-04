@@ -1,6 +1,6 @@
 
 AdjustAutoAudit: |-
-  Adjust audit settings automatically – Select this checkbox to adjust the audit settings automatically. With this approach, 1Secure will check your current audit settings at each data collection session and adjust them if <madcap:annotation madcap:createdate="2025-02-19T13:34:13.5780598+05:00" madcap:creator="AyeshaAzeem" madcap:initials="AY" madcap:comment="We need to discuss the settings that are adjusted automatically." madcap:editor="AyeshaAzeem" madcap:editdate="2025-02-19T13:34:28.1505617+05:00">necessary</madcap:annotation>. See the [Active Directory: automatic configuration](/Configuration/AD/Auto.md)  topic for additional information.
+  Adjust audit settings automatically – Select this checkbox to adjust the audit settings automatically. With this approach, 1Secure will check your current audit settings at each data collection session and adjust them if <madcap:annotation madcap:createdate="2025-02-19T13:34:13.5780598+05:00" madcap:creator="AyeshaAzeem" madcap:initials="AY" madcap:comment="We need to discuss the settings that are adjusted automatically." madcap:editor="AyeshaAzeem" madcap:editdate="2025-02-19T13:34:28.1505617+05:00">necessary</madcap:annotation>. See the [Active Directory: automatic configuration](Auto.md))  topic for additional information.
 
 AzureGroups: |-
   Service Account Azure Groups – If needed, specify a list of Azure groups whose service accounts can be excluded from billable domain accounts
@@ -22,16 +22,16 @@ DisplayName: |-
   Display Name  – Specify a name you want to show for your credentials. It will be displayed on the Credentials tab of the Managed Organizations page.
 
 DownloadCertificate: |-
-  Download Certificate  – For certain connectors, such as SharePoint Online State, authentication requires a certificate instead of a client secret. Download this certificate and then upload it to the app registered in <madcap:variable name="MyVariables.Azure AD app"></madcap:variable>. See the [Upload a Certificate](/Configuration/EntraID/RegisterConfig.md#Upload)  topic for additional information.
+  Download Certificate  – For certain connectors, such as SharePoint Online State, authentication requires a certificate instead of a client secret. Download this certificate and then upload it to the app registered in <madcap:variable name="MyVariables.Azure AD app"></madcap:variable>. See the [Upload a Certificate](RegisterConfig.md#Upload))  topic for additional information.
 
 ExisSiteBullet: |-
   When you select an existing site from the drop-down menu, one of the following happens:
 
 NewSiteBullet: |-
-  When you choose to add a new site, you have to provide a name for it in the New site name field. Then click **Next** to proceed with configuring the agent for the site. See the [Install Agent](/Install/InstallAgent.md)  topic for details on configuring the agent, starting at Step 6.
+  When you choose to add a new site, you have to provide a name for it in the New site name field. Then click **Next** to proceed with configuring the agent for the site. See the [Install Agent](InstallAgent.md))  topic for details on configuring the agent, starting at Step 6.
 
 NewSiteBullet2: |-
-  If the agent has not been configured for the site, the system will proceed with the agent configuration when you click *Next*. See the [Install Agent](/Install/InstallAgent.md)  topic for details on configuring the agent, starting at Step 6.
+  If the agent has not been configured for the site, the system will proceed with the agent configuration when you click *Next*. See the [Install Agent](InstallAgent.md))  topic for details on configuring the agent, starting at Step 6.
 
 OrgSelectionStep: |-
   Click an organization to define a data source and connector(s) for it. The properties page for the organization is displayed with the Sources tab selected by default.
@@ -58,7 +58,7 @@ TenantID: |-
   Tenant ID – Obtain this value from your <madcap:variable name="MyVariables.Azure AD app"></madcap:variable>  account.
 
 TrafficNetCompression: |-
-  Enable traffic network compression – Select this checkbox to enable traffic network compression for the connector. See the [Network Traffic Compression](/Configuration/NetworkTrafficCompression.md)  topic for additional information.
+  Enable traffic network compression – Select this checkbox to enable traffic network compression for the connector. See the [Network Traffic Compression](NetworkTrafficCompression.md))  topic for additional information.
 
 Username: |-
   Username - Username of your Active Directory account

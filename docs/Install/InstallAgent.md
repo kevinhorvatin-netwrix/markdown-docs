@@ -14,7 +14,7 @@ Click **Save**.
 
 On the Agent Config panel, select **Download Agent** to start downloading agent for analyzing your data.
 
- Complete the [Install the Agent](/Install/#Install)  steps. Ensure you tick Launch Netwrix Cloud Agent Configuration tool and click Finish.![](../../Resources/Images/1Secure/Organization_CloudAgent.png)
+ Complete the [Install the Agent](#Install))  steps. Ensure you tick Launch Netwrix Cloud Agent Configuration tool and click Finish.![](../../Resources/Images/1Secure/Organization_CloudAgent.png)
 
 On the displayed Netwrix Cloud Agent Configuration screen, select Configure to configure with Netwrix Cloud Agent.![](../../Resources/Images/1Secure/InstallAgent_CopyAgent.png)
 

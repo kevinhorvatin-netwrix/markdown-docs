@@ -32,7 +32,7 @@ Follow the steps to modify an organization group. @Snippet:1Secure/Organization:
 
 Click the Edit icon for the organization group you want to modify. The Editing Group &lt;group name&gt; pane is displayed.
 
-Modify the required information. For details, refer to Step 3 in the [Add an Organization Group](/Admin/Organizations/#Add)  section.
+Modify the required information. For details, refer to Step 3 in the [Add an Organization Group](#Add))  section.
 
 Click **Save**.
 

@@ -30,7 +30,7 @@ On the Configure source details (Step 3 of 4) window, add a site for your organi
 
 This step is displayed only when adding Active Directory and Computer sources. 
 
-See the [Add Sites to Organization](/Admin/Organizations/AddSites.md)  topic for additional information.![](../../../Resources/Images/1Secure/AddOrganizationsAgent.png)
+See the [Add Sites to Organization](AddSites.md)  topic for additional information.![](../../../Resources/Images/1Secure/AddOrganizationsAgent.png)
 
 On the Configure source details (Step 3 of 4) window, follow the instructions to install  the agent. Please go to the [Install Agent](../../Install/InstallAgent.md) topic of the online help. Click **Next**.
 

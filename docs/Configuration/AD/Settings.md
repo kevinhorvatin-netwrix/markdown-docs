@@ -14,8 +14,8 @@ Effective domain controllers policy settings must be configured as listed in the
 
 You can configure either **Basic domain audit policies**, or **Advanced domain audit policies**.
 
-- To configure these settings automatically using {{ MyVariables.ProductName_Overlord }}, refer to [Active Directory: automatic configuration](/Configuration/AD/Auto.md)  section.
-- To configure them manually, refer to [Configure Advanced Audit Policies](/Configuration/AD/DomainAuditPolicies.md)  section.
+- To configure these settings automatically using {{ MyVariables.ProductName_Overlord }}, refer to [Active Directory: automatic configuration](Auto.md))  section.
+- To configure them manually, refer to [Configure Advanced Audit Policies](DomainAuditPolicies.md))  section.
 
 ## Audit Settings for AD Partitions
 
@@ -27,8 +27,8 @@ Object-level audit settings for the Domain partition must be configured to audit
 
 These settings must be configured for **Everyone** security principal and applied to **This object and all descendant objects**. 
 
-- You can configure these settings automatically using {{ MyVariables.ProductName_Overlord }}, as described in [Configure Domain for Monitoring Active Directory](/Configuration/AD/ADManual.md)  section.
-- To configure them manually, refer to [Configure Object-Level Auditing](/Configuration/AD/ObjectLevel.md)  section.
+- You can configure these settings automatically using {{ MyVariables.ProductName_Overlord }}, as described in [Configure Domain for Monitoring Active Directory](ADManual.md))  section.
+- To configure them manually, refer to [Configure Object-Level Auditing](ObjectLevel.md))  section.
 
 ### Configuration and Schema Partitions
 
@@ -36,8 +36,8 @@ Object-level audit settings for the Configuration and **Schema** partitions must
 
 These settings must be configured for **Everyone** security principal and applied to **This object and its descendant objects**.
 
-- You can configure these settings automatically using {{ MyVariables.ProductName_Overlord }}, as described in [Active Directory: automatic configuration](/Configuration/AD/Auto.md)  section.
-- To configure them manually, refer to [Configure Object-Level Auditing](/Configuration/AD/ObjectLevel.md)  section.
+- You can configure these settings automatically using {{ MyVariables.ProductName_Overlord }}, as described in [Active Directory: automatic configuration](Auto.md))  section.
+- To configure them manually, refer to [Configure Object-Level Auditing](ObjectLevel.md))  section.
 
 ## Security Event Log Settings
 
@@ -49,5 +49,5 @@ These settings must be configured for **Everyone** security principal and applie
 | Retention method | *Overwrite events as needed* |
 | Auto-archiving | Enabled |
 
-- You can configure these settings automatically using {{ MyVariables.ProductName_Overlord }}, as described in [Active Directory: automatic configuration](/Configuration/AD/Auto.md)  section.
-- To configure them manually, refer to [Adjust Security Event Log Size and Retention Settings](/Configuration/AD/SecurityLogSize.md)  section.
+- You can configure these settings automatically using {{ MyVariables.ProductName_Overlord }}, as described in [Active Directory: automatic configuration](Auto.md))  section.
+- To configure them manually, refer to [Adjust Security Event Log Size and Retention Settings](SecurityLogSize.md))  section.

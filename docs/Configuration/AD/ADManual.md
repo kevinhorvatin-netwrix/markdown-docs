@@ -11,8 +11,8 @@ You can configure your Active Directory domain for monitoring in one of the fol
 
 Also, perform the following procedures:
 
-- [Configure Basic Domain Audit Policies](/Configuration/AD/DomainAuditPolicies.md)  
-		or [Configure Advanced Audit Policies](/Configuration/AD/AdvancedPolicy.md) . Either local or advanced audit policies must be configured to track changes to accounts and groups, and to identify workstations where changes were made.
-- [Configure Object-Level Auditing](/Configuration/AD/ObjectLevel.md) 
-- [Adjust Security Event Log Size and Retention Settings](/Configuration/AD/SecurityLogSize.md) 
-- [Enable Secondary Logon Service](/Configuration/AD/SecondaryLogonService.md) 
+- [Configure Basic Domain Audit Policies](DomainAuditPolicies.md))  
+		or [Configure Advanced Audit Policies](AdvancedPolicy.md)) . Either local or advanced audit policies must be configured to track changes to accounts and groups, and to identify workstations where changes were made.
+- [Configure Object-Level Auditing](ObjectLevel.md)) 
+- [Adjust Security Event Log Size and Retention Settings](SecurityLogSize.md)) 
+- [Enable Secondary Logon Service](SecondaryLogonService.md)) 

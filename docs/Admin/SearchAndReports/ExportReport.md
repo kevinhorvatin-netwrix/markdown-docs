@@ -26,6 +26,6 @@ A report cannot be exported if no data is available for it. In this case, the Ex
 Follow the steps to export the results of an investigation. @Snippet:1Secure/Reports:ActivityReportNav@ 
 @Snippet:1Secure/Reports:ReportNavStep2@
 
-Define a filter criteria, then click **Search** to generate the investigation results based on it. See the [Apply Filters](/Admin/SearchAndReports/ApplyFilters.md)  topic for additional information.
+Define a filter criteria, then click **Search** to generate the investigation results based on it. See the [Apply Filters](ApplyFilters.md))  topic for additional information.
 
 Click **Export**. The investigation results report is sent to you as an .xlsx file by email.

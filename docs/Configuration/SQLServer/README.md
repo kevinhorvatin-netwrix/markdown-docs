@@ -10,5 +10,5 @@
 
 Remember to do the following:
 
-- Configure a Data Collecting Account as described in the [Permissions for SQL Server Auditing](/Configuration/SQLServer/Permissions.md)  topic.
-- Configure ports as described in the [SQL Server Ports](/Configuration/SQLServer/Ports.md)  topic.
+- Configure a Data Collecting Account as described in the [Permissions for SQL Server Auditing](Permissions.md))  topic.
+- Configure ports as described in the [SQL Server Ports](Ports.md))  topic.

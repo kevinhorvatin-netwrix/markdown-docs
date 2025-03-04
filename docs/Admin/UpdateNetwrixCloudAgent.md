@@ -60,4 +60,4 @@ The self-update function is now configured.
 
 See the following topic for additional information:
 
-- [Notifications](/Admin/Notifications.md) 
+- [Notifications](Notifications.md) 

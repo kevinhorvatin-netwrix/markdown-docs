@@ -18,9 +18,9 @@ Select the **Reports**&gt; **Activity** tab.![](../../../Resources/Images/1Secur
 
 You can also access the **Reports** &gt; **Activity** page from your organization's page. On your Home screen, click **Configure** &gt; **Reports** in the right upper corner of the page.![](../../../Resources/Images/1Secure/ReportsReportAccess.png "Organization data sources list")
 
- Select a filter from the Filter drop-down menu. See the [Filter Descriptions](/Admin/SearchAndReports/#Filter)  topic for additional information. 
+ Select a filter from the Filter drop-down menu. See the [Filter Descriptions](#Filter))  topic for additional information. 
 
-You must specify three columns: Filter, Operator, and Value. You may also select more than one filter. To review the Operator filter options, see the [Filter Values](/Admin/SearchAndReports/FilterOperators.md)  topic for additional information.
+You must specify three columns: Filter, Operator, and Value. You may also select more than one filter. To review the Operator filter options, see the [Filter Values](FilterOperators.md))  topic for additional information.
 
 If required, specify the property change filters. 
 
@@ -34,7 +34,7 @@ Click the required activity record from the grid view  the activity record detai
 
 Navigate from one report to another by selecting **Prev** or **Next**. This will directly upload the details of the selected report. 
 
-You can also create your own reports with custom filters. See the [Custom Reports](/Admin/SearchAndReports/CustomReports.md)  topic for additional information.
+You can also create your own reports with custom filters. See the [Custom Reports](CustomReports.md))  topic for additional information.
 
 ## Filter Descriptions
 

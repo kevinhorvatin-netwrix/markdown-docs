@@ -6,7 +6,7 @@ After you added the organization to your system, you may want to add users as pa
 - Editor
 - Viewer
 
-You can add users both in Managing Organization and in Managed Organization. See the [Manage Organizations](/Admin/Organizations/README.md)  topic for additional information. 
+You can add users both in Managing Organization and in Managed Organization. See the [Manage Organizations](README.md)  topic for additional information. 
 
 Image keys:
 
