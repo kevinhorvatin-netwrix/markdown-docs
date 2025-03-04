@@ -428,7 +428,7 @@ On the left navigation menu, navigate to <strong>Identity</strong> &gt; <strong>
 <ul>
 <li>Application (client) ID – A client ID for the registered application</li>
 <li>Directory (tenant) ID – A tenant ID for the registered application</li>
-<li>Client Secret – A client secret value generated when a new client secret key is created for the registered application. See the <a href="/Configuration/EntraID/#Generate">Generate Client Secret Value</a>  topic for additional information.</li>
+<li>Client Secret – A client secret value generated when a new client secret key is created for the registered application. See the <a href="#Generate">Generate Client Secret Value</a>)  topic for additional information.</li>
 </ul>
 <h2 id="grant-permissions-to-the-app">Grant Permissions to the App</h2>
 <p>You must grant the necessary permissions to the registered application in {{ no such element: dict object['Azure_AD_app'] }}, based on the data sources you plan to audit in.</p>
@@ -443,9 +443,9 @@ On the App registrations page, click the <strong>All applications</strong> tab. 
 <p>Click the <strong>Application permissions</strong> tab. The permission categories are listed. Click a category and select the required permissions under it.</p>
 <p>See the following topics for the  list of API permissions required to audit the respective data source.  </p>
 <ul>
-<li><a href="/Configuration/EntraID/Permissions.md#EntraID">Permissions to Audit Microsoft Entra ID</a> </li>
-<li><a href="/Configuration/EntraID/Permissions.md#SharePt">Permissions to Audit SharePoint Online</a> </li>
-<li><a href="/Configuration/EntraID/Permissions.md#Exchange">Permissions to Audit Exchange Online</a> </li>
+<li><a href="../Permissions/#EntraID">Permissions to Audit Microsoft Entra ID</a>) </li>
+<li><a href="../Permissions/#SharePt">Permissions to Audit SharePoint Online</a>) </li>
+<li><a href="../Permissions/#Exchange">Permissions to Audit Exchange Online</a>) </li>
 </ul>
 <p>After selecting the required permission(s), click <strong>Add Permissions</strong> at the bottom. You are navigated to the API Permissions page.</p>
 <p>Click <strong>Grant admin consent for &lt;tenant&gt;</strong> to grant the selected permissions to the applcation. </p>
@@ -497,7 +497,7 @@ On the App registrations page, click the <strong>All applications</strong> tab. 
 <p>Enter a description for this certificate and click the <strong>Add</strong> button at the bottom. The certificate is uploaded to the registered application.</p>
 <h2 id="assign-permissions-to-the-app-using-manifest">Assign Permissions to the App Using Manifest</h2>
 <p>Follow the steps to assign permissions to the registered application by modifying its attribute values using the Manifest app. See the <a href="https://learn.microsoft.com/en-us/entra/identity-platform/reference-app-manifest#requiredresourceaccess-attribute" title="Microsoft Entra app manifest (Azure AD Graph format)">Microsoft Entra app manifest (Azure AD Graph format)</a> article for additional information on Manifest.</p>
-<p>This is an alternate way for assigning permissions to the registered application that differs from the normal method discussed in the <a href="/Configuration/EntraID/#Grant">Grant Permissions to the App</a> topic. 
+<p>This is an alternate way for assigning permissions to the registered application that differs from the normal method discussed in the <a href="#Grant">Grant Permissions to the App</a>) topic. 
 @@@NEEDSCONVERSION@@@ 
 On the left navigation menu, navigate to <strong>Identity</strong> &gt; <strong>Applications</strong> &gt; <strong>App registrations</strong> page. 
 On the App registrations page, click the <strong>All applications</strong> tab. The registered applications are displayed in a list.</p>
