@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Compliance Reports - Netwrix 1Secure</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../css/netwrix.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Compliance Reports";
+        var mkdocs_page_input_path = "Admin/SearchAndReports/Compliance.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Netwrix 1Secure
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Netwrix 1Secure Documentation</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../..">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Whatsnew/">What's New</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Requirements</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Requirements/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Requirements/PrerequisitesForDataSources/">Prerequisites for Data Sources</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Requirements/CloudAgentRequirements/">Netwrix Cloud Agent Requirements</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Configuration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Configuration/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Active Directory</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/AD/ADManual/">Active Directory</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/AD/AdvancedPolicy/">Configure Advanced Audit Policies</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/AD/Auto/">Active Directory automatic configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/AD/CfgManual/">Active Directory manual configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/AD/DomainAuditPolicies/">Configure Basic Domain Audit Policies</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/AD/ADManual/">Active Directory</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/AD/ObjectLevel/">Configure Object-Level Auditing</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/AD/SecondaryLogonService/">Enable Secondary Logon Service</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/AD/GroupPolicyManagementConsole/">Group Policy Management Console</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/AD/ProtocolsAndPorts/">Protocols and Ports Required for Monitoring Active Directory, Exchange, and Group Policy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/AD/ADSI/">Install ADSI Edit</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Microsoft 365</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/EntraID/RegisterConfig/">Registration and Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/EntraID/Permissions/">Microsoft 365 Permissions</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Logon Activity</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/LogonActivity/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/LogonActivity/AdvancedAudit/">Configure Advanced Audit Policies</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/LogonActivity/BasicAuditPolicies/">Configure Basic Domain Audit Policies</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/LogonActivity/FirewallRules/">Configure Windows Firewall Inbound Connection Rules</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/LogonActivity/SecurityLogSize/">Configure Security Event Log Size and Retention Settings</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Computer</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/Computer/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/Computer/ProtocolsAndPorts/">Protocols and Ports Required for Monitoring File Servers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/Computer/ObjectLevel/">Configure Object-Level Access Auditing</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/Computer/LocalPolicy/">Configure Local Audit Policies</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/Computer/AdvancedPolicy/">Configure Advanced Audit Policies</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/Computer/EventLog/">Configure Event Log Size and Retention Settings</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/Computer/RemoteRegistryService/">Enable Remote Registry Service</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/Computer/FirewallRules/">Configure Windows Firewall Inbound Connection Rules</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/Computer/FileServersandAntivirus/">File Servers and Antivirus</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >SQL Server</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/SQLServer/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/SQLServer/Ports/">SQL Server Ports</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/SQLServer/Permissions/">Permissions for SQL Server Auditing</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/SQLServer/ConfiguringTraceLogging/">Configure Trace Logging</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Configuration/ConfigureITInfrastructure/">Configure IT Infrastructure for Auditing and Monitoring</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Configuration/ExchangeOnlineNonOwner/">Settings for Non-Owner Mailbox Access Audit Using Application</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Configuration/NetworkTrafficCompression/">NetworkTrafficCompression.htm</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Install</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Install/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Install/InstallAgent/">Install Agent</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Admin</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../../">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >1Secure Dashboard</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Dashboard/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Dashboard/OrganizationStatistics/">Organization Statistics</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Dashboard/AlertsTimeline/">Alerts Timeline</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Organizations</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Organizations/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Sources and Connectors</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../Organizations/SourcesAndConnectors/">Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Organizations/SourcesAndConnectors/ActiveDirectory/">ActiveDirectory</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Organizations/SourcesAndConnectors/EntraID/">EntraID</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Organizations/SourcesAndConnectors/Computer/">Computer</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Organizations/SourcesAndConnectors/ExchangeOnline/">Exchanage Online</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Organizations/SourcesAndConnectors/SharePointOnline/">SharePoint Online</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Organizations/SourcesAndConnectors/SQLServer/">Add a Source and Connectors for SQL Server</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Organizations/AddOrganizations/">Add Organizations</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Organizations/ManageMyOrganization/">Manage My Organization</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Organizations/AddSites/">Add Sites to Organization</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Organizations/ViewTabsAndDashboard/">View Tabs of the Organization</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Organizations/BillableAccounts/">Billable Accounts</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Add Users</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../Organizations/AddingUsers/">Add Users</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../Organizations/RoleDefinitions/">Permissions by Role</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Organizations/OrganizationGroups/">Organization Groups</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Organizations/ManagingCredentials/">Manage Credentials</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Search and Reports</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Activity/">Activity Reports</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Compliance Reports</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#review-a-report">Review a Report</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#filter-descriptions">Filter Descriptions</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../StateInTime/">State In Time Risks Reports</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../System/">System Reports</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../CustomReports/">Custom Reports</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AuditLogs/">Audit Logs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ExportReport/">Export a Report or Investigation Results</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Subscriptions/">Subscriptions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ApplyFilters/">Apply Filters</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../FilterOperators/">Filter operators</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BillableUsers/">Billable Users</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data Collection</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../DataCollection/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../DataCollection/DataCollectingAccount/">Data Collecting Account</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../DataCollection/EntraID/">Microsoft Entra ID Auditing</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../DataCollection/SharePointOnline/">SharePoint Online Auditing</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../DataCollection/ExchangeOnline/">Exchange Online Auditing</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Active Directory</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../DataCollection/ActiveDirectory/ActiveDirectoryAuditing/">Active Directory</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DataCollection/ActiveDirectory/AuditLogsRole/">AuditLogsRole.htm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DataCollection/ActiveDirectory/PermissionsADContainer/">PermissionsADContainer.htm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DataCollection/ActiveDirectory/ManageAuditingSecurityLog/">ManageAuditingSecurityLog.htm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DataCollection/ActiveDirectory/PermissionsRegistryKeys/">PermissionsRegistryKeys.htm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DataCollection/ActiveDirectory/LogOnAsBatch/">Define Log On As a Batch Job Policy</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DataCollection/ActiveDirectory/AuditLogging/">AuditLogging.htm</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Computer</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../DataCollection/Computer/">Computer</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DataCollection/Computer/BackupFilesDirectories/">Configure the Back up Files and Directories Policy</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Logon Activity</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../DataCollection/LogonActivity/">Logon Activity</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DataCollection/LogonActivity/NonDomainAdmin/">Configure Non-Administrative Account to Collect Logon Activity</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../DataCollection/GMSA/GMSA/">GMSA</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Risk Profiles</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../RiskProfiles/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../RiskProfiles/ConfigureProfile/">Configure Risk Profile</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../RiskProfiles/RiskAssessmentDashboard/">Review Risks using Risks Assessment Dashboard</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../RiskProfiles/AddProfile/">Risk Profiles</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Alert Profiles</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Alerts/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Alerts/Alerts/">Alerts</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../LogIn/">Log in</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Statuses/">Statuses</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Notifications/">Notifications</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../UpdateNetwrixCloudAgent/">Update Netwrix Cloud Agent</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../HowItWorks/">How it works</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Integration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Integration/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Integration/ConnectWise/">ConnectWise</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Integration/ServiceNow/">ServiceNow</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Integration/SharePointOnline/">SharePoint Online</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Security</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Security/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Security/Compliance/">Compliance</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Security/CustomerDataPrivacy/">Customer Data Privacy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Security/AccessControl/">Access Control</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Security/DataSecurity/">Data Security</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Netwrix 1Secure</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div><div class="zDocsAnnouncementTopBanner"><div class="zDocsAnnouncement zDocsCallToAction"><p><span class="text-big">Share Insights and Connect with Peers in </span><a href="https://community.netwrix.com/"><span class="text-big"><strong>The Netwrix Community</strong></span></a></p></div><svg class="ico-close zDocsDismissButton" role="button" aria-label="Close announcement" tabindex="0"><use xlink:href="#ico-close"></use></svg></div></div><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Admin</li>
+          <li class="breadcrumb-item">Search and Reports</li>
+      <li class="breadcrumb-item active">Compliance Reports</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="compliance-reports">Compliance Reports</h1>
+<p>Compliance reports help clients and Managed Service Providers gather information about their {{ no such element: dict object['Azure_AD_app'] }}, Active Directory, and SharePoint Online configuration state at a specific point in time. This enables them to prove compliance with many regulations to auditors.  Compliance reports provide information on user attributes, expired or locked user accounts, group memberships, and so on. </p>
+<h2 id="review-a-report">Review a Report</h2>
+<p>Follow the steps to review a Compliance report. Click <strong>Reports</strong> in the top bar to navigate to the Reports page. By default, the page opens to the Activity tab with New Investigation selected in the left pane. 
+Select an organization from the drop-down menu at the top of the left pane to access its reports. An organization is selected by default, but you can choose a different one if needed.</p>
+<p>Click the <strong>Compliance</strong> tab to access the compliance reports. This opens the Compliance page with the Group Membership report selected by default in the left pane.<img alt="" src="../../../Resources/Images/1Secure/ReportsCompliance.png" title="Compliance Reports Page" /> In left pane, click a category to view its reports. Categories are:</p>
+<ul>
+<li>Active Directory</li>
+<li>Entra ID</li>
+<li>SharePoint Online Click a report to open it. Reports without a filter generate automatically when you open them. Click <strong>Search</strong> to generate reports with a predefined filter set.</li>
+</ul>
+<p>A list of the available Compliance reports is given below.</p>
+<p><strong>Active Directory</strong></p>
+<table>
+<thead>
+<tr>
+<th>Report Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Group Membership</td>
+<td>Lists the members of a group. For each member, it provides details, including the name, path, account type, membership type, domain, and admin group membership.</td>
+</tr>
+<tr>
+<td>Groups</td>
+<td>Lists all groups within Active Directory. For each group, it provides details, including the name, path, group scope, group type, and direct member count.</td>
+</tr>
+<tr>
+<td>Last Logon Time</td>
+<td>Lists user and computer accounts with the path, status (enabled, disabled), account type, and last login time for each.</td>
+</tr>
+<tr>
+<td>Organizational Units</td>
+<td>Lists the organizational units and their paths.</td>
+</tr>
+<tr>
+<td>User Accounts - Expired</td>
+<td>Lists expired user accounts, with the path, logon name, and expiration date for each account.</td>
+</tr>
+<tr>
+<td>User Accounts - Locked</td>
+<td>Lists locked user accounts, with the path, logon name, and lock date for each account.</td>
+</tr>
+<tr>
+<td>User Attributes</td>
+<td>Lists the user accounts with settings that violate company policies or applicable compliance standards.</td>
+</tr>
+<tr>
+<td>User Membership</td>
+<td>Lists the groups the user is a member of, with the permissions granted to the groups.</td>
+</tr>
+</tbody>
+</table>
+<p><madcap:variable name="MyVariables.Azure AD app" style="font-weight: bold;"></madcap:variable></p>
+<table>
+<thead>
+<tr>
+<th>Report Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Role Members</td>
+<td>Lists {{ no such element: dict object['Azure_AD_app'] }} accounts (members or guests) assigned to a given role in your organization. Use this report to identify unauthorized role assignments or changes.</td>
+</tr>
+<tr>
+<td>Roles</td>
+<td>Lists the {{ no such element: dict object['Azure_AD_app'] }} roles in your organization and the number of accounts (members or guests) assigned to each role.</td>
+</tr>
+<tr>
+<td>User Attributes</td>
+<td>Lists the user accounts with settings that violate company policies or applicable compliance standards.</td>
+</tr>
+</tbody>
+</table>
+<p>SharePoint Online</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Broken Permissions Inheritance</td>
+<td>Lists objects with permissions that differ from their parent, such as a folder with permissions different from its parent site.</td>
+</tr>
+<tr>
+<td>Direct Object Permissions</td>
+<td>Lists all identities (users or groups) that have assigned permissions to specific objects, such as documents, lists, or sites. Use this report to review which users or groups have access to data objects.</td>
+</tr>
+<tr>
+<td>Direct User Permissions</td>
+<td>Lists user accounts with direct permissions to specific objects. Use this report to see which users have permissions to what data.</td>
+</tr>
+<tr>
+<td>High Risk Permissions</td>
+<td>Lists the permissions and permission levels of high-risk trustees, such as Everyone, Authenticated Users, and Everyone except external users.</td>
+</tr>
+<tr>
+<td>Permissions Overview by Resource</td>
+<td>Provides a summary of assigned permissions in your organization, including the count of direct user permissions, stale permissions, broken permission inheritance, and high-risk permissions for each object. Click any permissions value to navigate to the specific permissions report for the selected resource. For example, clicking a High Risk Permissions value will take you to the High Risk Permissions report.</td>
+</tr>
+</tbody>
+</table>
+<p>Sort a Report Click a column header to sort data in a report by that column in ascending order. An arrow appears next to the column name to indicate the sort order. Click the column header again to sort the data in descending order. 
+Filter a Report
+You can filter the data displayed in a report. Select a filter, operator, and value from  the Filter, Operator, and Value drop-down menus, then click <strong>Search</strong>. 
+You can select more than one filter. 
+For options displayed in the Operator drop-down menu, see the <a href="../FilterOperators/">Filter Operators</a>) topic.</p>
+<h2 id="filter-descriptions">Filter Descriptions</h2>
+<p>This table provides a list of filters and descriptions.</p>
+<table>
+<thead>
+<tr>
+<th>Filter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Group Type</td>
+<td>Filters the report based on any of the following group types:<br><ul></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>Security</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>Distribution</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                        </ul></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                        <br>To apply this filter, select <strong>Group Type</strong> from the <strong>Filter</strong> drop-down menu and choose an option from the <strong>Value</strong> drop-down menu.</td>
+<td></td>
+</tr>
+<tr>
+<td>Group Name</td>
+<td>Filters the report based on the name of a  group.<br></td>
+</tr>
+<tr>
+<td><br>                        <br>To apply this filter, select <strong>Group Name</strong> from the <strong>Filter</strong> drop-down menu and specify a group name in the <strong>Value</strong> field.</td>
+<td></td>
+</tr>
+<tr>
+<td>Member Type</td>
+<td>Filters the report based on any of the following member types:<br><ul></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>User</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>Computer</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>Group</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                        </ul></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                        <br>To apply this filter, select <strong>Member Type</strong> from the <strong>Filter</strong> drop-down menu and choose an option from the <strong>Value</strong> drop-down menu.</td>
+<td></td>
+</tr>
+<tr>
+<td>Membership <br></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                        <br>Type</td>
+<td>Filters the report based on any of the following membership types:<br><ul></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>Direct</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>Nested</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                        </ul></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                        <br>To apply this filter, select <strong>Membership Type</strong> from the <strong>Filter</strong> drop-down menu and choose an option from the <strong>Value</strong> drop-down menu.</td>
+<td></td>
+</tr>
+<tr>
+<td>Name</td>
+<td>Filters the report based on the name of a user or computer account.<br></td>
+</tr>
+<tr>
+<td><br>                        <br>To apply this filter, select <strong>Name</strong> from the <strong>Filter</strong> drop-down menu and specify a user or computer name in the <strong>Value</strong> field.</td>
+<td></td>
+</tr>
+<tr>
+<td>Path</td>
+<td>This is a filter in the report, Groups.<br></td>
+</tr>
+<tr>
+<td><br>                        <br>It filters the report based on the path of an object, which is a member of the group. The object can be a computer, user, or group. For example, "Account operator" is a group and its path is "BUILTIN/Account Operators", which is how you can find it in Active Directory Users and Computers (ADUC).<br></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                        <br>To apply this filter, select <strong>Path</strong> from the <strong>Filter</strong> drop-down menu and specify a path in the <strong>Value</strong> field.</td>
+<td></td>
+</tr>
+<tr>
+<td>Security Identifier (SID)</td>
+<td>Filters the report based on a Security Identifier (SID). The Security Identifier is a unique ID number that a computer or domain controller uses to identify you.<br></td>
+</tr>
+<tr>
+<td><br>                        <br>To apply this filter, select <strong>Security Identifier (SID)</strong> from the <strong>Filter</strong> drop-down menu and specify a SID in the <strong>Value</strong> field.<br></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                        <br>This filter is shown by default in the Group Membership report.</td>
+<td></td>
+</tr>
+<tr>
+<td>Status</td>
+<td>Filters the report based on any of the following user account statuses:<br><ul></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>Enabled</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>Disabled</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                        </ul></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                        <br>To apply this filter, select <strong>Status</strong> from the <strong>Filter</strong> drop-down menu and choose a status from the <strong>Value</strong> drop-down menu.</td>
+<td></td>
+</tr>
+<tr>
+<td>Inactive days</td>
+<td>Filters the report based on an account's inactive days.<br></td>
+</tr>
+<tr>
+<td><br>                        <br>To apply this filter, select <strong>Inactive Days</strong> from the <strong>Filter</strong> drop-down menu and specify the number of inactive days in the <strong>Value</strong> field.</td>
+<td></td>
+</tr>
+<tr>
+<td>AD and {{ no such element: dict object['Azure_AD_app'] }} User Attributes filters</td>
+<td>Depending on the following filters, review the specific information on the user accounts that violate company policies or applicable compliance standards:<br><ul></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>Account Cannot be Delegated </p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>Cannot Change Password</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>Change Password on next sign in</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>City</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>Country</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>Creation Date</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>Department</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>Description </p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>Email Address</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>Expiration Date</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>First Name</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>Is Locked</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>Job Title</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>Last Login</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>Last Modified</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>Last Name</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>Password Expiry</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>Password Last Changed</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>Path</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>Post Code</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>Primary Contact Number</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>SAM Account Name</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>State or Province</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>Status</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>Street Address</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>UPN (User Principal Name)</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                        </ul></td>
+<td></td>
+</tr>
+<tr>
+<td>Domain</td>
+<td>Filters the report based on the  domain.<br></td>
+</tr>
+<tr>
+<td><br>                        <br>To apply this filter, select <strong>Domain</strong> from the <strong>Filter</strong> drop-down menu and specify the name of a <madcap:annotation madcap:createdate="2024-10-03T13:55:51.9909860+05:00" madcap:creator="AyeshaAzeem" madcap:initials="AY" madcap:comment="What should be the format for providing the domain name?" madcap:editor="AyeshaAzeem" madcap:editdate="2024-10-03T13:56:10.8572348+05:00">domain </madcap:annotation>in the <strong>Value</strong> field.</td>
+<td></td>
+</tr>
+<tr>
+<td>Group Scope</td>
+<td>Filters the report based on any of the following group scopes:<br><ul></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>Universal</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>Global</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>Domain Local</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                        </ul></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                        <br>To apply this filter, select <strong>Group Scope</strong> from the <strong>Filter</strong> drop-down menu and choose an option from the <strong>Value</strong> drop-down menu.</td>
+<td></td>
+</tr>
+<tr>
+<td>Group Location</td>
+<td>Filters the report based on the specific location of a group in the directory.<br></td>
+</tr>
+<tr>
+<td><br>                        <br>To apply this filter, select <strong>Group Location</strong> from the <strong>Filter</strong> drop-down menu and specify a <madcap:annotation madcap:createdate="2024-10-03T14:00:40.2403933+05:00" madcap:creator="AyeshaAzeem" madcap:initials="AY" madcap:comment="What should be the format for specying a location?\r\n\r\nWill this filter limit the report to all groups at the provided location?" madcap:editor="AyeshaAzeem" madcap:editdate="2024-10-11T15:37:30.9837761+05:00">location </madcap:annotation>in the <strong>Value</strong> field.</td>
+<td></td>
+</tr>
+<tr>
+<td>Group Type</td>
+<td>Filters the report based on any of the following group types:<br><ul></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p class="table-text">Security</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>Distribution</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                        </ul></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                        <br>To apply this filter, select <strong>Group Type</strong> from the <strong>Filter</strong> drop-down menu and choose an option from the <strong>Value</strong> drop-down menu.</td>
+<td></td>
+</tr>
+<tr>
+<td>Department</td>
+<td>Filters the report based on a department in your organization.<br></td>
+</tr>
+<tr>
+<td><br>                        <br>To apply this filter, select <strong>Department</strong> from the <strong>Filter</strong> drop-down menu and specify the name of a department in the <strong>Value</strong> field.</td>
+<td></td>
+</tr>
+<tr>
+<td>Job Role</td>
+<td>Filters the report based on a job role in your organization.<br></td>
+</tr>
+<tr>
+<td><br>                        <br>To apply this filter, select <strong>Job Role</strong> from the <strong>Filter</strong> drop-down menu and specify a role in the <strong>Value</strong> field.</td>
+<td></td>
+</tr>
+<tr>
+<td>User Origin</td>
+<td>Filters the report based on any of the following platforms where the user was initially created:<br><ul></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>Hybrid AD</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>{{ no such element: dict object['Azure_AD_app'] }}</td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                </p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                        </ul></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                        <br>To apply this filter, select <strong>User Origin</strong> from the <strong>Filter</strong> drop-down menu and choose a value from the <strong>Value</strong> drop-down menu.</td>
+<td></td>
+</tr>
+<tr>
+<td>User Type</td>
+<td>Filters the report based on any of the following user types in Microsoft 365:<br><ul></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>Member</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>Guest</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                        </ul></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                        <br>To apply this filter, select <strong>User Type</strong> from the <strong>Filter</strong> drop-down menu and choose a value from the <strong>Value</strong> drop-down menu.</td>
+<td></td>
+</tr>
+<tr>
+<td>Member Count</td>
+<td>This filter appears in the Roles report and it filters the roles based on how many users are in it. You have to provide a number as a filter criterion  and the report will display the roles  that have the specified number of users.<br></td>
+</tr>
+<tr>
+<td><br>                        <br>To apply this filter, select <strong>Member Count</strong> from the <strong>Filter</strong> drop-down menu and specify a number in the <strong>Value</strong> field.</td>
+<td></td>
+</tr>
+<tr>
+<td>Role</td>
+<td>This filter appears in the Roles report and it filters the list of roles in the report according to a name. For example. adding the filter "Role Contains 'Administrator'" will return a list of roles like Global Administrator, Exchange Administrator, etc. It will not return roles  that do not contain the word.<br></td>
+</tr>
+<tr>
+<td><br>                        <br>To apply this filter, select <strong>Role</strong> from the <strong>Filter</strong> drop-down menu and specify the full or partial name of a role in the <strong>Value</strong> field.</td>
+<td></td>
+</tr>
+<tr>
+<td>Enabled</td>
+<td>Filters the report based on any of the following account statuses: <br><ul></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>Enabled</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            <li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                                <p>Disabled</p></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                            </li></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                        </ul></td>
+<td></td>
+</tr>
+<tr>
+<td><br>                        <br>To apply this filter, select <strong>Enabled</strong> from the <strong>Filter</strong> drop-down menu and choose an option from the <strong>Value</strong> drop-down menu.</td>
+<td></td>
+</tr>
+<tr>
+<td>Is Built-In</td>
+<td>Filters the report based on predefined roles in your organization.<br></td>
+</tr>
+<tr>
+<td><br>                        <br>To apply this filter, select <strong>Is Built-In</strong> from the <strong>Filter</strong> drop-down menu and choose either <strong>Yes</strong> or <strong>No</strong> from the <strong>Value</strong> drop-down menu.</td>
+<td></td>
+</tr>
+<tr>
+<td>Is Privileged</td>
+<td>Filters the report based on privileged roles in your organization.<br></td>
+</tr>
+<tr>
+<td><br>                        <br>To apply this filter, select <strong>Is Privileged</strong> from the <strong>Filter</strong> drop-down menu and choose either <strong>Yes</strong> or <strong>No</strong> from the <strong>Value</strong> drop-down menu.</td>
+<td></td>
+</tr>
+<tr>
+<td>Resource Name</td>
+<td>Filters the report based on the name of an  object, such as <em>Document</em>.<br></td>
+</tr>
+<tr>
+<td><br>                        <br>To apply this filter, select <strong>Resource Name</strong> from the <strong>Filter</strong> drop-down menu and specify an object name in the <strong>Value</strong> field.</td>
+<td></td>
+</tr>
+<tr>
+<td>Object URL</td>
+<td>Filters the report based on the URL of an object. For example, <em>SharePointHomeOrgLinks</em> is an object and its URL is <em>https://lbkt.sharepoint.com/Lists/SharePointHomeOrgLinks</em><br></td>
+</tr>
+<tr>
+<td><br>                        <br>To apply this filter, select <strong>Object URL</strong> from the <strong>Filter</strong> drop-down menu and specify an Object URL in the <strong>Value</strong> field.</td>
+<td></td>
+</tr>
+<tr>
+<td>Object Type</td>
+<td>Filters the report based on an object type. For example, <em>Documents</em> is an object and its type is <em>SharePoint Online Document Library</em>.<br></td>
+</tr>
+<tr>
+<td><br>                        <br>To apply this filter, select <strong>Object Type</strong> from the <strong>Filter</strong> drop-down menu and choose an option from the <strong>Value</strong> drop-down menu.</td>
+<td></td>
+</tr>
+<tr>
+<td>Accounts</td>
+<td>Filters the report based on an account (user or group) with permissions to data objects, such as <em>Site Collection Administrators</em>.<br></td>
+</tr>
+<tr>
+<td><br>                        <br>To apply this filter, select <strong>Account</strong> from the <strong>Filter</strong> drop-down menu and specify an account name in the <strong>Value</strong> field.</td>
+<td></td>
+</tr>
+<tr>
+<td>Account Type</td>
+<td>Filters the report based on an account type, such as <em>SharePoint Online Group</em>. The report will display accounts belonging to the specified type with permissions to data objects.<br></td>
+</tr>
+<tr>
+<td><br>                        <br>To apply this filter, select <strong>Account Type</strong> from the <strong>Filter</strong> drop-down menu and choose an option from the <strong>Value</strong> drop-down menu.</td>
+<td></td>
+</tr>
+<tr>
+<td>Permissions</td>
+<td>Filters the report based on the permission assigned to an account, such as Add Items, Edit Items, Delete Items, etc.<br></td>
+</tr>
+<tr>
+<td><br>                        <br>To apply this filter, select <strong>Permissions</strong> from the <strong>Filter</strong> drop-down menu and choose an option from the <strong>Value</strong> drop-down menu.</td>
+<td></td>
+</tr>
+<tr>
+<td>Last Logon</td>
+<td>Filters the report based on an account's last logon date and time.<br></td>
+</tr>
+<tr>
+<td><br>                        <br>To apply this filter, select <strong>Last Logon</strong> from the <strong>Filter</strong> drop-down menu and choose a date and time from the <strong>Value</strong> drop-down menu.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Activity/" class="btn btn-neutral float-left" title="Activity Reports"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../StateInTime/" class="btn btn-neutral float-right" title="State In Time Risks Reports">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+  <ul>
+    <li>© 2008 - 2025 Netwrix Corporation. All Rights Reserved</li>
+    <li class="zDocsFooterLinksList"><a class="css-ettsdk" href="https://www.netwrix.com/privacy.html" target="_blank">Privacy Policy</a></li>
+  </ul>
+
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Activity/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../StateInTime/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

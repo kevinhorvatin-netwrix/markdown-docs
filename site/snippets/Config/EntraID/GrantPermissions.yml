@@ -1,0 +1,8 @@
+AddPermission: |-
+  @@@NEEDSCONVERSION@@@
+
+APIPermissions: |-
+  @@@NEEDSCONVERSION@@@
+
+GrantAdminConsent: |-
+  @@@NEEDSCONVERSION@@@

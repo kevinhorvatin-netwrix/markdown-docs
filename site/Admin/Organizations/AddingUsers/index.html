@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Add Users - Netwrix 1Secure</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../css/netwrix.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Add Users";
+        var mkdocs_page_input_path = "Admin/Organizations/AddingUsers.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Netwrix 1Secure
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Netwrix 1Secure Documentation</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../..">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Whatsnew/">What's New</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Requirements</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Requirements/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Requirements/PrerequisitesForDataSources/">Prerequisites for Data Sources</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Requirements/CloudAgentRequirements/">Netwrix Cloud Agent Requirements</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Configuration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Configuration/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Active Directory</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/AD/ADManual/">Active Directory</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/AD/AdvancedPolicy/">Configure Advanced Audit Policies</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/AD/Auto/">Active Directory automatic configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/AD/CfgManual/">Active Directory manual configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/AD/DomainAuditPolicies/">Configure Basic Domain Audit Policies</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/AD/ADManual/">Active Directory</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/AD/ObjectLevel/">Configure Object-Level Auditing</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/AD/SecondaryLogonService/">Enable Secondary Logon Service</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/AD/GroupPolicyManagementConsole/">Group Policy Management Console</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/AD/ProtocolsAndPorts/">Protocols and Ports Required for Monitoring Active Directory, Exchange, and Group Policy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/AD/ADSI/">Install ADSI Edit</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Microsoft 365</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/EntraID/RegisterConfig/">Registration and Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/EntraID/Permissions/">Microsoft 365 Permissions</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Logon Activity</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/LogonActivity/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/LogonActivity/AdvancedAudit/">Configure Advanced Audit Policies</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/LogonActivity/BasicAuditPolicies/">Configure Basic Domain Audit Policies</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/LogonActivity/FirewallRules/">Configure Windows Firewall Inbound Connection Rules</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/LogonActivity/SecurityLogSize/">Configure Security Event Log Size and Retention Settings</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Computer</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/Computer/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/Computer/ProtocolsAndPorts/">Protocols and Ports Required for Monitoring File Servers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/Computer/ObjectLevel/">Configure Object-Level Access Auditing</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/Computer/LocalPolicy/">Configure Local Audit Policies</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/Computer/AdvancedPolicy/">Configure Advanced Audit Policies</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/Computer/EventLog/">Configure Event Log Size and Retention Settings</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/Computer/RemoteRegistryService/">Enable Remote Registry Service</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/Computer/FirewallRules/">Configure Windows Firewall Inbound Connection Rules</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/Computer/FileServersandAntivirus/">File Servers and Antivirus</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >SQL Server</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/SQLServer/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/SQLServer/Ports/">SQL Server Ports</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/SQLServer/Permissions/">Permissions for SQL Server Auditing</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Configuration/SQLServer/ConfiguringTraceLogging/">Configure Trace Logging</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Configuration/ConfigureITInfrastructure/">Configure IT Infrastructure for Auditing and Monitoring</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Configuration/ExchangeOnlineNonOwner/">Settings for Non-Owner Mailbox Access Audit Using Application</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Configuration/NetworkTrafficCompression/">NetworkTrafficCompression.htm</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Install</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Install/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Install/InstallAgent/">Install Agent</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Admin</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../../">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >1Secure Dashboard</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Dashboard/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Dashboard/OrganizationStatistics/">Organization Statistics</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Dashboard/AlertsTimeline/">Alerts Timeline</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Organizations</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Sources and Connectors</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../SourcesAndConnectors/">Overview</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../SourcesAndConnectors/ActiveDirectory/">ActiveDirectory</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../SourcesAndConnectors/EntraID/">EntraID</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../SourcesAndConnectors/Computer/">Computer</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../SourcesAndConnectors/ExchangeOnline/">Exchanage Online</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../SourcesAndConnectors/SharePointOnline/">SharePoint Online</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../SourcesAndConnectors/SQLServer/">Add a Source and Connectors for SQL Server</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AddOrganizations/">Add Organizations</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ManageMyOrganization/">Manage My Organization</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../AddSites/">Add Sites to Organization</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ViewTabsAndDashboard/">View Tabs of the Organization</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BillableAccounts/">Billable Accounts</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" >Add Users</a>
+    <ul class="current">
+                <li class="toctree-l3 current"><a class="reference internal current" href="#">Add Users</a>
+    <ul class="current">
+    <li class="toctree-l4"><a class="reference internal" href="#add-users-to-managing-organization">Add Users to Managing Organization</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#access-rights-for-roles">Access Rights for Roles</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#add-the-business-viewer-role">Add the Business Viewer Role</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#add-the-co-managing-administrator-role">Add the Co-Managing Administrator Role</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#delete-a-managed-organization-user">Delete a Managed Organization User</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../RoleDefinitions/">Permissions by Role</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../OrganizationGroups/">Organization Groups</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ManagingCredentials/">Manage Credentials</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Search and Reports</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../SearchAndReports/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../SearchAndReports/Activity/">Activity Reports</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../SearchAndReports/Compliance/">Compliance Reports</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../SearchAndReports/StateInTime/">State In Time Risks Reports</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../SearchAndReports/System/">System Reports</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../SearchAndReports/CustomReports/">Custom Reports</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../SearchAndReports/AuditLogs/">Audit Logs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../SearchAndReports/ExportReport/">Export a Report or Investigation Results</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../SearchAndReports/Subscriptions/">Subscriptions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../SearchAndReports/ApplyFilters/">Apply Filters</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../SearchAndReports/FilterOperators/">Filter operators</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../SearchAndReports/BillableUsers/">Billable Users</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Data Collection</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../DataCollection/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../DataCollection/DataCollectingAccount/">Data Collecting Account</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../DataCollection/EntraID/">Microsoft Entra ID Auditing</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../DataCollection/SharePointOnline/">SharePoint Online Auditing</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../DataCollection/ExchangeOnline/">Exchange Online Auditing</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Active Directory</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../DataCollection/ActiveDirectory/ActiveDirectoryAuditing/">Active Directory</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DataCollection/ActiveDirectory/AuditLogsRole/">AuditLogsRole.htm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DataCollection/ActiveDirectory/PermissionsADContainer/">PermissionsADContainer.htm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DataCollection/ActiveDirectory/ManageAuditingSecurityLog/">ManageAuditingSecurityLog.htm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DataCollection/ActiveDirectory/PermissionsRegistryKeys/">PermissionsRegistryKeys.htm</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DataCollection/ActiveDirectory/LogOnAsBatch/">Define Log On As a Batch Job Policy</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DataCollection/ActiveDirectory/AuditLogging/">AuditLogging.htm</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Computer</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../DataCollection/Computer/">Computer</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DataCollection/Computer/BackupFilesDirectories/">Configure the Back up Files and Directories Policy</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Logon Activity</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../DataCollection/LogonActivity/">Logon Activity</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../DataCollection/LogonActivity/NonDomainAdmin/">Configure Non-Administrative Account to Collect Logon Activity</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../DataCollection/GMSA/GMSA/">GMSA</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Risk Profiles</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../RiskProfiles/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../RiskProfiles/ConfigureProfile/">Configure Risk Profile</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../RiskProfiles/RiskAssessmentDashboard/">Review Risks using Risks Assessment Dashboard</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../RiskProfiles/AddProfile/">Risk Profiles</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Alert Profiles</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Alerts/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Alerts/Alerts/">Alerts</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../LogIn/">Log in</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Statuses/">Statuses</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Notifications/">Notifications</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../UpdateNetwrixCloudAgent/">Update Netwrix Cloud Agent</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../HowItWorks/">How it works</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Integration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Integration/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Integration/ConnectWise/">ConnectWise</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Integration/ServiceNow/">ServiceNow</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Integration/SharePointOnline/">SharePoint Online</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Security</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Security/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Security/Compliance/">Compliance</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Security/CustomerDataPrivacy/">Customer Data Privacy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Security/AccessControl/">Access Control</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Security/DataSecurity/">Data Security</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Netwrix 1Secure</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div><div class="zDocsAnnouncementTopBanner"><div class="zDocsAnnouncement zDocsCallToAction"><p><span class="text-big">Share Insights and Connect with Peers in </span><a href="https://community.netwrix.com/"><span class="text-big"><strong>The Netwrix Community</strong></span></a></p></div><svg class="ico-close zDocsDismissButton" role="button" aria-label="Close announcement" tabindex="0"><use xlink:href="#ico-close"></use></svg></div></div><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Admin</li>
+          <li class="breadcrumb-item">Organizations</li>
+          <li class="breadcrumb-item">Add Users</li>
+      <li class="breadcrumb-item active">Add Users</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="add-users">Add Users</h1>
+<p>After you added the organization to your system, you may want to add users as part of your organization, depending on the role you would like to provide them. The users in Netwrix 1Secure include:</p>
+<ul>
+<li>Administrator</li>
+<li>Editor</li>
+<li>Viewer</li>
+</ul>
+<p>You can add users both in Managing Organization and in Managed Organization. See the <a href="../">Manage Organizations</a>  topic for additional information. </p>
+<p>Image keys:</p>
+<table>
+<thead>
+<tr>
+<th>Icon</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><br><img alt="" src="../../../Resources/Images/1Secure/Deletebutton.png" /><br></td>
+<td>Bin Icon. Click the Bin  Icon to delete the user.</td>
+</tr>
+<tr>
+<td><br><img alt="" src="../../../Resources/Images/1Secure/Editbutton.png" /><br></td>
+<td>Edit icon. Click the Edit Icon to edit the user data.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="add-users-to-managing-organization">Add Users to Managing Organization</h2>
+<p>The Users page allows a Managed Service Provider  to provide the client's manager with  access to review reports or other activities. In this case, the MSP shall assign the Viewer rights to the manager. </p>
+<p>Follow the instructions to add a user.</p>
+<p>In the Netwrix 1Secure Website, go to <strong>Configuration</strong> &gt; <strong>Users</strong> page, click <strong>Add Users</strong>. </p>
+<p>Specify email addresses of the user and roles:</p>
+<ul>
+<li>Administrator – full access rights within the tenant</li>
+<li>Editor –  modification access rights within the tenant</li>
+<li>Viewer – read-only access rights within the tenant</li>
+</ul>
+<h2 id="access-rights-for-roles">Access Rights for Roles</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Admin</th>
+<th style="text-align: center;">Editor</th>
+<th>Viewer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>My organizations - Home</td>
+<td>+</td>
+<td style="text-align: center;">+</td>
+<td>+</td>
+</tr>
+<tr>
+<td>Child tenant dashboard</td>
+<td>+</td>
+<td style="text-align: center;">+</td>
+<td>+</td>
+</tr>
+<tr>
+<td>Configuration page</td>
+<td>+</td>
+<td style="text-align: center;">+</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Child tenant alerts overview drill-down</td>
+<td>+</td>
+<td style="text-align: center;">+</td>
+<td>+</td>
+</tr>
+<tr>
+<td>Child tenant investigation pane</td>
+<td>+</td>
+<td style="text-align: center;">+</td>
+<td>+</td>
+</tr>
+<tr>
+<td>С- Users</td>
+<td>+</td>
+<td style="text-align: center;">+</td>
+<td>-</td>
+</tr>
+<tr>
+<td>C - My Organization</td>
+<td>+</td>
+<td style="text-align: center;">-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Add organization</td>
+<td>+</td>
+<td style="text-align: center;">+</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Add/Edit Tags</td>
+<td>+</td>
+<td style="text-align: center;">+</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Request deletion for a child tenant</td>
+<td>+</td>
+<td style="text-align: center;">+</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Check/Manage child organization settings</td>
+<td>+</td>
+<td style="text-align: center;">+</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Add/Manage child-level users</td>
+<td>+</td>
+<td style="text-align: center;">+</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Add/Manage MSP-level users</td>
+<td>+</td>
+<td style="text-align: center;">-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Resend Invite for already added users</td>
+<td>+</td>
+<td style="text-align: center;">+</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Customize existing Alerts</td>
+<td>+</td>
+<td style="text-align: center;">+</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Edit Alerts delivery settings</td>
+<td>+</td>
+<td style="text-align: center;">-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Activate/Deactivate alerts</td>
+<td>+</td>
+<td style="text-align: center;">+</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Managing and assigning alert profiles for child tenants</td>
+<td>+</td>
+<td style="text-align: center;">+</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Managing integrations</td>
+<td>+</td>
+<td style="text-align: center;">-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Requesting deletion for MSP-level tenants</td>
+<td>+</td>
+<td style="text-align: center;">-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Performing Search</td>
+<td>+</td>
+<td style="text-align: center;">+</td>
+<td>+</td>
+</tr>
+<tr>
+<td>Saving/Deleting a custom report/folder</td>
+<td>+</td>
+<td style="text-align: center;">+</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Exporting report data</td>
+<td>+</td>
+<td style="text-align: center;">+</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Managing/Configuring agent Self-update</td>
+<td>+</td>
+<td style="text-align: center;">-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Segregating access to child tenants for MSP users</td>
+<td>+</td>
+<td style="text-align: center;">-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p>Select the Grant user temporary access check box if you need to allow access to specific user for certain period. </p>
+<p>For example, if you are a tenant administrator and you allowed a access to a member of your team who should edit 100 accounts before 08.03.2023, this member can manage these activities up to a certain period and the administrator does not need to suspend the rights manually.<img alt="" src="../../../Resources/Images/1Secure/AddUsers.png" title="Add Users pane" /></p>
+<p>Select one or more organization groups from the <strong>Select organization group(s) for the user</strong> drop-down menu. To specify multiple groups, select them one by one from the drop-down menu.</p>
+<p>The user can only view and/or manage the organizations assigned to the group(s) you select here. Administrators have access to all tenancies regardless of the organization group(s).</p>
+<p>Click Add.</p>
+<p>Follow the steps to review main options and statuses. </p>
+<p>To delete the user, select the <strong>Bin icon</strong>  for that user. </p>
+<p>To edit the user data, select the <strong>Edit icon</strong> for that user. </p>
+<p>In case the user received an invitation from your tenant and registered within a system, its status shall be Verified. </p>
+<p>If the user has not registered within a system, the status will be Pending Verification. The administrator may select Resend Invite to re-notify this user.<img alt="" src="../../../Resources/Images/1Secure/Users_Status.png" title="Users List" /></p>
+<p>When logging in, the users see the Home screen, on which they can do the following actions:</p>
+<ul>
+<li>Add organization here by selecting <strong>Add Organization</strong></li>
+<li>Find the organization by populating the  <strong>Filtering the keyword</strong> field</li>
+<li>Select the required filters from the <strong>Alert</strong>, <strong>Health Status</strong>, <strong>Tag</strong>, <strong>Time Filter</strong> drop-down lists. These filters will apply to available organizations.</li>
+</ul>
+<h2 id="add-the-business-viewer-role">Add the Business Viewer Role</h2>
+<p>This option is not available for End Customer Organizations. </p>
+<p>Add a Business Viewer role using the Managed Organizations page. The Business viewer is the organization user, which can be added by the System Administrator  to access the reports and other data of the organization. </p>
+<p>The Business viewer role:</p>
+<ul>
+<li>Can access organization dashboards and alerts</li>
+<li>Can run investigations</li>
+<li>Can view predefined reports</li>
+<li>
+<p>Can view the following custom reports:</p>
+<ul>
+<li>ag-test1</li>
+</ul>
+</li>
+</ul>
+<p>Business viewer cannot add reports on their own. When creating the report, tick the option <strong>Share with business users</strong>. This way, all the business users can view the shared reports. See the <a href="../../SearchAndReports/CustomReports/">Custom Reports</a>  topic for additional information. </p>
+<p>As you add the business viewer, the created reports shall be automatically displayed.<img alt="" src="../../../Resources/Images/1Secure/BusinessUsers.png" title="Add Users pane" /></p>
+<p>Follow the steps to add the Business Viewer role.</p>
+<p>On the Managed Organizations page, select your organization and select to the <strong>Users</strong> tile. </p>
+<p>Click <strong>Add User</strong>.</p>
+<p>Verify that the <strong>Business Viewer</strong> radio button is selected. This is the default option.</p>
+<p>Specify email addresses you want to add for the role.</p>
+<p>Click <strong>Send Invite</strong>. </p>
+<p>The Business viewer role  provides access to the Home screen, which displays the logged in organization.<img alt="" src="../../../Resources/Images/1Secure/HomeScreen_2.png" title="Home page" /></p>
+<p>When logging in, if the Business Viewer account is registered with multiple organizations, select the one you wish to access.</p>
+<h2 id="add-the-co-managing-administrator-role">Add the Co-Managing Administrator Role</h2>
+<p>Add a Co-Managing Administrator role using the Managed Organizations page. The Co-Managing Administrator extends the permissions available with the Business Viewer role, which can be added by the System Administrator  to access the reports and other data of the organization. </p>
+<p>The Co-Managing Administrator role:</p>
+<ul>
+<li>Can configure sources and connectors</li>
+<li>Can add business viewers</li>
+<li>Can run investigations</li>
+<li>Can view predefined reports</li>
+<li>Can view custom reports</li>
+</ul>
+<p>The Co-Managing Administrator role cannot add reports on their own. When creating the report, select the option <strong>Share with business users</strong>. This way, all the business users can view the shared reports. See the <a href="../../SearchAndReports/CustomReports/">Custom Reports</a>  topic for additional information.<img alt="" src="../../../Resources/Images/1Secure/ComanagingAdministrator.png" title="Add Users pane" /></p>
+<p>Follow the steps to add the Co-managing Administrator role.</p>
+<p>On the Manage Organizations page, select your organization and click the <strong>Users</strong> tile. </p>
+<p>Click <strong>Add User</strong>.</p>
+<p>Specify email addresses you want to add for the role.</p>
+<p>Select the <strong>Co-managing Administrator</strong> radio button.</p>
+<p>Click <strong>Send Invite</strong>. </p>
+<p>The Co-managing Administrator role  provides access to the Home screen, which displays the logged in organization.</p>
+<h2 id="delete-a-managed-organization-user">Delete a Managed Organization User</h2>
+<p>Follow the steps to delete a user from a managed organization.</p>
+<p>User(s) can only be deleted from a managed organization by tenant administrators or co-managing administrators. Click <strong>Configuration</strong> in the top bar. The Managed organizations page is displayed, that lists the managed organizations defined in {{ ProductName_Overlord }}. 
+Click the name of an organization from the list. The properties page for the organization is displayed.</p>
+<p>Click the <strong>Users</strong> tab. The users for the organization are listed here.</p>
+<p>Click the <strong>Delete</strong> icon for a user to delete it.</p>
+<p>A dialog box is displayed, prompting you to confirm the deletion of the user.</p>
+<p>Click <strong>Yes</strong>.</p>
+<p>The user is deleted.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../BillableAccounts/" class="btn btn-neutral float-left" title="Billable Accounts"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../RoleDefinitions/" class="btn btn-neutral float-right" title="Permissions by Role">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+  <ul>
+    <li>© 2008 - 2025 Netwrix Corporation. All Rights Reserved</li>
+    <li class="zDocsFooterLinksList"><a class="css-ettsdk" href="https://www.netwrix.com/privacy.html" target="_blank">Privacy Policy</a></li>
+  </ul>
+
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../BillableAccounts/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../RoleDefinitions/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
