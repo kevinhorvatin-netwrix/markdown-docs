@@ -4,4 +4,4 @@
 
 See the following topic for additional information:
 
-- [Install agent](InstallAgent.md)) 
+- [Install agent](InstallAgent.md) 

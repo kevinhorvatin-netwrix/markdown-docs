@@ -5,6 +5,6 @@ You can configure your IT infrastructure for monitoring Logon Activity in one of
 
 - When creating an organization — select the **Adjust audit settings automatically** option. For existing organization, you can modify data collection settings for Logon Activity data source.
 - To configure your domain manually for monitoring Logon Activity, perform the following procedures:
-    - [Configure Advanced Audit Policies](BasicAuditPolicies.md)) 
-    - [Configure Security Event Log Size and Retention Settings](SecurityLogSize.md)) 
-    - [Configure Windows Firewall Inbound Connection Rules](FirewallRules.md)) 
+    - [Configure Advanced Audit Policies](BasicAuditPolicies.md) 
+    - [Configure Security Event Log Size and Retention Settings](SecurityLogSize.md) 
+    - [Configure Windows Firewall Inbound Connection Rules](FirewallRules.md) 

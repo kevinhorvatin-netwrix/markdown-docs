@@ -77,7 +77,7 @@ On this page, you can review statuses for your subscriptions in the Last run res
 
  Click the Edit icon for a subscription to modify it. The Subscription to &lt;*name of the report*&gt; pane is displayed.
 
-Modify the required information. For details, refer to Steps 6 through 12 in the [Add a Subscription](#Add))  topic.
+Modify the required information. For details, refer to Steps 6 through 12 in the [Add a Subscription](#Add)  topic.
 
 Click **Save**.
 

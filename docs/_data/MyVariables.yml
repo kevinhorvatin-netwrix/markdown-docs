@@ -1,1 +1,93 @@
-ProductName_Overlord: Netwrix 1Secure
+CompanyName: |-
+  Netwrix Corp.
+
+ProductName: |-
+  Netwrix Auditor
+
+TargetSystem: |-
+  Netwrix Risk Insights
+
+Version: |-
+  10.5
+
+GuideName: |-
+  
+
+Year: |-
+  2022
+
+Feature_name: |-
+  
+
+AIO_version: |-
+  4.5
+
+NAC: |-
+  Netwrix Auditor Server
+
+AuditIntel console: |-
+  Netwrix Auditor client
+
+Audit Archive: |-
+  AuditArchive
+
+Long-Term Archive: |-
+  Long-Term Archive
+
+Audit Database: |-
+  Audit Database
+
+MO: |-
+  monitoring plan
+
+HealthDashboard: |-
+  Health Status
+
+Add-On: |-
+  DDC Provider
+
+DDC: |-
+  Data Discovery and Classification
+
+CClassfier web console: |-
+  DDC Collector console
+
+Database: |-
+  DDC Collector database
+
+Concept Classifier: |-
+  Netwrix Auditor Data Discovery and Classification
+
+Concept Classifier shortname: |-
+  DDC Collector
+
+UBA: |-
+  Netwrix Behavior Anomaly Insight
+
+UBA Configurator: |-
+  Netwrix Behavior Anomaly Insight Configuration
+
+ALE Version: |-
+  5.2
+
+ProductName_Overlord: |-
+  Netwrix 1Secure
+
+UI: |-
+  Netwrix 1Secure UI
+
+Website: |-
+  Netwrix 1Secure Website
+
+API: |-
+  Netwrix Overlord API
+
+Agent: |-
+  Netwrix Overlord On-Prem Agent
+
+Azure AD app: |-
+  Microsoft Entra ID
+
+Azure AD admin center: |-
+  Microsoft Entra admin center
+

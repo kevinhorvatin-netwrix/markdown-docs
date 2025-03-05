@@ -2,7 +2,7 @@
 
 Activity reports help administrators monitor, track, and analyze various user activities across their audited environment. These reports provide detailed insights into user behavior, helping to identify any suspicious or unauthorized actions. For example, you can easily track all changes made by a specific user, view a list of deleted accounts, and much more.
 
-You can choose to view predefined Activity reports or create customized reports tailored to your needs by applying specific filters. To view custom reports, see the [Create Reports with Custom Filters ](CreateReportsWithCustomFilters.md)) topic.
+You can choose to view predefined Activity reports or create customized reports tailored to your needs by applying specific filters. To view custom reports, see the [Create Reports with Custom Filters ](CreateReportsWithCustomFilters.md) topic.
 
 Activity reports collect data from the following environments:
 
@@ -118,4 +118,4 @@ A list of the available Activity reports is given below.
         
 Subscribe to Activity Reports
 
-You can subscribe to Activity reports to receive them automatically via email, or have them uploaded to a specified folder in SharePoint Online. See the [Subscriptions](Subscriptions.md))  topic for additional information.
+You can subscribe to Activity reports to receive them automatically via email, or have them uploaded to a specified folder in SharePoint Online. See the [Subscriptions](Subscriptions.md)  topic for additional information.

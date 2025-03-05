@@ -66,4 +66,4 @@ Follow the instructions in the  [Data Collecting Account](../../Admin/DataCollec
 
 ## Configure required protocols and ports
 
-Set up protocols and ports as described in the [Protocols and Ports Required for Monitoring File Servers](ProtocolsAndPorts.md))  section.
+Set up protocols and ports as described in the [Protocols and Ports Required for Monitoring File Servers](ProtocolsAndPorts.md)  section.

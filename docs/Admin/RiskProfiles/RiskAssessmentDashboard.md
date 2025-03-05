@@ -28,7 +28,7 @@ Select the following drop down lists.
 - **Trend Since** – Review the risks since the required period (Last month, Last week, Last 3 months). The trend **Since last month** is enabled by default
 - **Risk Profile Preview** – Select a risk profile for your organization from the drop-down list
 
-You can also click the Sprocket icon to set up the risk profile for your organization. See the [Risk Profiles](AddProfile.md))  topic for additional information.![](../../../Resources/Images/1Secure/RiskProfileRiskAssesmentTabs.png)
+You can also click the Sprocket icon to set up the risk profile for your organization. See the [Risk Profiles](AddProfile.md)  topic for additional information.![](../../../Resources/Images/1Secure/RiskProfileRiskAssesmentTabs.png)
 
 View the following tabs of the dashboard. 
 

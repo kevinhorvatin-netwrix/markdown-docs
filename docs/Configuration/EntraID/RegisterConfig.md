@@ -31,7 +31,7 @@ The Overview page for the newly registered application opens. The following sett
 
 - Application (client) ID – A client ID for the registered application
 - Directory (tenant) ID – A tenant ID for the registered application
-- Client Secret – A client secret value generated when a new client secret key is created for the registered application. See the [Generate Client Secret Value](#Generate))  topic for additional information.
+- Client Secret – A client secret value generated when a new client secret key is created for the registered application. See the [Generate Client Secret Value](#Generate)  topic for additional information.
 
 ## Grant Permissions to the App
 
@@ -54,9 +54,9 @@ Click the **Application permissions** tab. The permission categories are listed.
 
 See the following topics for the  list of API permissions required to audit the respective data source.  
 
-- [Permissions to Audit Microsoft Entra ID](Permissions.md#EntraID)) 
-- [Permissions to Audit SharePoint Online](Permissions.md#SharePt)) 
-- [Permissions to Audit Exchange Online](Permissions.md#Exchange)) 
+- [Permissions to Audit Microsoft Entra ID](Permissions.md#EntraID) 
+- [Permissions to Audit SharePoint Online](Permissions.md#SharePt) 
+- [Permissions to Audit Exchange Online](Permissions.md#Exchange) 
 
 After selecting the required permission(s), click **Add Permissions** at the bottom. You are navigated to the API Permissions page.
 
@@ -138,7 +138,7 @@ Enter a description for this certificate and click the **Add** button at the bot
 
 Follow the steps to assign permissions to the registered application by modifying its attribute values using the Manifest app. See the [Microsoft Entra app manifest (Azure AD Graph format)](https://learn.microsoft.com/en-us/entra/identity-platform/reference-app-manifest#requiredresourceaccess-attribute "Microsoft Entra app manifest (Azure AD Graph format)") article for additional information on Manifest.
 
-This is an alternate way for assigning permissions to the registered application that differs from the normal method discussed in the [Grant Permissions to the App](#Grant)) topic. 
+This is an alternate way for assigning permissions to the registered application that differs from the normal method discussed in the [Grant Permissions to the App](#Grant) topic. 
 @Snippet:Config/EntraID/Register:SignIn@ 
 @Snippet:1Secure/EntraIDApp:NavAppReg-Step@ 
 @Snippet:1Secure/EntraIDApp:AppStep2@

@@ -13,7 +13,7 @@ The feature is helpful for Managed Service Providers with clients in multiple of
 
 Follow the steps to add a site to your organization. 
 
-Add your organization or add a source to the created organization. See the [Add Organizations](AddOrganizations.md))  topic for additional information. 
+Add your organization or add a source to the created organization. See the [Add Organizations](AddOrganizations.md)  topic for additional information. 
 
 You can add sites only for on-prem sources - Active Directory and Computer. These sources require an installation of the agent. See the [Add a Computer Source and Connectors](SourcesAndConnectors/ActiveDirectory.md) topic for additional information.![](../../../Resources/Images/1Secure/AddSourcesSite.png)
 

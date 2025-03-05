@@ -19,6 +19,6 @@ This functionality is currently available for the following data sources:
 
 See the following topics for additional information:
 
-- [Apply Filters](ApplyFilters.md)) 
-- [Create Reports with Custom Filters](CreateReportsWithCustomFilters.md)) 
-- [State In Time Risks Reports](StateInTime.md)) 
+- [Apply Filters](ApplyFilters.md) 
+- [Create Reports with Custom Filters](CreateReportsWithCustomFilters.md) 
+- [State In Time Risks Reports](StateInTime.md) 

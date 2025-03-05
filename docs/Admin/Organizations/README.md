@@ -16,7 +16,7 @@ Below you can see home pages of:
 
 See the following topics for additional information:
 
-- [Add Organizations](AddOrganizations.md)) 
-- [Add Users](AddingUsers.md)) 
+- [Add Organizations](AddOrganizations.md) 
+- [Add Users](AddingUsers.md) 
 - [Sources and Connectors](SourcesAndConnectors/README.md) 
-- [Manage Credentials](ManagingCredentials.md)) 
+- [Manage Credentials](ManagingCredentials.md) 

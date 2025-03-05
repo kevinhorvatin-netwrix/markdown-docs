@@ -1,6 +1,6 @@
 # Configure Advanced Audit Policies 
 @Snippet:_CrossProduct/Auditor/FileServers:ConfigAdvancedOverview@ 
-Perform procedures below instead of those discussed in the [Configure Local Audit Policies](LocalPolicy.md))  topic.
+Perform procedures below instead of those discussed in the [Configure Local Audit Policies](LocalPolicy.md)  topic.
 
 ## Enforce Advanced Policies Over Local Policies 
 @Snippet:Auditor/ConfigSettings:Advanced_Vs_Basic_Policies@ 

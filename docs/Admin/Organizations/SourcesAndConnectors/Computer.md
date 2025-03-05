@@ -27,7 +27,7 @@ Select the **Manual** or **AD Container** option button.
 
     - Domain Name – Specify the FQDN of the domain the container exists in.
     - Container Name – Specify the name of the container to crawl its computers.
-    - Detection Interval – Specify the time interval (in hour(s) and minutes(s)) after which the source group will automatically detect the computers for auditing.
+    - Detection Interval – Specify the time interval (in hour(s) and minutes(s) after which the source group will automatically detect the computers for auditing.
     - @Snippet:1Secure/SourcesAndConnectors:SourceGroup@
 - @Snippet:1Secure/SourcesAndConnectors:CrawlSource@
 - @Snippet:1Secure/SourcesAndConnectors:Credentials@

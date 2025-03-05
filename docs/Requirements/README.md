@@ -4,5 +4,5 @@ This section provides the requirements for the computer where {{ MyVariables.Pro
 
 See the following topics for additional information:
 
-- [Agent Software Requirements](CloudAgentRequirements.md)) 
-- [Prerequisites for Data Sources](PrerequisitesForDataSources.md)) 
+- [Agent Software Requirements](CloudAgentRequirements.md)
+- [Prerequisites for Data Sources](PrerequisitesForDataSources.md)

@@ -4,6 +4,6 @@ In {{ MyVariables.ProductName_Overlord }}, a Risk Profile examines the nature an
 
 Please review following topics on risk profiles:
 
-- [Risk Profiles](AddProfile.md)) 
-- [Configure Risk Profile](ConfigureProfile.md)) 
-- [Review Risks using Risks Assessment Dashboard](RiskAssessmentDashboard.md)) 
+- [Risk Profiles](AddProfile.md) 
+- [Configure Risk Profile](ConfigureProfile.md) 
+- [Review Risks using Risks Assessment Dashboard](RiskAssessmentDashboard.md) 

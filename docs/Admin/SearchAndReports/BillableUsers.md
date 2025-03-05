@@ -20,7 +20,7 @@ You can also access the report by navigating to the **Reports** &gt; **System** 
 
 If necessary, you can filter the provided data. Select a filter, operator, and value from  the Filter, Operator, and Value drop-down menus respectively. 
 
-You must specify three columns: Filter, Operator, and Value. You may also select more than one filter. To review the Operator filter options, see the [Filter Operators](FilterOperators.md)) topic for additional information. 
+You must specify three columns: Filter, Operator, and Value. You may also select more than one filter. To review the Operator filter options, see the [Filter Operators](FilterOperators.md) topic for additional information. 
 
 Click **Search**. 
 

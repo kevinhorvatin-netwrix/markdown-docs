@@ -4,6 +4,7 @@
 
 All Netwrix product announcements have moved to the new Netwrix Community. See announcements for Netwrix 1Secure in the [1Secure](https://community.netwrix.com/c/1secure/announcements/161 "https://community.netwrix.com/c/1secure/announcements/161") area of our new community.
 
+
 ## Netwrix 1Secure 2024.12.13
 
 New Alerts and Permission Reports for SharePoint Online

@@ -7,9 +7,9 @@ After adding an organization, you can view available tabs for the organization o
 The Managed organizations page has the following tabs:![](../../../Resources/Images/1Secure/TabsView.png)
 
 - Sources – Add, edit, or delete sources for your organization, review its statuses, and so on. See the [Sources and Connectors](SourcesAndConnectors/README.md)  topic for additional information.
-- Sites  – View the sites and status of your Netwrix Cloud Agent. See the [Update Netwrix Cloud Agent](AddSites.md))  topic for additional information.
-- Credentials  – Review and edit the credentials of your organization. See the [Manage Credentials](ManagingCredentials.md)) topic for additional information.
-- Users – Review or add Business Viewers or Co-managing Administrators to the audited organization.  See the [Add Users](AddingUsers.md))  topic for additional information.
+- Sites  – View the sites and status of your Netwrix Cloud Agent. See the [Update Netwrix Cloud Agent](AddSites.md)  topic for additional information.
+- Credentials  – Review and edit the credentials of your organization. See the [Manage Credentials](ManagingCredentials.md) topic for additional information.
+- Users – Review or add Business Viewers or Co-managing Administrators to the audited organization.  See the [Add Users](AddingUsers.md)  topic for additional information.
 - Subscriptions– Review or edit the subscriptions of your organization. See the [Subscriptions](../SearchAndReports/Subscriptions.md)  topic for additional information.
 
 In addition to the tabs, the right upper corner of the page has the following options:

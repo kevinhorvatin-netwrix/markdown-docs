@@ -8,7 +8,7 @@ Follow the steps to create a custom report. @Snippet:1Secure/Reports:ActivityRep
 
  Select an organization from the drop-down menu at the top of the left pane to create a custom report for it. An organization is selected by default, but you can choose a different one if needed.
 
-Define a filter criteria. See the [Apply Filters](ApplyFilters.md))  topic for additional information.
+Define a filter criteria. See the [Apply Filters](ApplyFilters.md)  topic for additional information.
 
 Click **Save as** in the upper right corner of the page. The Create Report pane is displayed.![](../../../Resources/Images/1Secure/SearchCreateReports.png "Create Report Pane")
 
@@ -41,7 +41,7 @@ Follow the steps to modify a custom report. @Snippet:1Secure/Reports:ActivityRep
 
 Click **Edit** to modify the report. The Edit Report pane is displayed.
 
-Modify the required information. See Step 5 through 8 in the [Create a Custom Report](#CreateGe))  topic for additional information.
+Modify the required information. See Step 5 through 8 in the [Create a Custom Report](#CreateGe)  topic for additional information.
 
 Click **Save Report**.
 
